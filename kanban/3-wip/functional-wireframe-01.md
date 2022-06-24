@@ -44,4 +44,4 @@ All folders to be populated with `.md` files, which can be moved to different fo
 
 Great, no more github issues, which can be downloaded via the Github API, but are not accessible via repo, like the Github Wiki (which we'll only use if necessary)
 
-And we will place references in the `TODO.md` files to actual commits as the tasks are completed, and/or other acted upon.
+And we will place references in the `TODO.md` files to actual commits as the tasks are completed, and/or otherwise acted upon.
