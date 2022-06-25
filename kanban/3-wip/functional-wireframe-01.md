@@ -121,3 +121,35 @@ Date:   Sat Jun 25 11:54:21 2022 -0300
 
     build: initialize npm project
 ```
+
+- Decoupled and responsive Navbar component rendered on home page with ITCC svg logo; changed to npm instead of yarn package manager
+
+```bash
+victor@victorpc:components$ git log --stat
+commit b79c601383515f50604d6cbd9f31a69ce2f03288 (HEAD -> starter-tw-npm, origin/starter-tw-npm)
+Author: Victor Kane <victorkane@gmail.com>
+Date:   Sat Jun 25 18:41:29 2022 -0300
+
+    fix: consistent ITCC colors for mobile and for desktop breakpoint Navbar rendering
+
+ components/Navbar.js | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit f967f98a5f43a71af6c8504ee1b761246b1286de (HEAD -> starter-tw-npm, origin/starter-tw-npm)
+Author: Victor Kane <victorkane@gmail.com>
+Date:   Sat Jun 25 18:23:40 2022 -0300
+
+    feat: decoupled navbar component rendered on home page with ITCC svg logo
+
+ components/Navbar.js                    |  106 +++
+ kanban/3-wip/functional-wireframe-01.md |    7 +-
+ package-lock.json                       | 5955 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ package.json                            |    2 +
+ pages/_app.js                           |    2 +-
+ pages/_document.js                      |   16 +
+ pages/index.js                          |   21 +-
+ public/ITCC.svg                         |    3 +
+ public/vercel.svg                       |    4 -
+ yarn.lock                               | 1953 ---------------------------------------------
+ 10 files changed, 6109 insertions(+), 1960 deletions(-)
+```
