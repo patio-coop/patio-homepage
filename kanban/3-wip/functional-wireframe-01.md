@@ -71,3 +71,57 @@ Date:   Sat Jun 25 11:30:57 2022 -0300
 ```
 
 - Create vanilla Next.js / Tailwind CSS starter
+
+```bash
+commit 772906be366c9fc142a1e8086423b95e4bf6210e (HEAD -> starter-tw-npm, origin/starter-tw-npm)
+Author: Victor Kane <victorkane@gmail.com>
+Date:   Sat Jun 25 12:32:48 2022 -0300
+
+    build: created initial static page for no-tool viewing
+
+ static/index.html                                | 18 ++----------------
+ static/index_files/149b18973e5508c7.css          |  1 +
+ static/index_files/27d177a30947857b.css          |  1 +
+ static/index_files/_app-69da446bea935969.js      |  1 +
+ static/index_files/_buildManifest.js             |  1 +
+ static/index_files/_middlewareManifest.js        |  1 +
+ static/index_files/_ssgManifest.js               |  1 +
+ static/index_files/framework-7dc8a65f4a0cda33.js |  1 +
+ static/index_files/index-89eb3f652d2ddf4f.js     |  1 +
+ static/index_files/main-fc7d2f0e2098927e.js      |  1 +
+ static/index_files/polyfills-5cd94c89d3acac5f.js |  1 +
+ static/index_files/vercel.svg                    |  4 ++++
+ static/index_files/webpack-69bfa6990bb9e155.js   |  1 +
+ 13 files changed, 17 insertions(+), 16 deletions(-)
+
+commit b1c5a0d10fd2b03c8e4393f49bd8a450d8131bf4
+Author: Victor Kane <victorkane@gmail.com>
+Date:   Sat Jun 25 12:11:53 2022 -0300
+
+    build: Created vanilla next.js dev environment
+
+ .eslintrc.json                          |    3 +
+ .gitignore                              |   32 ++
+ README-nextjs.md                        |   34 ++
+ kanban/3-wip/functional-wireframe-01.md |    2 +
+ next.config.js                          |    6 +
+ package.json                            |   17 +-
+ pages/_app.js                           |    7 +
+ pages/api/hello.js                      |    5 +
+ pages/index.js                          |   69 +++
+ public/favicon.ico                      |  Bin 0 -> 25931 bytes
+ public/vercel.svg                       |    4 +
+ styles/Home.module.css                  |  116 ++++
+ styles/globals.css                      |   16 +
+ yarn.lock                               | 1665 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 14 files changed, 1974 insertions(+), 2 deletions(-)
+
+commit d3c97a5c9e261e2b42166e7261a1004809d83409
+Author: Victor Kane <victorkane@gmail.com>
+Date:   Sat Jun 25 11:54:21 2022 -0300
+
+    build: initialize npm project
+
+ package.json | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+```
