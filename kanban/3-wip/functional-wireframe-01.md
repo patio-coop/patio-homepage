@@ -10,11 +10,16 @@ _created 2022-06-23 victorkane_
 - [ ] Review current design with design team members
 - [x] Create vanilla Next.js / Tailwind CSS starter according to [instructions in the docs](https://tailwindcss.com/docs/guides/nextjs)
 - [ ] Skeleton header, first section and footer tailwind components
-  - [ ] Skeleton header
+  - [x] Structure decoupled homepage and components
+  - [ ] Skeleton header and navbar
+    - [x] Skeleton navbar
+    - [ ] Skeleton header
   - [ ] Skeleton footer
   - [ ] Skeleton first section
   - [ ] Skeleton remaining sections
 - [ ] Confirm Style Guide and setup as Tailwind theme
+  - [ ] fonts (Ubuntu)
+  - [ ] colors
 - [ ] Create Components for all sections
   - [ ] Markdown and image components to be imported into Section components in order to achieve separation of concerns and workflow in content, design, dev, devops
 - [ ] Add initial hi-fidelity design characteristics to components
