@@ -8,7 +8,7 @@ _created 2022-06-23 victorkane_
 
 - [x] Review current design
 - [ ] Review current design with design team members
-- [ ] Create vanilla Next.js / Tailwind CSS starter according to [instructions in the docs](https://tailwindcss.com/docs/guides/nextjs)
+- [x] Create vanilla Next.js / Tailwind CSS starter according to [instructions in the docs](https://tailwindcss.com/docs/guides/nextjs)
 - [ ] Skeleton header, first section and footer tailwind components
   - [ ] Skeleton header
   - [ ] Skeleton footer
