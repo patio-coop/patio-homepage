@@ -2,7 +2,7 @@
 
 ### Contents
 
-`static` directory (previously called `prototype/`) contains a statically generated version of the page after each and every release.
+`prototype/` directory contains a statically generated version of the page after each and every release.
 
 ### Content, Design, Development and DevOps Workflows
 
