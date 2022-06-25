@@ -52,3 +52,20 @@ All folders to be populated with `.md` files, which can be moved to different fo
 Great, no more github issues, which can be downloaded via the Github API, but are not accessible via repo, like the Github Wiki (which we'll only use if necessary)
 
 And we will place references in the `TODO.md` files to actual commits as the tasks are completed, and/or otherwise acted upon.
+
+### victorkane 2022-06-25
+
+- planning
+
+```bash
+commit 33d45186a8aa9038e2204524bee8ea17a8e348a9 (HEAD -> starter-tw-npm, origin/starter-tw-npm)
+Author: Victor Kane <victorkane@gmail.com>
+Date:   Sat Jun 25 11:30:57 2022 -0300
+
+    docs(issues): updated planning
+
+ README.md                               |  8 +++++---
+ kanban/3-wip/functional-wireframe-01.md | 21 ++++++++++++++-------
+ {prototype => static}/index.html        |  0
+ 3 files changed, 19 insertions(+), 10 deletions(-)
+```
