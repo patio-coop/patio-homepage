@@ -73,6 +73,8 @@ Date:   Sat Jun 25 11:30:57 2022 -0300
 - Create vanilla Next.js / Tailwind CSS starter
 
 ```bash
+victor@victorpc:patio-homepage$ git log --stat
+
 commit 772906be366c9fc142a1e8086423b95e4bf6210e (HEAD -> starter-tw-npm, origin/starter-tw-npm)
 Author: Victor Kane <victorkane@gmail.com>
 Date:   Sat Jun 25 12:32:48 2022 -0300
