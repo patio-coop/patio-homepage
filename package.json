@@ -1,13 +1,26 @@
 {
   "name": "patio-homepage",
   "version": "0.1.0",
+  "private": true,
   "description": "PATIO Homepage",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/patio-coop/patio-homepage"
   },
-  "author": "patio-coop"
+  "author": "patio-coop",
+  "dependencies": {
+    "next": "12.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.1.6"
+  }
 }

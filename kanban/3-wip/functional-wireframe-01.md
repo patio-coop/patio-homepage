@@ -69,3 +69,5 @@ Date:   Sat Jun 25 11:30:57 2022 -0300
  {prototype => static}/index.html        |  0
  3 files changed, 19 insertions(+), 10 deletions(-)
 ```
+
+- Create vanilla Next.js / Tailwind CSS starter
