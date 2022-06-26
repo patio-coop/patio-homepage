@@ -11,7 +11,7 @@ _created 2022-06-23 victorkane_
 - [x] Create vanilla Next.js / Tailwind CSS starter according to [instructions in the docs](https://tailwindcss.com/docs/guides/nextjs)
 - [ ] Skeleton header, first section and footer tailwind components
   - [x] Structure decoupled homepage and components
-  - [x] Skeleton navbar and hero
+  - [x] Responsive skeleton navbar and hero
     - [x] Skeleton navbar
     - [x] Skeleton hero
   - [ ] Skeleton footer
@@ -152,4 +152,20 @@ Date:   Sat Jun 25 18:23:40 2022 -0300
  public/vercel.svg                       |    4 -
  yarn.lock                               | 1953 ---------------------------------------------
  10 files changed, 6109 insertions(+), 1960 deletions(-)
+```
+
+### victorkane 2022-06-26
+
+```bash
+commit 3229c91ec4efdff0ac9bbfe6e7d18e89551ac8c2 (HEAD -> starter-tw-npm, origin/starter-tw-npm)
+Author: Victor Kane <victorkane@gmail.com>
+Date:   Sun Jun 26 19:59:22 2022 -0300
+
+    feat: responsive skeleton navbar and hero complete
+
+
+ components/Hero.js                      | 46 ++++++++++++++++++++++++++++++++++++++++++++++
+ kanban/3-wip/functional-wireframe-01.md |  4 ++--
+ pages/index.js                          |  5 ++++-
+ 3 files changed, 52 insertions(+), 3 deletions(-)
 ```
