@@ -16,12 +16,12 @@ export function Navbar() {
               <div className="flex-shrink-0 flex items-center">
                 <img
                   className="block lg:hidden h-8 w-auto"
-                  src="/ITCC.svg"
+                  src="/PATIO.svg"
                   alt="Workflow"
                 />
                 <img
                   className="hidden lg:block h-8 w-auto"
-                  src="/ITCC.svg"
+                  src="/PATIO.svg"
                   alt="Workflow"
                 />
               </div>
