@@ -1,5 +1,6 @@
 import Head from "next/head"
 import { Navbar } from "../components/Navbar"
+import { Hero } from "../components/Hero"
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
       </Head>
       {/* <Header /> */}
       <Navbar />
-      <main></main>
+      <main>
+        <Hero />
+      </main>
       {/* <Footer /> */}
     </>
   )

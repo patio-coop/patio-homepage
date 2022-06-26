@@ -11,9 +11,9 @@ _created 2022-06-23 victorkane_
 - [x] Create vanilla Next.js / Tailwind CSS starter according to [instructions in the docs](https://tailwindcss.com/docs/guides/nextjs)
 - [ ] Skeleton header, first section and footer tailwind components
   - [x] Structure decoupled homepage and components
-  - [ ] Skeleton header and navbar
+  - [x] Skeleton navbar and hero
     - [x] Skeleton navbar
-    - [ ] Skeleton header
+    - [x] Skeleton hero
   - [ ] Skeleton footer
   - [ ] Skeleton first section
   - [ ] Skeleton remaining sections
