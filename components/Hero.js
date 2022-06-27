@@ -6,7 +6,17 @@ export function Hero() {
           <p className="text-lg">We are</p>
           <p className="text-lg">Patio</p>
           <h1 className="text-4xl tracking-tight font-extrabold text-[#0c1354] sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-            <span className="block xl:inline text-lg text-white bg-[#0c1354] px-4">
+            <span className="top-block rounded-md xl:inline text-lg text-white bg-[#0c1354] pr-2 mr-2">
+              <svg
+                className="inline mt-4"
+                width="31"
+                height="32"
+                viewBox="0 0 31 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0H31L0 32V0Z" fill="#0C1354" />
+              </svg>
               and we
             </span>
             <br />
@@ -37,7 +47,7 @@ export function Hero() {
       <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
         <img
           className="absolute inset-0 w-full h-full object-cover"
-          src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+          src="/images/hero.png"
           alt=""
         />
       </div>
