@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* General Config */
 
 :root {
-    --font-family: "Ubuntu", sans-serif;;
+    --font-family: "Ubuntu", sans-serif;
     --font-size-standard: 16px;
     --font-size-h1: 54px;
     --font-size-h2: 52px;
@@ -11,6 +13,10 @@
     --font-size-special: 21px;
     --font-size-details: 14px;
 
+    --font-stats: 'Rubik', sans-serif;
+    --font-size-stats: 64px;
+    --font-size-stats-descrip: 19px;
+    
     box-sizing: border-box;
     max-width: 1920px;
     scroll-behavior: smooth;
@@ -300,3 +306,170 @@ nav ul li a:hover {
 
     max-width: 500px;
 }
+
+/* SECTION 3 */
+
+.main__section3 {
+    background: var(--background-section3);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    min-height: 588px;
+}
+
+.main__section3__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin: 0 0 0 60px;
+
+    max-width: 512px;
+    gap: 18px;
+}
+
+.main__section3__h2 {
+    color: rgba(20, 173, 237, 1);
+    margin: 18px 0;
+}
+
+.main__section3__pmain {
+    font-size: var(--font-size-special);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 33.6px;
+}
+
+.main__section3__p {
+    font-size: var(--font-size-standard);
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    line-height: 26px;
+}
+
+.main__section3__img {
+    background-image: url(./media/Rectangle48.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-width: 50%;
+}
+
+/* SECTION 4 */
+
+.main__section4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.main__section4__stats {
+    background: var(--background-section4);
+    min-width: 850px;
+    max-width: 55%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__section4__statsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    /* INSETAR MARGEN */
+    padding: 5% 10%;
+
+}
+
+.main__section4__stats__coops, 
+.main__section4__stats__cooperators, 
+.main__section4__stats__countries, 
+.main__section4__stats__digital {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 24px 64px;
+    max-width: 200px;
+}
+
+.main__section4__stats__img {
+    max-width: 116px;
+    max-height: 116px;
+
+    margin: 8px;
+}
+
+.main__section4__stats__number {
+    font-family: var(--font-stats);
+    font-size: var(--font-size-stats);
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+
+    margin: 0 0 -10px 0;
+}
+
+.main__section4__stats__descrip {
+    font-family: var(--font-family);
+    font-size: var(--font-size-details);
+    font-weight: 500;
+    color: rgba(12, 19, 84, 1);
+
+}
+
+.main__section4__list {
+    background-color: rgba(12, 19, 84, 1);
+    min-width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 5% 0 0 6% /*64px 0 0 132px*/;
+}
+
+.main__section4__list__wrapper {
+    display: flex;
+    padding: 50px 132px;
+}
+
+.main__section4__list__title {
+    font-family: var(--font-family);
+    font-size: var(--font-size-special);
+    font-weight: 500;
+
+    color: rgba(255, 255, 255, 1);
+    margin: 8px 0;
+}
+
+.main__section4__list__slugline {
+    font-family: var(--font-family);
+    font-size: var(--font-size-standard);
+    font-weight: 400;
+    line-height: 120%;
+
+    color: rgba(255, 255, 255, 1);
+}
+
+.main__section4__list__items {
+    font-family: var(--font-family);
+    font-size: var(--font-size-standard);
+    font-weight: 300;
+    line-height: 35px;
+
+    color: rgba(255, 255, 255, 1);
+
+    margin: 27px 25px;
+
+    overflow-y: scroll;
+    max-height: 250px;
+    min-width: 300px;
+}
+
+/* SECTION 5 */
