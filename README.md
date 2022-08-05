@@ -7,6 +7,12 @@ Patio Interational Worker Co-operative Association Homepage
 page. The static site generation system (to be added later) should produce
 essentially the same output under the `output/` directory.
 
+At <https://patio-coop.github.io/patio-homepage/prototype/> (on GitHub
+Pages) we publish one branch of the repo. This is whatever branch a
+developer happened to need to show to others at the time; feel free to
+change it when you need it. (It's set by clicking on the _Settings_ tab and
+then in _Pages_ in left sidebar.)
+
 ### Developers
 
 For development help contact `@cjs_tng_jp` or `@yasu_tng_jp` on Patio
