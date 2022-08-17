@@ -1,7 +1,8 @@
 Patio Interational Worker Co-operative Association Homepage
 ===========================================================
 
-### Contents
+Contents
+--------
 
 `prototype/` contains a straight HTML/CSS/etc. version of the prototype
 page. The static site generation system (to be added later) should produce
@@ -13,7 +14,9 @@ developer happened to need to show to others at the time; feel free to
 change it when you need it. (It's set by clicking on the _Settings_ tab and
 then in _Pages_ in left sidebar.)
 
-### Developers
+
+Developers
+----------
 
 For development help contact `@cjs_tng_jp` or `@yasu_tng_jp` on Patio
 Mattermost chat, or anybody else in the `#homepage-technical` channel.
