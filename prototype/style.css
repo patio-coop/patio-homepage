@@ -568,3 +568,52 @@ nav ul li a:hover {
 
     color: rgba(255, 255, 255, 1);
 }
+/* SECTION 8 */
+
+.main__section8 {
+    display: flex;
+    flex-direction: row;
+
+    background: linear-gradient(180deg, #9A49EC 50.06%, rgba(154, 73, 236, 0) 90.19%), #6E24B0;
+}
+
+.main__section8__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin: 90px 100px;
+    max-width: 25%;
+}
+
+.main__section8__title {
+    font-family: var(--font-family);
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+
+    color: rgba(12, 19, 84, 1);
+}
+
+.main__section8__content {
+    font-family: var(--font-family);
+    font-size: var(--font-size-special);
+    line-height: 160%;
+
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* footer */
+
+footer{
+    background-color: rgba(12, 19, 84, 1);
+    padding: 32px 60px;
+    display: flex;
+    flex-direction: row;
+
+}
+.footer__social{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-between;
+}
