@@ -19,3 +19,7 @@ For development help contact `@cjs_tng_jp` or `@yasu_tng_jp` on Patio
 Mattermost chat, or anybody else in the `#homepage-technical` channel.
 Design and content is done by the folks in the `#Community Landing Page`
 group.
+
+
+## FIGMA
+https://www.figma.com/file/P0vtqF4VtOkKEM6L0nWh5h/PATIO?node-id=240%3A439

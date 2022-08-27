@@ -16,7 +16,7 @@
     --font-stats: 'Rubik', sans-serif;
     --font-size-stats: 64px;
     --font-size-stats-descrip: 19px;
-    
+
     box-sizing: border-box;
     max-width: 1920px;
     scroll-behavior: smooth;
@@ -24,7 +24,7 @@
     --background-section1: #08F5DA;
 
     --background-section2: linear-gradient(319.44deg, rgba(255, 255, 255, 0.15) -7.39%, rgba(255, 255, 255, 0) 62.16%), #14ADED;
-    
+
     --background-section3:linear-gradient(0deg, #0C1354, #0C1354), linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
 
     --background-section4:linear-gradient(180deg, #9A49EC 6.68%, rgba(154, 73, 236, 0) 90.19%), #6E24B0;
@@ -64,7 +64,7 @@ p {
     background-color: rgba(110, 36, 176, 1);
     padding: 15px 30px;
     border-radius: 6px;
-    
+
     font-size: var(--font-size-standard);
     color: rgba(255, 255, 255, 1);
     font-weight: 700;
@@ -167,7 +167,7 @@ nav ul {
     align-items: center;
 
     list-style: none;
-    
+
     margin: 25px 0;
 }
 
@@ -220,7 +220,7 @@ nav ul li a:hover {
 
 .main__section1__title__top {
     margin: 32px 0;
-    font-size: 24px;  
+    font-size: 24px;
 }
 
 .main__section1__title__middle {
@@ -259,7 +259,7 @@ nav ul li a:hover {
 
 .main__section1__img {
     background: url(./media/LandingPage_People_Solar_chilling\ 2.png);
-    
+
     background-size: contain;
     background-repeat: no-repeat;
     max-width: 60%;
@@ -380,15 +380,15 @@ nav ul li a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
+
     /* INSETAR MARGEN */
     padding: 5% 10%;
 
 }
 
-.main__section4__stats__coops, 
-.main__section4__stats__cooperators, 
-.main__section4__stats__countries, 
+.main__section4__stats__coops,
+.main__section4__stats__cooperators,
+.main__section4__stats__countries,
 .main__section4__stats__digital {
     display: flex;
     justify-content: center;
@@ -498,6 +498,70 @@ nav ul li a:hover {
 }
 
 .main__section5__content {
+    font-family: var(--font-family);
+    font-size: var(--font-size-special);
+    line-height: 160%;
+
+    color: rgba(255, 255, 255, 1);
+}
+/* SECTION 6 */
+
+.main__section6 {
+    display: flex;
+    flex-direction: row;
+
+    background: linear-gradient(180deg, #9A49EC 50.06%, rgba(154, 73, 236, 0) 90.19%), #6E24B0;
+}
+
+.main__section6__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin: 90px 100px;
+    max-width: 25%;
+}
+
+.main__section6__title {
+    font-family: var(--font-family);
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+
+    color: rgba(12, 19, 84, 1);
+}
+
+.main__section6__content {
+    font-family: var(--font-family);
+    font-size: var(--font-size-special);
+    line-height: 160%;
+
+    color: rgba(255, 255, 255, 1);
+}
+/* SECTION 7 */
+
+.main__section7 {
+    display: flex;
+    flex-direction: row;
+
+    background: linear-gradient(180deg, #9A49EC 50.06%, rgba(154, 73, 236, 0) 90.19%), #6E24B0;
+}
+
+.main__section7__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin: 90px 100px;
+    max-width: 25%;
+}
+
+.main__section7__title {
+    font-family: var(--font-family);
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+
+    color: rgba(12, 19, 84, 1);
+}
+
+.main__section7__content {
     font-family: var(--font-family);
     font-size: var(--font-size-special);
     line-height: 160%;
