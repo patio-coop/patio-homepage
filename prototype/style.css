@@ -423,7 +423,7 @@ nav ul li a:hover {
 
 .main__section4__list {
     background-color: rgba(12, 19, 84, 1);
-    min-width: 45%;
+    min-width: 100%;
 
     display: flex;
     flex-direction: column;
