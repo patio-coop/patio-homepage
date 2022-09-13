@@ -368,7 +368,6 @@ nav ul li a:hover {
 .main__section4__stats {
     background: var(--background-section4);
     min-width: 850px;
-    max-width: 55%;
 
     display: flex;
     align-items: center;
@@ -424,7 +423,6 @@ nav ul li a:hover {
 
 .main__section4__list {
     background-color: rgba(12, 19, 84, 1);
-    min-width: 45%;
 
     display: flex;
     flex-direction: column;
@@ -476,11 +474,14 @@ nav ul li a:hover {
 
 .main__section5 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     background: linear-gradient(180deg, #9A49EC 50.06%, rgba(154, 73, 236, 0) 90.19%), #6E24B0;
 }
-
+.main__section5__conteiner {
+    display: flex;
+    flex-direction: row;
+}
 .main__section5__wrapper {
     display: flex;
     flex-direction: column;
@@ -503,4 +504,8 @@ nav ul li a:hover {
     line-height: 160%;
 
     color: rgba(255, 255, 255, 1);
+}
+
+.main__section5__services {
+    
 }
