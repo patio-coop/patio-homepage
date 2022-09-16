@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General Config */
+
+:root {
+    --font-family: "Ubuntu", sans-serif;
+    --font-size-standard: 16px;
+    --font-size-h1: 54px;
+    --font-size-h2: 52px;
+    --font-size-h3: 36px;
+    --font-size-special: 21px;
+    --font-size-details: 14px;
+
+    --font-stats: 'Rubik', sans-serif;
+    --font-size-stats: 64px;
+    --font-size-stats-descrip: 19px;
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    --background-section1: #08F5DA;
+
+    --background-section2: linear-gradient(319.44deg, rgba(255, 255, 255, 0.15) -7.39%, rgba(255, 255, 255, 0) 62.16%), #14ADED;
+
+    --background-section3:linear-gradient(0deg, #0C1354, #0C1354), linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
+
+    --background-section4:linear-gradient(180deg, #9A49EC 6.68%, rgba(154, 73, 236, 0) 90.19%), #6E24B0;
+
+    --background-section5:linear-gradient(180deg, rgba(154, 73, 236, 0.2) 0%, rgba(12, 19, 84, 0.2) 61.91%), #0C1354;
+
+    --background-section6:linear-gradient(180deg, #0C1354 0%, #14ADED 100%);
+
+    --background-section6b:#14ADED;
+
+    --background-section7:linear-gradient(180deg, #0C1354 0%, #14ADED 100%);
+
+    --background-section8:linear-gradient(0deg, #0C1354, #0C1354), #EBECF4;
+}
+
+h1 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-h3);
+}
+
+p {
+    font-family: var(--font-family);
+    font-size: var(--font-size-standard);
+}
+
+.btn1 {
+    background-color: rgba(110, 36, 176, 1);
+    padding: 15px 30px;
+    border-radius: 6px;
+
+    font-size: var(--font-size-standard);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+}
+
+.btn2 {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 15px 30px;
+    border-radius: 6px;
+
+    font-size: var(--font-size-standard);
+    color: rgba(12, 19, 84, 1);
+    font-weight: 700;
+}
+
+
+/* Reset CSS Config */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0 64px 0 64px;
+    min-height: 120px;
+
+    background-color: var(--background-section1);
+}
+
+.header__logo {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    color:rgba(12, 19, 84, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo__holder {
+    font-size: 30px;
+}
+
+.header__navbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header__navbar__socialmedia {
+    display: flex;
+    justify-content: right;
+    justify-items: right;
+    align-items: center;
+    width: 300px;
+
+    margin: 15px 0 0 0;
+}
+
+.header__navbar__socialmedia ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header__navbar__socialmedia ul li{
+    margin: 0 20px;
+}
+
+.header__navbar__socialmedia hr {
+    border: 1px solid rgba(161, 165, 203, 0.3);
+    height: 100%;
+}
+
+.header__navbar__socialmedia select {
+    margin: 0 0 0 10px;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+
+    background-color: transparent;
+    color: rgba(12, 19, 84, 0.7);
+
+    border: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+
+    margin: 25px 0;
+}
+
+nav ul li {
+    font-family: var(--font-family);
+    font-size: var(--font-size-standard);
+    font-weight: 400;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(12, 19, 84, 1);
+    padding: 0.3rem 1.2rem;
+    margin: 0 -1rem 0 30px;
+    border-radius: 6px;
+}
+
+nav ul li a:hover {
+    transition: 0.3s;
+    background-color: rgba(110, 36, 176, 1);
+    color: white;
+}
+
+/* SECTION 1 */
+
+.main__section1 {
+    background: linear-gradient(180deg, #08F5DA, #14ADED);
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    max-height: 90vh;
+    padding: 25px 64px;
+}
+
+.main__section1__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    font-family: var(--font-family);
+    color: rgba(12, 19, 84, 1);
+
+    max-width: 530px;
+}
+
+.main__section1__title__top {
+    margin: 32px 0;
+    font-size: 24px;
+}
+
+.main__section1__title__middle {
+    background-color: rgba(12, 19, 84, 1);
+    border-radius: 4px;
+    padding: 3px 14px;
+
+    font-size: 24px;
+    color: rgba(8, 245, 218, 1);
+
+}
+
+.main__section1__title__middle_triangle {
+    content: "";
+    position: relative;
+    top: -5px;
+
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid rgba(12, 19, 84, 1);
+    border-bottom: 10px solid rgba(12, 19, 84, 1);
+
+    transform: rotate(90deg);
+}
+
+.main__section1__title__title {
+    margin: 14px 0 52px 0;
+}
+
+.main__section1__title__btns {
+    display: flex;
+    gap: 16px;
+}
+
+.main__section1__img {
+    background: url(./media/LandingPage_People_Solar_chilling\ 2.png);
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 60%;
+}
+
+.main__section1__img__front {
+    height: 40vw;
+}
+
+/* SECTION 2 */
+
+.main__section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--background-section2);
+
+    height: 340px;
+    gap:5%;
+}
+
+.main__section2__patio {
+    font-family: var(--font-family);
+    font-size: 18px;
+    color: rgba(12, 19, 84, 1);
+
+    text-align: right;
+    line-height: 36px;
+
+    max-width: 480px;
+}
+.main__section2__hr {
+    border: 1px solid rgba(12, 19, 84, 1);
+    height: 40%;
+}
+.main__section2__coops{
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(12, 19, 84, 1);
+
+    line-height: 40px;
+
+    max-width: 500px;
+}
+
+/* SECTION 3 */
+
+.main__section3 {
+    background: var(--background-section3);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    min-height: 588px;
+}
+
+.main__section3__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin: 0 0 0 60px;
+
+    max-width: 512px;
+    gap: 18px;
+}
+
+.main__section3__h2 {
+    color: rgba(20, 173, 237, 1);
+    margin: 18px 0;
+}
+
+.main__section3__pmain {
+    font-size: var(--font-size-special);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 33.6px;
+}
+
+.main__section3__p {
+    font-size: var(--font-size-standard);
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    line-height: 26px;
+}
+
+.main__section3__img {
+    background-image: url(./media/Rectangle48.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-width: 50%;
+}
+
+/* SECTION 4 */
+
+.main__section4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 100vw;
+    background-color: #e90a0a;
+    border: red 1px solid;
+
+}
+
+.main__section4__stats {
+    background: var(--background-section4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 45%;
+}
+
+.main__section4__statsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+
+    /* INSETAR MARGEN */
+    padding: 5% 10%;
+
+}
+
+.main__section4__stats__coops,
+.main__section4__stats__cooperators,
+.main__section4__stats__countries,
+.main__section4__stats__digital {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 24px 64px;
+    max-width: 200px;
+}
+
+.main__section4__stats__img {
+    max-width: 116px;
+    max-height: 116px;
+
+    padding: 8px;
+}
+
+.main__section4__stats__number {
+    font-family: var(--font-stats);
+    font-size: var(--font-size-stats);
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+
+    margin: 0 0 -10px 0;
+}
+
+.main__section4__stats__descrip {
+    font-family: var(--font-family);
+    font-size: var(--font-size-details);
+    font-weight: 500;
+    color: rgba(12, 19, 84, 1);
+
+}
+
+.main__section4__list {
+    background-color: rgba(12, 19, 84, 1);
+    min-width: 55vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 5% 0 0 6% /*64px 0 0 132px*/;
+}
+
+.main__section4__list__wrapper {
+    display: flex;
+    padding: 50px 132px;
+}
+
+.main__section4__list__title {
+    font-family: var(--font-family);
+    font-size: var(--font-size-special);
+    font-weight: 500;
+
+    color: rgba(255, 255, 255, 1);
+    margin: 8px 0;
+}
+
+.main__section4__list__slugline {
+    font-family: var(--font-family);
+    font-size: var(--font-size-standard);
+    font-weight: 400;
+    line-height: 120%;
+
+    color: rgba(255, 255, 255, 1);
+}
+
+.main__section4__list__items {
+    font-family: var(--font-family);
+    font-size: var(--font-size-standard);
+    font-weight: 300;
+    line-height: 35px;
+
+    color: rgba(255, 255, 255, 1);
+
+    margin: 27px 25px;
+
+    overflow-y: scroll;
+    max-height: 250px;
+    min-width: 300px;
+}
+
+/* SECTION 5 */
+
+.main__section5 {
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(180deg, #9A49EC 50.06%, rgba(154, 73, 236, 0) 90.19%), #6E24B0;
+}
+.main__section5__conteiner {
+    display: flex;
+    flex-direction: row;
+}
+.main__section5__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin: 90px 100px;
+    max-width: 25%;
+}
+
+.main__section5__title {
+    font-family: var(--font-family);
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+
+    color: rgba(12, 19, 84, 1);
+}
+
+.main__section5__content {
+    font-family: var(--font-family);
+    font-size: var(--font-size-special);
+    line-height: 160%;
+
+    color: rgba(255, 255, 255, 1);
+}
+/* SECTION 6 */
+
+.main__section6 {
+    display: flex;
+    flex-direction: row;
+
+    background: linear-gradient(180deg, #9A49EC 50.06%, rgba(154, 73, 236, 0) 90.19%), #6E24B0;
+}
+
+.main__section6__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin: 90px 100px;
+    max-width: 25%;
+}
+
+.main__section6__title {
+    font-family: var(--font-family);
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+
+    color: rgba(12, 19, 84, 1);
+}
+
+.main__section6__content {
+    font-family: var(--font-family);
+    font-size: var(--font-size-special);
+    line-height: 160%;
+
+    color: rgba(255, 255, 255, 1);
+}
+/* SECTION 7 */
+
+.main__section7 {
+    display: flex;
+    flex-direction: row;
+
+    background: linear-gradient(180deg, #9A49EC 50.06%, rgba(154, 73, 236, 0) 90.19%), #6E24B0;
+}
+
+.main__section7__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin: 90px 100px;
+    max-width: 25%;
+}
+
+.main__section7__title {
+    font-family: var(--font-family);
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+
+    color: rgba(12, 19, 84, 1);
+}
+
+.main__section7__content {
+    font-family: var(--font-family);
+    font-size: var(--font-size-special);
+    line-height: 160%;
+
+    color: rgba(255, 255, 255, 1);
+}
+/* SECTION 8 */
+
+.main__section8 {
+    display: flex;
+    flex-direction: row;
+
+    background: linear-gradient(180deg, #9A49EC 50.06%, rgba(154, 73, 236, 0) 90.19%), #6E24B0;
+}
+
+.main__section8__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin: 90px 100px;
+    max-width: 25%;
+}
+
+.main__section8__title {
+    font-family: var(--font-family);
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+
+    color: rgba(12, 19, 84, 1);
+}
+
+.main__section8__content {
+    font-family: var(--font-family);
+    font-size: var(--font-size-special);
+    line-height: 160%;
+
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* footer */
+
+footer{
+    background-color: rgba(12, 19, 84, 1);
+    padding: 32px 60px;
+    display: flex;
+    flex-direction: row;
+
+}
+.footer__social{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-between;
+}
