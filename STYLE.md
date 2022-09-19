@@ -1,6 +1,26 @@
 Formatting and Code/Writing Style
 =================================
 
+Branch Naming Conventions
+-------------------------
+
+There are two types of branches in the repo: the `main` branch, which is
+what we all agree should go out to production at the next opportunity, and
+the "development" branches which is where people do work and keep it until
+we agree it should be put on the main branch.
+
+Development branches are named as follows:
+
+     ┌─────────── 1. indicates that this is a development branch
+     │   ┌─────── 2. some name to identify to whom this branch belongs
+     │   │   ┌─── 3. any set of words identifying what the branch is about
+     │   │   │
+    dev/cjs/some-topic
+
+- 2. The identifying name can be whatever you like (it need not be a login
+  name or anything like that) so long as other people in the group can
+  figure out who it is.
+
 
 Commit Messages
 ---------------
