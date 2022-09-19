@@ -20,6 +20,9 @@ Mattermost chat, or anybody else in the `#homepage-technical` channel.
 Design and content is done by the folks in the `#Community Landing Page`
 group.
 
+Information about naming and other code conventions is in the [`STYLE.md`]
+document.
+
 ## Coffee-Shop
 
 Due to our persistent lack of time (although there is desire) to develop
@@ -38,3 +41,8 @@ Or just directly start participating in these places!
 
 ## FIGMA
 https://www.figma.com/file/P0vtqF4VtOkKEM6L0nWh5h/PATIO?node-id=240%3A439
+
+
+
+<!-------------------------------------------------------------------->
+[`STYLE.md`]: ./STYLE.md
