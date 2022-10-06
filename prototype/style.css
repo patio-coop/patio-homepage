@@ -94,7 +94,8 @@ media query x<1350 { .container{width: 1000px} }
 BREAKPOINTS
 Infinite > Larger screen > 1350px
 1350px > Normal Screen > 1000px
-1000px > 
+1000px > Tablet Screen > 650px
+650 > Mobile > Infinite
 */
 
 /* Reset CSS Config */
