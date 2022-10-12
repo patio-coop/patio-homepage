@@ -22,21 +22,29 @@ group.
 
 Information about naming and other code conventions is in the [`STYLE.md`]
 document.
-Some assumptions before going to the commands
-1) The branch that contains the latest version agreed as valid by everyone is the main branch.
-2) Whenever you take a new issue, you must create a new branch starting from main with the following name: "dev/your_name/something_that_identifies_issue".
-3) Whenever you work on your issue, please make sure to update your branch daily with the latest version of main.
-4) When you finish the issue (or while working on it), push everything to a remote branch with the same name.
-5) Lastly, create a pull request and assign it to a teammate.
-
-We agree on this procedure with those we are working on the project and we will test it for one or two sprints and evaluate if we are comfortable or not.
 
 Suggested Development Guideline as of Oct 13, 2020
 ==================================================
 [Below is copied from our
 chat](https://patio.ica.coop/chat/tech-coops/pl/upna7f8ik7b1fcpw549mxy5sre)
 
-What we agreed is that typically, we expect that if you are going to start
+### Some assumptions before going to the commands
+1) The branch that contains the latest version agreed as valid by everyone
+   is the main branch.
+2) Whenever you take a new issue, you must create a new branch starting from
+   main with the following name:
+   "dev/your_name/something_that_identifies_issue".
+3) Whenever you work on your issue, please make sure to update your branch
+   daily with the latest version of main.
+4) When you finish the issue (or while working on it), push everything to a
+   remote branch with the same name.
+5) Lastly, create a pull request and assign it to a teammate.
+
+We agree on this procedure with those we are working on the project and we
+will test it for one or two sprints and evaluate if we are comfortable or
+not.
+
+### What we agreed is that typically, we expect that if you are going to start
 working on an issue, you do something like this (or similar). Open the
 command line and type:
 
