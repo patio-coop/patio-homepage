@@ -847,6 +847,13 @@ footer {
   padding: 32px 60px;
   display: flex;
   flex-direction: row;
+  color: rgba(255, 255, 255, 1);
+}
+.footer__logo {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  justify-content: space-between;
 }
 .footer__social {
   display: flex;
