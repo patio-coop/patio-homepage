@@ -435,6 +435,12 @@ nav ul li a:hover {
   min-height: 588px;
 }
 
+.main__section3__container {
+  display: flex;
+  flex-direction: row;
+  margin: 100px;
+}
+
 .main__section3__text {
   display: flex;
   flex-direction: column;
@@ -442,6 +448,7 @@ nav ul li a:hover {
   justify-content: center;
 
   max-width: 512px;
+  width: 45%;
 }
 
 .main__section3__h2 {
@@ -462,13 +469,11 @@ nav ul li a:hover {
   line-height: 26px;
 }
 
-.main__section3__img {
-  background-image: url(./media/Rectangle48.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  min-width: 60%;
+.main__section3__globe {
+  pointer-events:none;
+  margin: -100px 0px -100px 0px;
 }
+
 
 /* SECTION 4 */
 
