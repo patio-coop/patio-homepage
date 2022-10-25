@@ -11,6 +11,7 @@
   --font-size-h1: 3.375rem; /*54px*/
   --font-size-h2: 3.25rem; /*52px*/
   --font-size-h3: 2.25rem; /*36px*/
+  --font-size-h4: 1.7rem; /*27px*/
   --font-size-special: 1.3125rem; /*21px*/
   --font-size-details: 0.875rem; /*14px*/
 
@@ -511,7 +512,6 @@ nav ul li a:hover {
 .main__section4__stats__img {
   max-width: 116px;
   max-height: 116px;
-
   padding: 8px;
 }
 
@@ -520,7 +520,6 @@ nav ul li a:hover {
   font-size: var(--font-size-stats);
   font-weight: 700;
   color: rgba(255, 255, 255, 1);
-
   margin: 0 0 -10px 0;
 }
 
@@ -538,7 +537,6 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-
   padding: 5% 10% /*64px 0 0 132px*/;
   min-width: 40%;
 }
@@ -553,7 +551,6 @@ nav ul li a:hover {
   font-size: var(--font-size-standard);
   font-weight: 400;
   line-height: 120%;
-
   color: rgba(255, 255, 255, 1);
 }
 
@@ -562,11 +559,8 @@ nav ul li a:hover {
   font-size: var(--font-size-standard);
   font-weight: 300;
   line-height: 35px;
-
   color: rgba(255, 255, 255, 1);
-
   margin: 27px 25px;
-
   overflow-y: scroll;
   max-height: 250px;
   min-width: 300px;
@@ -646,12 +640,12 @@ nav ul li a:hover {
   background-image: url(/prototype/media/services-white-rectangle.png);
   margin: 20px;
   border-radius: 10px;
-  padding-top: 55px !important;
+  padding-top: 57px !important;
 }
 
 .main__section5__services__title__bolder {
   font-weight: 700;
-  font-size: var(--font-size-special);
+  font-size: var(--font-size-h4);
 }
 
 .main__section5__services__title__triangle {
@@ -669,16 +663,34 @@ nav ul li a:hover {
   transform: rotate(90deg);
 }
 
-.main__section5__services__full-stack {
-  text-align: center;
+.main__section__services__service {
   color: rgba(255, 255, 255, 1);
+  text-align: center;
 }
 
-.main__section5__services__design {
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
+.main__section5__services__full-stack img {
+  width: 100% !important;
 }
 
+.main__section5__services__design img {
+  width: 117% !important;
+}
+
+.main__section5__services__branding img {
+  width: 145% !important;
+}
+
+.main__section5__services__mobile img {
+  width: 100% !important;
+}
+
+.main__section5__services__IOT img {
+  width: 107% !important;
+}
+
+.main__section5__services__PM img {
+  width: 99% !important;
+}
 
 /* SECTION 6 */
 
