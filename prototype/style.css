@@ -146,7 +146,7 @@ p {
 .main__section__list__items {
   list-style-type: "";
   list-style-image: url(/prototype/media/CheckList1.png);
-  padding-inline-start: 6rem;
+  padding-inline-start: 40px;
 }
 
 .main__section__list__items__item {
@@ -154,7 +154,7 @@ p {
   font-size: var(--font-size-standard);
   color: rgb(255, 255, 255);
 
-  margin: 1.625rem 0 0;
+  margin: 0 0 1rem;
 }
 
 /*GENERAL CLASS > ISLANDS*/
@@ -470,10 +470,9 @@ nav ul li a:hover {
 }
 
 .main__section3__globe {
-  pointer-events:none;
+  pointer-events: none;
   margin: -100px 0px -100px 0px;
 }
-
 
 /* SECTION 4 */
 
@@ -577,7 +576,12 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
 
-  background: linear-gradient( 359deg, #9a49ec 50.06%, rgba(154, 73, 236, 0) 90.19% ), #6e24b0;
+  background: linear-gradient(
+      359deg,
+      #9a49ec 50.06%,
+      rgba(154, 73, 236, 0) 90.19%
+    ),
+    #6e24b0;
 }
 .main__section5__container {
   display: flex;
@@ -708,13 +712,13 @@ nav ul li a:hover {
 }
 
 .main__section6__container {
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .main__section6__container div {
-  width: 50%;
+  width: 48%;
 }
 
 .main__section6__content__title {
@@ -736,7 +740,6 @@ nav ul li a:hover {
 .main__section6__list {
   display: flex;
   flex-direction: column;
-
   max-width: 500px;
 }
 
