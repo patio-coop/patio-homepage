@@ -300,7 +300,7 @@ nav ul li a {
   text-decoration: none;
   color: rgba(12, 19, 84, 1);
   padding: 0.3rem 1.2rem;
-  margin: 0 -1rem 0 30px;
+  margin: 0 0 0 30px;
   border-radius: 6px;
 }
 
@@ -708,7 +708,6 @@ nav ul li a:hover {
 }
 
 .main__section6__container {
-  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
 }
