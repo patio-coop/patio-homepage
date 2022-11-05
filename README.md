@@ -15,8 +15,11 @@ then in _Pages_ in left sidebar.)
 
 ### Developers
 
-For development help contact `@cjs_tng_jp` or `@yasu_tng_jp` on Patio
-Mattermost chat, or anybody else in the `#homepage-technical` channel.
+For development help contact anyone
+in the `#homepage-technical` channel.
+
+[There is also a Trello board for the development](https://trello.com/b/UmETQtyW/homepage-development-issues)
+
 Design and content is done by the folks in the `#Community Landing Page`
 group.
 
