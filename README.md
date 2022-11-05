@@ -23,7 +23,7 @@ group.
 Information about naming and other code conventions is in the [`STYLE.md`]
 document.
 
-Suggested Development Guideline as of Oct 13, 2020
+Suggested Development Guideline as of Oct 13, 2022
 ==================================================
 [Below is copied from our
 chat](https://patio.ica.coop/chat/tech-coops/pl/upna7f8ik7b1fcpw549mxy5sre)
