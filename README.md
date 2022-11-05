@@ -16,7 +16,11 @@ then in _Pages_ in left sidebar.)
 ### Developers
 
 For development help contact anyone
-in the `#homepage-technical` channel.
+in the `#homepage-technical` channel, in the
+[private chat server](https://patio.ica.coop/chat/)
+
+To join the private chat group, contact someone you know
+or, yasu@tng.coop, or anyone you see in commit messages 😄
 
 [There is also a Trello board for the development](https://trello.com/b/UmETQtyW/homepage-development-issues)
 
