@@ -6,50 +6,79 @@ data.countries = [
     "coops": [
       {
         "name": "Fiqus",
-        "tagline": "Tagline for Fiqus",
-        "moretext": "This is longer text"
+        "url": "https://www.fiqus.coop",
       },
       {
-        "name": "Another coop",
-        "tagline": "Tagline for something else",
-        "moretext": "This is more longer text"
+        "name": "Redjar",
+        "url": "https://redjar.com.ar/",
       },
     ]
   },
   {
     "name": "Turkey",
     "longitude": "35",
-    "latitude": "39"
+    "latitude": "39",
+    "coops": [
+      {
+        "name": "Albatros",
+        "url": "https://albatros.coop/en/",
+      },
+    ]
   },
   {
     "name": "Bulgaria",
     "longitude": "23.316667",
-    "latitude": "42.683333"
+    "latitude": "42.683333",
+    "coops": [
+      {
+        "name": "Albatros",
+        "url": "https://albatros.coop/en/",
+      },
+    ]
   },
   {
     "name": "Japan",
     "latitude": "36",
-    "longitude": "138"
+    "longitude": "138",
+    "coops": [
+      {
+        "name": "Tng",
+        "url": "https://tng.coop/",
+      },
+    ]
   },
   {
     "name": "Brazil",
     "latitude": "-10",
-    "longitude": "-52"
-  },
-  {
-    "name": "Hungary",
-    "latitude": "47",
-    "longitude": "20"
+    "longitude": "-52",
+    "coops": [
+      {
+        "name": "Tng",
+        "url": "https://librecode.coop/",
+      },
+    ]
   },
   {
     "name": "Israel",
     "latitude": "31",
-    "longitude": "35"
+    "longitude": "35",
+    "coops": [
+      {
+        "name": "Sofi",
+        "url": "https://www.sofi.coop/",
+      },
+    ]
   },
   {
     "name": "United Kingdom",
     "latitude": "55",
-    "longitude": "-3"
+    "longitude": "-3",
+    "coops": [
+      {
+        "name": "Animorph",
+        "url": "https://animorph.coop/",
+      },
+    ]
   },
   // {
   //   "name": "Pakistan",
@@ -194,7 +223,13 @@ data.countries = [
   {
     "name": "Greece",
     "latitude": "37.9792",
-    "longitude": "23.7166"
+    "longitude": "23.7166",
+    "coops": [
+      {
+        "name": "Sociality",
+        "url": "https://sociality.coop/",
+      },
+    ]
   },
   // {
   //   "name": "Serbia",
@@ -204,7 +239,13 @@ data.countries = [
   {
     "name": "Croatia",
     "latitude": "45.8069",
-    "longitude": "15.9614"
+    "longitude": "15.9614",
+    "coops": [
+      {
+        "name": "Slobodnadomena",
+        "url": "https://slobodnadomena.hr/",
+      },
+    ]
   },
   // {
   //   "name": "Spain",
@@ -244,12 +285,28 @@ data.countries = [
   {
     "name": "Mexico",
     "latitude": "19.427",
-    "longitude": "-99.1276"
+    "longitude": "-99.1276",
+    "coops": [
+      {
+        "name": "Tierra común",
+        "url": "https://tierracomun.org/",
+      },
+    ]
   },
   {
     "name": "United States",
     "latitude": "38.8895",
-    "longitude": "-77.032"
+    "longitude": "-77.032",
+    "coops": [
+      {
+        "name": "Agaric",
+        "url": "https://agaric.coop/",
+      },
+      {
+        "name": "Colab",
+        "url": "https://colab.coop/",
+      },
+    ]
   },
   // {
   //   "name": "Greenland",

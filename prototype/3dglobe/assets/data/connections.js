@@ -1,6 +1,6 @@
 data.connections = {
   "Argentina": [
-    "Argentina", "Mexico","United States", "Turkey", "Greece", "Croatia", "Bulgaria", "Japan", "Brazil", "Hungary", "Israel", "United Kingdom"
+    "Argentina", "Mexico","United States", "Turkey", "Greece", "Croatia", "Bulgaria", "Japan", "Brazil", "Israel", "United Kingdom"
   ],
 }
 
