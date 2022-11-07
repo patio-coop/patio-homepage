@@ -145,7 +145,7 @@ p {
 
 .main__section__list__items {
   list-style-type: "";
-  list-style-image: url(/prototype/media/CheckList1.png);
+  list-style-image: url(/media/CheckList1.png);
   padding-inline-start: 6rem;
 }
 
@@ -471,7 +471,15 @@ nav ul li a:hover {
 
 .main__section3__globe {
   pointer-events:none;
-  margin: -100px 0px -100px 0px;
+  margin-top: 64px;
+  margin-right: 186px;
+  display: flex;
+  width: 50%;
+}
+
+#3dglobe-target > canvas {
+  width: 1100px !important;
+  height: 309px !important;
 }
 
 
@@ -642,7 +650,7 @@ nav ul li a:hover {
 
 .main__section5__services__title {
   color: rgba(12, 19, 84, 1);
-  background-image: url(/prototype/media/services-white-rectangle.png);
+  background-image: url(/media/services-white-rectangle.png);
   margin: 20px;
   border-radius: 10px;
   padding-top: 57px !important;
@@ -708,7 +716,6 @@ nav ul li a:hover {
 }
 
 .main__section6__container {
-  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
 }

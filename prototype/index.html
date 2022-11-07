@@ -163,7 +163,7 @@
         </div>
       </div>
 
-      <div class="main__section4__list">
+      <div id="coops_by_country_list_container" class="main__section4__list">
 
         <h4 class="main__section__list__title">
           List of cooperatives sorted by country
@@ -171,17 +171,7 @@
         <p class="main__section4__list__slugline">
           Click for more info of each coop
         </p>
-        <ul class="main__section4__list__items">
-          <li class="main__section4__list__items__item">Placeholder (country)</li>
-          <li class="main__section4__list__items__item">Placeholder (country)</li>
-          <li class="main__section4__list__items__item">Placeholder (country)</li>
-          <li class="main__section4__list__items__item">Placeholder (country)</li>
-          <li class="main__section4__list__items__item">Placeholder (country)</li>
-          <li class="main__section4__list__items__item">Placeholder (country)</li>
-          <li class="main__section4__list__items__item">Placeholder (country)</li>
-          <li class="main__section4__list__items__item">Placeholder (country)</li>
-          <li class="main__section4__list__items__item">Placeholder (country)</li>
-          <li class="main__section4__list__items__item">Placeholder (country)</li>
+        <ul id="coops_by_country_list" class="main__section4__list__items">
         </ul>
 
       </div>
@@ -418,7 +408,7 @@
       <a href=""><i class="fa-brands fa-facebook-f"></i></a>
     </div>
   </footer>
-
+  
   <script src="script.js"></script>
 
   <!-- Start 3d globe dependencies -->
@@ -460,6 +450,31 @@
   <script src="3dglobe/assets/data/grid.js"></script>
   <!-- End 3d globe dependencies -->
 
+  <script type="text/javascript">
+    // CREATE LIST
+    countries_list = document.getElementById("coops_by_country_list");
+    for (let i of data.countries) {
+      for (let c of i.coops) {
+        // CREATE ITEM LINK
+        let link = document.createElement("a");
+        link.innerHTML = c.name;
+        link.setAttribute('href', c.url);
+
+        // CREATE LIST ITEM
+        let item = document.createElement("li");
+        item.setAttribute('class', "main__section4__list__items__item");
+        item.appendChild(link);
+        countries_list.appendChild(item);
+      }
+    }
+    // APPEND LIST TO CONTAINER
+    document.getElementById("coops_by_country_list_container").appendChild(countries_list);
+
+    // var canvas = document.getElementById("3dglobe-target").childNodes[0];
+    // var parent = document.getElementById("3dglobe-target");
+    // canvas.width = parent.offsetWidth;
+    // canvas.height = parent.offsetHeight;
+  </script>
 </body>
 
 </html>
