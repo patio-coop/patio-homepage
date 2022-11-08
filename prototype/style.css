@@ -387,7 +387,7 @@ nav ul li a:hover {
 
 .main__section1__img__front:hover {
     filter: drop-shadow(5px 10px 16px rgba(61, 61, 61, 0.199));
-    transform: matrix(1.00,0.07,-0.07,1.00,0,-32);
+    transform: matrix(1.00,0.07,-0.07,1.00,0,-16);
     transition: 300ms;
 }
 
@@ -408,22 +408,23 @@ nav ul li a:hover {
     font-family: var(--font-family);
     font-size: 18px;
     color: rgba(12, 19, 84, 1);
-
+    align-self: center;
     text-align: right;
-    line-height: 36px;
+    line-height: 40px;
 
     max-width: 480px;
 }
 .main__section2__hr {
     border: 1px solid rgba(12, 19, 84, 1);
     height: 150px;
+    align-self: center;
 }
 .main__section2__coops{
     font-family: var(--font-family);
     font-size: 24px;
     font-weight: 500;
     color: rgba(12, 19, 84, 1);
-
+    align-self: center;
     line-height: 40px;
 
     max-width: 500px;
