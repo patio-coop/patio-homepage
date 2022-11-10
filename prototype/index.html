@@ -11,6 +11,46 @@
   <meta name="description" content="Coop Tech home. Software Development services by Coops around the world.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Start 3d globe dependencies -->
+  <script src="http://unpkg.com/three"></script>
+  <script src="http://unpkg.com/three/examples/js/controls/TrackballControls.js"></script>
+  <script src="http://unpkg.com/three-globe"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.4.0/Tween.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.3.2/fabric.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.4/chroma.min.js"></script>
+  <script src="https://d3js.org/d3-array.v1.min.js"></script>
+  <script src="https://d3js.org/d3-geo.v1.min.js"></script>
+
+  <script src="3dglobe/libs/THREE.MeshLine.js"></script>
+  <script src="3dglobe/libs/orbit-controls.js"></script>
+  <script src="3dglobe/libs/trackball-controls.js"></script>
+  <script src="3dglobe/libs/perlin-noise.js"></script>
+
+  <!-- -- The customizable JS -->
+  <script src="3dglobe/assets/data/processing.js"></script>
+  <script src="3dglobe/scripts/config.js"></script>
+  <script src="3dglobe/scripts/app.js"></script>
+  <script src="3dglobe/scripts/shaders.js"></script>
+  <script src="3dglobe/scripts/index.js"></script>
+  <script src="3dglobe/scripts/globe.js"></script>
+  <script src="3dglobe/scripts/points.js"></script>
+  <script src="3dglobe/scripts/marker.js"></script>
+  <script src="3dglobe/scripts/markers.js"></script>
+  <script src="3dglobe/scripts/lines.js"></script>
+  <script src="3dglobe/scripts/dots.js"></script>
+  <script src="3dglobe/scripts/utils.js"></script>
+
+  <!-- -- The Country and Connection data -->
+  <script src="assets/countries.js"></script>
+  <script src="assets/languages.js"></script>
+  <script src="assets/connections.js"></script>
+  <script src="3dglobe/assets/data/grid.js"></script>
+  <!-- End 3d globe dependencies -->
 </head>
 
 <body>
@@ -34,19 +74,20 @@
             <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
           </ul>
           <hr>
-          <select name="language" id="">
-            <option value="english">English</option>
-            <option value="spanish">Español</option>
-            <option value="japanese">日本語</option>
+          <select name="language" id="language-selector" onchange="setLang(this)">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="jp">日本語</option>
           </select>
+          <script>initLanguageSelector()</script>
         </div>
         <nav class=".header__navbar__sections">
           <ul>
-            <li><a href="">Who we are</a></li>
-            <li><a href="">What we do</a></li>
-            <li><a href="">How we work</a></li>
-            <li><a href="">Our philosophy</a></li>
-            <li><a href="">Get in touch</a></li>
+            <li><a href=""><script>t("navbar-who-we-are-button")</script></a></li>
+            <li><a href=""><script>t("navbar-what-we-do-button")</script></a></li>
+            <li><a href=""><script>t("navbar-how-we-work")</script></a></li>
+            <li><a href=""><script>t("navbar-our-philosophy")</script></a></li>
+            <li><a href=""><script>t("navbar-get-in-touch")</script></a></li>
           </ul>
         </nav>
       </div>
@@ -120,7 +161,7 @@
           </p>
         </div>
 
-        <div id="3dglobe-target" class="main__section3_globe"></div>
+        <div id="3dglobe-target" class="main__section3__globe"></div>
 
       </div>
     </section>
@@ -381,8 +422,6 @@
           <input class="form_input_8" type="submit" value="Send">
         </form>
       </div>
-
-
     </section>
 
   </main>
@@ -408,47 +447,6 @@
       <a href=""><i class="fa-brands fa-facebook-f"></i></a>
     </div>
   </footer>
-  
-  <script src="script.js"></script>
-
-  <!-- Start 3d globe dependencies -->
-  <script src="http://unpkg.com/three"></script>
-  <script src="http://unpkg.com/three/examples/js/controls/TrackballControls.js"></script>
-  <script src="http://unpkg.com/three-globe"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.4.0/Tween.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.3.2/fabric.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.4/chroma.min.js"></script>
-  <script src="https://d3js.org/d3-array.v1.min.js"></script>
-  <script src="https://d3js.org/d3-geo.v1.min.js"></script>
-
-  <script src="3dglobe/libs/THREE.MeshLine.js"></script>
-  <script src="3dglobe/libs/orbit-controls.js"></script>
-  <script src="3dglobe/libs/trackball-controls.js"></script>
-  <script src="3dglobe/libs/perlin-noise.js"></script>
-
-  <!-- -- The customizable JS -->
-  <script src="3dglobe/assets/data/processing.js"></script>
-  <script src="3dglobe/scripts/config.js"></script>
-  <script src="3dglobe/scripts/app.js"></script>
-  <script src="3dglobe/scripts/shaders.js"></script>
-  <script src="3dglobe/scripts/index.js"></script>
-  <script src="3dglobe/scripts/globe.js"></script>
-  <script src="3dglobe/scripts/points.js"></script>
-  <script src="3dglobe/scripts/marker.js"></script>
-  <script src="3dglobe/scripts/markers.js"></script>
-  <script src="3dglobe/scripts/lines.js"></script>
-  <script src="3dglobe/scripts/dots.js"></script>
-  <script src="3dglobe/scripts/utils.js"></script>
-
-  <!-- -- The Country and Connection data -->
-  <script src="3dglobe/assets/data/countries.js"></script>
-  <script src="3dglobe/assets/data/connections.js"></script>
-  <script src="3dglobe/assets/data/grid.js"></script>
-  <!-- End 3d globe dependencies -->
 
   <script type="text/javascript">
     // CREATE LIST
@@ -469,11 +467,6 @@
     }
     // APPEND LIST TO CONTAINER
     document.getElementById("coops_by_country_list_container").appendChild(countries_list);
-
-    // var canvas = document.getElementById("3dglobe-target").childNodes[0];
-    // var parent = document.getElementById("3dglobe-target");
-    // canvas.width = parent.offsetWidth;
-    // canvas.height = parent.offsetHeight;
   </script>
 </body>
 

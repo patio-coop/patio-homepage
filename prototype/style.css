@@ -471,15 +471,11 @@ nav ul li a:hover {
 
 .main__section3__globe {
   pointer-events:none;
+  user-select: none;
   margin-top: 64px;
   margin-right: 186px;
   display: flex;
-  width: 50%;
-}
-
-#3dglobe-target > canvas {
-  width: 1100px !important;
-  height: 309px !important;
+  /* width: 50%; */
 }
 
 
