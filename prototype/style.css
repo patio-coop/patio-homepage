@@ -963,7 +963,7 @@ nav ul li a:hover {
 .main__section6__island__img {
   z-index: 3;
   background-color: #330033;
-  background-image: url(/prototype/media/Coop5.png);
+  background-image: url(./media/Coop5.png);
 }
 
 #specialCheck {
