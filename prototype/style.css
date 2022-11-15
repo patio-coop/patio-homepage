@@ -118,7 +118,7 @@ p {
 
 .main__section__pmain {
   font-size: var(--font-size-special);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 33.6px;
   color: rgba(255, 255, 255, 1);
 
@@ -145,7 +145,7 @@ p {
 
 .main__section__list__items {
   list-style-type: "";
-  list-style-image: url(/media/CheckList1.png);
+  list-style-image: url(./media/CheckList1.png);
   padding-inline-start: 6rem;
 }
 
@@ -156,6 +156,40 @@ p {
 
   margin: 1.625rem 0 0;
 }
+
+.main__section4__list__items::-webkit-scrollbar {
+    width: 4px;               /* width of the entire scrollbar */
+  }
+  
+  .main__section4__list__items::-webkit-scrollbar-track {
+    background: rgba(12, 19, 84, 1);
+    ;        /* color of the tracking area */
+  }
+  
+  .main__section4__list__items::-webkit-scrollbar-thumb {
+    background-color: #14ADED;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid transparent;  /* creates padding around scroll thumb */
+    
+  }
+
+/* GENERAL CLASS > SCROLLBAR*/
+
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(12, 19, 84, 1);
+    ;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #14ADED;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid transparent;  /* creates padding around scroll thumb */
+    
+  }
 
 /*GENERAL CLASS > ISLANDS*/
 
@@ -447,8 +481,9 @@ nav ul li a:hover {
   align-items: flex-start;
   justify-content: center;
 
-  max-width: 512px;
-  width: 45%;
+  max-width: 30%;
+  min-width: 30%;
+  z-index: 3;
 }
 
 .main__section3__h2 {
@@ -472,10 +507,11 @@ nav ul li a:hover {
 .main__section3__globe {
   pointer-events:none;
   user-select: none;
-  margin-top: 64px;
-  margin-right: 186px;
   display: flex;
-  /* width: 50%; */
+  margin: 0 auto 0 -20%;
+  background-color: transparent;
+  overflow:hidden;
+  /* min-width: 73vw; */
 }
 
 
@@ -534,9 +570,10 @@ nav ul li a:hover {
 
 .main__section4__stats__descrip {
   font-family: var(--font-family);
-  font-size: var(--font-size-details);
-  font-weight: 500;
+  font-size: var(--font-size-stats-descrip);
+  font-weight: 900;
   color: rgba(12, 19, 84, 1);
+  width: 200px;
 }
 
 .main__section4__list {
@@ -550,6 +587,23 @@ nav ul li a:hover {
   min-width: 40%;
 }
 
+/*.main__section4__list::after {
+    content: " ";
+    position: relative;
+    top: 20%;
+    min-width: 100%;
+    min-height: 125px;
+    background: white;
+    background: linear-gradient(0deg, rgba(12,19,84,1) 0%, rgba(12,19,84,0) 100%);
+    margin: -50% 0 0 0;
+
+    border: red 1px solid;
+}*/
+
+#titleListSpecial {
+    min-width: 400px;
+}
+
 .main__section4__list__wrapper {
   display: flex;
   padding: 50px 132px;
@@ -558,7 +612,7 @@ nav ul li a:hover {
 .main__section4__list__slugline {
   font-family: var(--font-family);
   font-size: var(--font-size-standard);
-  font-weight: 400;
+  font-weight: 200;
   line-height: 120%;
   color: rgba(255, 255, 255, 1);
 }
@@ -568,11 +622,32 @@ nav ul li a:hover {
   font-size: var(--font-size-standard);
   font-weight: 300;
   line-height: 35px;
-  color: rgba(255, 255, 255, 1);
   margin: 27px 25px;
   overflow-y: scroll;
   max-height: 250px;
-  min-width: 300px;
+  min-width: 100%;
+}
+
+.main__section4__list__items a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.main__section4__list__items a::before {
+    content: "• ";
+    color: #0c1354;
+    transition: 300ms;
+}
+.main__section4__list__items a:hover {
+    color: #9a49ec;
+    transition: 300ms;
+}
+
+.main__section4__list__items a:hover::before {
+    content: "• ";
+    color: white;
+    transition: 300ms;
 }
 
 /* SECTION 5 */
@@ -634,6 +709,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
+  align-items: center;
 }
 
 .main__section5__services div {
@@ -646,10 +722,22 @@ nav ul li a:hover {
 
 .main__section5__services__title {
   color: rgba(12, 19, 84, 1);
-  background-image: url(/media/services-white-rectangle.png);
+  background-image: url(./media/services-white-rectangle.png);
   margin: 20px;
   border-radius: 10px;
-  padding-top: 57px !important;
+}
+
+.main__section5__services__title::after {
+    content: "";
+    position: relative;
+    width: 0; 
+    height: 0;
+    top: -98px;
+    right: -124px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-top: 20px solid #fff;
 }
 
 .main__section5__services__title__bolder {
@@ -717,7 +805,7 @@ nav ul li a:hover {
 }
 
 .main__section6__container div {
-  width: 50%;
+  width: 40%;
 }
 
 .main__section6__content__title {
@@ -762,6 +850,18 @@ nav ul li a:hover {
   background-image: url(/prototype/media/Coop5.png);
 }
 
+#specialCheck {
+    font-weight: 200;
+}
+
+#specialCheck::marker {
+    content: "✓       " ;/*url(./media/icon_check.png);*/
+    font-size: 100%;
+    vertical-align: center;
+    
+}
+
+
 /* SECTION 7 */
 
 .main__section7 {
@@ -789,6 +889,17 @@ nav ul li a:hover {
   flex-direction: column;
 
   max-width: 500px;
+}
+
+#specialCheck2 {
+    font-weight: 400;
+}
+
+#specialCheck2::marker {
+    content: "✓       " ;/*url(./media/icon_check.png);*/
+    font-size: 100%;
+    vertical-align: center;
+    
 }
 
 .main__section7__island__background {
@@ -937,17 +1048,32 @@ footer {
   padding: 32px 60px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   color: rgba(255, 255, 255, 1);
 }
+
 .footer__logo {
   display: flex;
   flex-direction: row;
   width: 20%;
   justify-content: space-between;
+  margin: 0;
 }
+
+.footer__text {
+    max-width: 40%;
+    font-size: var(--font-size-details);
+}
+
 .footer__social {
   display: flex;
   flex-direction: row;
   width: 20%;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.footer__social i {
+    color: white;
 }

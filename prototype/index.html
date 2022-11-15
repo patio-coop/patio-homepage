@@ -160,8 +160,9 @@
             Working together allows us to have multidisciplinary teams that collaborate on international projects.
           </p>
         </div>
-
-        <div id="3dglobe-target" class="main__section3__globe"></div>
+        <div class="main__section3__globe">
+          <div id="3dglobe-target" class="main__section3__globe"></div>
+        </div>
 
       </div>
     </section>
@@ -206,7 +207,7 @@
 
       <div id="coops_by_country_list_container" class="main__section4__list">
 
-        <h4 class="main__section__list__title">
+        <h4 class="main__section__list__title" id="titleListSpecial">
           List of cooperatives sorted by country
         </h4>
         <p class="main__section4__list__slugline">
@@ -295,11 +296,11 @@
             Some of the benefits of working with us:
           </h3>
           <ul class="main__section__list__items">
-            <li class="main__section__list__items__item">Our large portfolio</li>
-            <li class="main__section__list__items__item">International teams and cultural diversity</li>
-            <li class="main__section__list__items__item">Wide range of technologies</li>
-            <li class="main__section__list__items__item">Pool of knowledge and experience</li>
-            <li class="main__section__list__items__item">Socially responsible and linked to local communities</li>
+            <li class="main__section__list__items__item" id="specialCheck">Our large portfolio</li>
+            <li class="main__section__list__items__item" id="specialCheck">International teams and cultural diversity</li>
+            <li class="main__section__list__items__item" id="specialCheck">Wide range of technologies</li>
+            <li class="main__section__list__items__item" id="specialCheck">Pool of knowledge and experience</li>
+            <li class="main__section__list__items__item" id="specialCheck">Socially responsible and linked to local communities</li>
           </ul>
 
         </div>
@@ -346,15 +347,15 @@
             Key benefits:
           </h3>
           <ul class="main__section__list__items">
-            <li class="main__section__list__items__item">Having a supportive and healthy community environment that
+            <li class="main__section__list__items__item" id="specialCheck2">Having a supportive and healthy community environment that
               helps cooperatives thrive</li>
-            <li class="main__section__list__items__item">Learning from each other and innovating together by having a
+            <li class="main__section__list__items__item" id="specialCheck2">Learning from each other and innovating together by having a
               hub for knowledge sharing</li>
-            <li class="main__section__list__items__item">Allowing diverse approaches based on unique points of view
+            <li class="main__section__list__items__item" id="specialCheck2">Allowing diverse approaches based on unique points of view
             </li>
-            <li class="main__section__list__items__item">Accessing different experts and specializations in a variety
+            <li class="main__section__list__items__item" id="specialCheck2">Accessing different experts and specializations in a variety
               of fields</li>
-            <li class="main__section__list__items__item">Providing opportunities to join multidisciplinary set of
+            <li class="main__section__list__items__item" id="specialCheck2">Providing opportunities to join multidisciplinary set of
               teams</li>
           </ul>
         </div>
@@ -440,11 +441,13 @@
       international scope.
     </p>
 
+    <div class="footer__spaceblank"></div>
+
     <div class="footer__social">
       <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+      <a href=""><i class="fa fa-twitter"></i></a>
+      <a href=""><i class="fa fa-instagram"></i></a>
+      <a href=""><i class="fa fa-youtube-play"></i></a>
     </div>
   </footer>
 
@@ -467,6 +470,7 @@
     }
     // APPEND LIST TO CONTAINER
     document.getElementById("coops_by_country_list_container").appendChild(countries_list);
+
   </script>
 </body>
 
