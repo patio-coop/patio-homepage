@@ -319,7 +319,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   align-items: flex-start;
 
-  padding: 8.6rem 6rem;
+  padding: 8.0rem 6rem 5rem;
 }
 
 .main__section__island__content__text {
@@ -964,6 +964,13 @@ nav ul li a:hover {
   z-index: 3;
   background-color: #330033;
   background-image: url(./media/Coop5.png);
+  height: 100%;
+  width: 150%;
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+
+  -webkit-mask-image:-webkit-linear-gradient(left, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
 #specialCheck {
