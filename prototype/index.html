@@ -163,56 +163,56 @@
     </section>
 
     <section class="main__section4">
-      <!-- <div class="container"> -->
-      <div class="main__section4__stats">
-        <div class="main__section4__statsWrapper">
-          <div class="main__section4__stats__coops">
-            <img class="main__section4__stats__img" src="./media/Coop1.png" alt="">
-            <div class="main__section4__stats__content">
-              <p class="main__section4__stats__number">45</p>
-              <p class="main__section4__stats__descrip">Cooperatives</p>
+      <div class="container">
+        <div class="main__section4__stats">
+          <div class="main__section4__statsWrapper">
+            <div class="main__section4__stats__coops">
+              <img class="main__section4__stats__img" src="./media/Coop1.png" alt="">
+              <div class="main__section4__stats__content">
+                <p class="main__section4__stats__number">45</p>
+                <p class="main__section4__stats__descrip">Cooperatives</p>
+              </div>
             </div>
-          </div>
 
-          <div class="main__section4__stats__cooperators">
-            <img class="main__section4__stats__img" src="./media/Coop2.png" alt="">
-            <div class="main__section4__stats__content">
-              <p class="main__section4__stats__number">298</p>
-              <p class="main__section4__stats__descrip">Cooperators</p>
+            <div class="main__section4__stats__cooperators">
+              <img class="main__section4__stats__img" src="./media/Coop2.png" alt="">
+              <div class="main__section4__stats__content">
+                <p class="main__section4__stats__number">298</p>
+                <p class="main__section4__stats__descrip">Cooperators</p>
+              </div>
             </div>
-          </div>
 
-          <div class="main__section4__stats__countries">
-            <img class="main__section4__stats__img" src="./media/Coop3.png" alt="">
-            <div class="main__section4__stats__content">
-              <p class="main__section4__stats__number">17</p>
-              <p class="main__section4__stats__descrip">Countries</p>
+            <div class="main__section4__stats__countries">
+              <img class="main__section4__stats__img" src="./media/Coop3.png" alt="">
+              <div class="main__section4__stats__content">
+                <p class="main__section4__stats__number">17</p>
+                <p class="main__section4__stats__descrip">Countries</p>
+              </div>
             </div>
-          </div>
 
-          <div class="main__section4__stats__digital">
-            <img class="main__section4__stats__img" src="./media/Coop4.png" alt="">
-            <div class="main__section4__stats__content">
-              <p class="main__section4__stats__number">54</p>
-              <p class="main__section4__stats__descrip">Digital technologies services</p>
+            <div class="main__section4__stats__digital">
+              <img class="main__section4__stats__img" src="./media/Coop4.png" alt="">
+              <div class="main__section4__stats__content">
+                <p class="main__section4__stats__number">54</p>
+                <p class="main__section4__stats__descrip">Digital technologies services</p>
+              </div>
             </div>
           </div>
         </div>
+
+        <div id="coops_by_country_list_container" class="main__section4__list">
+
+          <h4 class="main__section__list__title" id="titleListSpecial">
+            Cooperatives sorted by country
+          </h4>
+          <p class="main__section4__list__slugline">
+            Click for more info of each coop
+          </p>
+          <ul id="coops_by_country_list" class="main__section4__list__items">
+          </ul>
+
+        </div>
       </div>
-
-      <div id="coops_by_country_list_container" class="main__section4__list">
-
-        <h4 class="main__section__list__title" id="titleListSpecial">
-          List of cooperatives sorted by country
-        </h4>
-        <p class="main__section4__list__slugline">
-          Click for more info of each coop
-        </p>
-        <ul id="coops_by_country_list" class="main__section4__list__items">
-        </ul>
-
-      </div>
-      <!-- </div> -->
     </section>
 
 
@@ -368,7 +368,7 @@
             </h3>
             <a href="" class="btn1">Join our community</a>
           </div>
-          <div class="main__section__island__img">
+          <div class="main__section__island__img main__section7__island__img">
             <!-- Placeholder -->
           </div>
         </div>
@@ -474,7 +474,7 @@
       }
     }
     // APPEND LIST TO CONTAINER
-    document.getElementById("coops_by_country_list_container").appendChild(countries_list);
+    document.getElementById("coops_by_country_list_container").appendChild(countries_list);  
 
   </script>
 </body>

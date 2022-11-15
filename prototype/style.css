@@ -635,7 +635,7 @@ nav ul li a:hover {
 
 .main__section4 {
   display: flex;
-  background-color: var(--background-section4);
+  background: var(--background-section4);
 }
 
 .main__section4__stats {
@@ -1037,7 +1037,13 @@ nav ul li a:hover {
 
 .main__section7__island__img {
   z-index: 3;
-  background-image: url(/prototype/media/Coop7.png);
+  background-color: #FFFFFF;
+  background-image: url(./media/Coop7.png);
+  height: 100%;
+  width: 150%;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  -webkit-mask-image:-webkit-linear-gradient(right, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
 }
 
 /* SECTION 8 */
