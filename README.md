@@ -15,15 +15,22 @@ then in _Pages_ in left sidebar.)
 
 ### Developers
 
-For development help contact `@cjs_tng_jp` or `@yasu_tng_jp` on Patio
-Mattermost chat, or anybody else in the `#homepage-technical` channel.
+For development help contact anyone
+in the `#homepage-technical` channel, in the
+[private chat server](https://patio.ica.coop/chat/)
+
+To join the private chat group, contact someone you know
+or, yasu@tng.coop, or anyone you see in commit messages 😄
+
+[There is also a Trello board for the development](https://trello.com/b/UmETQtyW/homepage-development-issues)
+
 Design and content is done by the folks in the `#Community Landing Page`
 group.
 
 Information about naming and other code conventions is in the [`STYLE.md`]
 document.
 
-Suggested Development Guideline as of Oct 13, 2020
+Suggested Development Guideline as of Oct 13, 2022
 ==================================================
 [Below is copied from our
 chat](https://patio.ica.coop/chat/tech-coops/pl/upna7f8ik7b1fcpw549mxy5sre)
