@@ -52,6 +52,14 @@
   --background-section8: linear-gradient(0deg, #0c1354, #0c1354), #ebecf4;
 }
 
+/* Reset CSS Config */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*MAIN ELEMENTS SETTINGS*/
 
 h1 {
@@ -123,85 +131,6 @@ p {
     margin: auto auto;
 }
 
-/*GENERAL CLASS*/
-
-.main__section__pmain {
-    font-size: var(--font-size-special);
-    font-weight: 500;
-    line-height: 33.6px;
-    color: rgba(255, 255, 255, 1);
-
-    margin-bottom: 1.125rem /*18px*/;
-}
-
-.main__section__p {
-    font-weight: 300;
-    line-height: 26px;
-
-    color: rgba(255, 255, 255, 1);
-}
-
-.main__section__list__title {
-    font-family: var(--font-family);
-    font-size: var(--font-size-special);
-    font-weight: 500;
-
-    color: rgba(255, 255, 255, 1);
-    margin: 8px 0;
-}
-
-/*GENERAL CLASS > LISTS*/
-
-.main__section__list__items {
-    list-style-type: "";
-    list-style-image: url(/prototype/media/CheckList1.png);
-    padding-inline-start: 6rem;   
-}
-
-.main__section__list__items__item {
-    font-family: var(--font-family);
-    font-size: var(--font-size-standard);
-    color: rgb(255, 255, 255);
-
-    margin: 1.625rem 0 0;
-}
-
-/*GENERAL CLASS > ISLANDS*/
-
-.main__section__island {
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-    background-color: rgb(255, 255, 255);
-    border-radius: 0.75rem;
-
-    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-
-.main__section__island__content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    padding: 8.6rem 6rem;
-}
-
-.main__section__island__content__text {
-    font-family: var(--font-family);
-    font-size: var(--font-size-h3);
-    font-weight: 400;
-}
-
-.main__section__island__img {
-    min-width: 50%;
-    background-repeat: no-repeat;
-    background-size: auto;
-}
-
 /*
 Media query x<1350 { .container{width: 1000px} }
 
@@ -211,15 +140,6 @@ Infinite > Larger screen > 1350px
 1000px > Tablet Screen > 650px
 650 > Mobile > Infinite
 */
-
-.container {
-  width: 1200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  margin: auto auto;
-}
 
 /*GENERAL CLASS*/
 
@@ -249,6 +169,7 @@ Infinite > Larger screen > 1350px
 }
 
 /*GENERAL CLASS > LISTS*/
+
 
 .main__section__list__items {
   list-style-type: "";
@@ -334,24 +255,6 @@ body::-webkit-scrollbar {
   background-size: auto;
 }
 
-/*
-Media query x<1350 { .container{width: 1000px} }
-
-BREAKPOINTS
-Infinite > Larger screen > 1350px
-1350px > Normal Screen > 1000px
-1000px > Tablet Screen > 650px
-650 > Mobile > Infinite
-*/
-
-/* Reset CSS Config */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* HEADER */
 
 header {
@@ -359,6 +262,19 @@ header {
     justify-content: center;
     min-height: 120px;
     background-color: var(--background-section1);
+}
+
+.navbar-fixed {
+  position: sticky; /* Set the navbar to fixed position */
+  top: 0;
+  z-index: 33;
+}
+
+.navbar-fixed.scrolled {
+  background-color: #08f5d9be;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: 50ms ease-in-out;
+  z-index: 33;
 }
 
 .header__logo {
@@ -374,6 +290,11 @@ header {
 
 .header__logo__holder {
     font-size: 1.875rem;
+}
+
+.header__logo__holder a {
+  text-decoration: none;
+  color: rgba(12, 19, 84, 1);
 }
 
 .header__navbar {
@@ -1038,7 +959,7 @@ nav ul li a:hover {
   background-color: #FFFFFF;
   background-image: url(./media/Coop7.png);
   height: 100%;
-  width: 150%;
+  width: 60%;
   border-top-right-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem;
   -webkit-mask-image:-webkit-linear-gradient(right, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);

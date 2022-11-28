@@ -57,11 +57,11 @@
 
   <!-- HEADER -->
 
-  <header>
+  <header class="navbar-fixed" disabled>
     <div class="container">
       <div class="header__logo">
         <!-- Remplace the text for an IMG -->
-        <p class="header__logo__holder">PATIO</p>
+        <p class="header__logo__holder"><a href="#top">PATIO</a></p>
         <!-- <img src="" alt=""> -->
       </div>
 
@@ -504,6 +504,21 @@
     // APPEND LIST TO CONTAINER
     document.getElementById("coops_by_country_list_container").appendChild(countries_list);
 
+  </script>
+
+  <script type="text/javascript">
+    const navbar = document.querySelector('.navbar-fixed')
+
+    window.addEventListener('scroll', function(e) {
+      const lastPosition = window.scrollY
+      if (lastPosition > 110 ) {
+        navbar.classList.add('scrolled')
+      } else if (navbar.classList.contains('scrolled')) {
+        navbar.classList.remove('scrolled')
+      } else {
+        navbar.classList.remove('scrolled')
+      }
+    })
   </script>
 </body>
 
