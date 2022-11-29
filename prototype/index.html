@@ -112,7 +112,10 @@
         <div class="main__section1__title">
 
           <p class="main__section1__title__top">
-            <script>t("section1-title-top")</script><br>PATIO Community
+            <script>t("section1-title-top1")</script>
+          </p>
+          <p class="main__section1__title__top">
+            <script>t("section1-title-top2")</script>
           </p>
           <p class="main__section1__title__middle">
             <script>t("section1-title-middle")</script>
@@ -176,32 +179,40 @@
             <div class="main__section4__stats__coops">
               <img class="main__section4__stats__img" src="./media/Coop1.png" alt="">
               <div class="main__section4__stats__content">
-                <p class="main__section4__stats__number">45</p>
-                <p class="main__section4__stats__descrip">Cooperatives</p>
+                <p class="main__section4__stats__number">64</p>
+                <p class="main__section4__stats__descrip">
+                  <script>t("section4-coops")</script>
+                </p>
               </div>
             </div>
 
             <div class="main__section4__stats__cooperators">
               <img class="main__section4__stats__img" src="./media/Coop2.png" alt="">
               <div class="main__section4__stats__content">
-                <p class="main__section4__stats__number">298</p>
-                <p class="main__section4__stats__descrip">Cooperators</p>
+                <p class="main__section4__stats__number">+500</p>
+                <p class="main__section4__stats__descrip">
+                  <script>t("section4-coopers")</script>
+                </p>
               </div>
             </div>
 
             <div class="main__section4__stats__countries">
               <img class="main__section4__stats__img" src="./media/Coop3.png" alt="">
               <div class="main__section4__stats__content">
-                <p class="main__section4__stats__number">17</p>
-                <p class="main__section4__stats__descrip">Countries</p>
+                <p class="main__section4__stats__number">20</p>
+                <p class="main__section4__stats__descrip">
+                  <script>t("section4-countries")</script>
+                </p>
               </div>
             </div>
 
             <div class="main__section4__stats__digital">
               <img class="main__section4__stats__img" src="./media/Coop4.png" alt="">
               <div class="main__section4__stats__content">
-                <p class="main__section4__stats__number">54</p>
-                <p class="main__section4__stats__descrip">Digital technologies services</p>
+                <p class="main__section4__stats__number">Many</p>
+                <p class="main__section4__stats__descrip">
+                  <script>t("section4-servicios")</script>
+                </p>
               </div>
             </div>
           </div>
@@ -209,10 +220,10 @@
 
         <div id="coops_by_country_list_container" class="main__section4__list">
           <h4 class="main__section__list__title" id="titleListSpecial">
-            Cooperatives sorted by country
+            <script>t("section4-list-title")</script>
           </h4>
           <p class="main__section4__list__slugline">
-            Click for more info of each coop
+            <script>t("section4-list-slugline")</script>
           </p>
           <ul id="coops_by_country_list" class="main__section4__list__items">
           </ul>
@@ -423,33 +434,57 @@
         <div class="main__section8__form__container">
           <form class="main__section8__form__content">
 
-            <label class="form_label_1" for="why">Why do you want to contact us?</label>
+            <label class="form_label_1" for="why">
+              <script>t("section8-why")</script>
+            </label>
             <select class="form_input_1" id="why" name="Select an option">
-              <option value="Work with us">Work with us</option>
-              <option value="Consulting">Consulting</option>
-              <option value="Join Patio Community">Join Patio Community</option>
-              <option value="Know more">Know more</option>
+              <option value="Work with us">
+                <script>t("section8-work")</script>
+              </option>
+              <option value="Consulting">
+                <script>t("section8-consulting")</script>
+              </option>
+              <option value="Join Patio Community">
+                <script>t("section8-join")</script>
+              </option>
+              <option value="Know more">
+                <script>t("section8-know")</script>
+              </option>
             </select>
 
-            <label class="form_label_2" for="name">Name</label>
+            <label class="form_label_2" for="name">
+              <script>t("section8-name")</script>
+            </label>
             <input class="form_input_2" type="text" id="name" name="name">
 
-            <label class="form_label_3" for="surname">Surname</label>
+            <label class="form_label_3" for="surname">
+              <script>t("section8-surname")</script>
+            </label>
             <input class="form_input_3" type="text" id="surname" name="surname">
 
-            <label class="form_label_4" for="email">Email</label>
+            <label class="form_label_4" for="email">
+              <script>t("section8-email")</script>
+            </label>
             <input class="form_input_4" type="text" id="email" name="email">
 
-            <label class="form_label_5" for="phone">Phone</label>
+            <label class="form_label_5" for="phone">
+              <script>t("section8-phone")</script>
+            </label>
             <input class="form_input_5" type="text" id="phone" name="phone">
 
-            <label class="form_label_6" for="subject">Subject</label>
+            <label class="form_label_6" for="subject">
+              <script>t("section8-subject")</script>
+            </label>
             <input class="form_input_6" type="text" id="subject" name="subject">
 
-            <label class="form_label_7" for="message">Message</label>
+            <label class="form_label_7" for="message">
+              <script>t("section8-message")</script>
+            </label>
             <textarea class="form_input_7" name="message" id="message" cols="30" rows="10"></textarea>
+            <a href="" class="btn1" type="submit" value="Send">
+              <script>t("section8-btn-send")</script>
+            </a>
 
-            <input class="form_input_8" type="submit" value="Send">
           </form>
         </div>
       </div>
@@ -509,9 +544,9 @@
   <script type="text/javascript">
     const navbar = document.querySelector('.navbar-fixed')
 
-    window.addEventListener('scroll', function(e) {
+    window.addEventListener('scroll', function (e) {
       const lastPosition = window.scrollY
-      if (lastPosition > 110 ) {
+      if (lastPosition > 110) {
         navbar.classList.add('scrolled')
       } else if (navbar.classList.contains('scrolled')) {
         navbar.classList.remove('scrolled')
