@@ -40,9 +40,13 @@ data.languages = {
     en: "Get in touch",
     es: "Contacto",
   },
-  "section1-title-top": {
+  "section1-title-top1": {
     en: "We are",
     es: "Somos",
+  },
+  "section1-title-top2": {
+    en: "PATIO Community",
+    es: "Comunidad PATIO",
   },
   "section1-title-middle": {
     en: "and we",
@@ -80,6 +84,30 @@ data.languages = {
     en: "Working together allows us to have multidisciplinary teams that collaborate on international projects.",
     es: "Trabajar juntas nos permite formar equipos multidisciplinarios para colaborar en proyectos internacionales.",
   },
+  "section4-coops": {
+    en: "cooperatives",
+    es: "cooperativas",
+  },
+  "section4-coopers": {
+    en: "cooperators",
+    es: "cooperativistas",
+  },
+  "section4-countries": {
+    en: "countries",
+    es: "países",
+  },
+  "section4-servicios": {
+    en: "digital services",
+    es: "servicios digitales",
+  },
+  "section4-list-title": {
+    en: "Co-ops sorted by country",
+    es: "Cooperativas por país",
+  },
+  "section4-list-slugline": {
+    en: "Click for more info of each coop",
+    es: "Clic para más información",
+  },
   "section5-title": {
     en: "What we do",
     es: "Qué hacemos",
@@ -114,7 +142,7 @@ data.languages = {
   },
   "services-mobile": {
     en: "Mobile development",
-    es: "Desarrollo móvil",
+    es: "Desarrollo Móvil",
   },
   "services-iot": {
     en: "Software & Hardware for IoT",
@@ -153,7 +181,7 @@ data.languages = {
     es: "Repositorio de conocimientos y experiencia",
   },
   "section6-list-5": {
-    en: "Socially responsible and linked to local",
+    en: "Socially responsible and linked to local communities",
     es: "Responsabilidad social y vínculos con comunidades locales",
   },
   "section6-island-text-1": {
@@ -166,7 +194,7 @@ data.languages = {
   },
   "section6-island-btn": {
     en: "Get in touch and ask for a quote",
-    es: "Contactanos y pide una cotización",
+    es: "Contáctanos y pide una cotización",
   },
   "section7-title": {
     en: "Our philosophy",
@@ -205,7 +233,7 @@ data.languages = {
     es: "Si eres parte de una",
   },
   "section7-island-text-2": {
-    en: "technical cooperative",
+    en: "tech cooperative",
     es: "cooperativa de tecnología",
   },
   "section7-island-btn": {
@@ -220,8 +248,56 @@ data.languages = {
     en: "with a brief description of how you want to collaborate. After we hear from you, a representative from our community will get back to you to work together on the details.",
     es: "Con una breve descripción acerca de cómo quieres colaborar. Al recibir tu mensaje, un representante de la comunidad te responderá para acordar juntos los detalles.",
   },
+  "section8-why": {
+    en: "Why do you want to contact us?",
+    es: "¿Por qué deseas contactarnos?",
+  },
+  "section8-work": {
+    en: "Work with us",
+    es: "Trabajar con nosotras",
+  },
+  "section8-consulting": {
+    en: "Consulting",
+    es: "Consulta",
+  },
+  "section8-join": {
+    en: "Join the community",
+    es: "Unirse a la comunidad",
+  },
+  "section8-know": {
+    en: "Know more",
+    es: "Saber más",
+  },
+  "section8-name": {
+    en: "Name",
+    es: "Nombre",
+  },
+  "section8-surname": {
+    en: "Surname",
+    es: "Apellido",
+  },
+  "section8-email": {
+    en: "Email",
+    es: "Correo",
+  },
+  "section8-phone": {
+    en: "Phone",
+    es: "Teléfono",
+  },
+  "section8-subject": {
+    en: "Subject",
+    es: "Asunto",
+  },
+  "section8-message": {
+    en: "Message",
+    es: "Mensaje",
+  },
+  "section8-btn-send": {
+    en: "Send",
+    es: "Enviar",
+  },
   "footer-text": {
-    en: "We are a global community of worker cooperatives, specialized in the development of digital technology, communication and design, located in 17 different countries (and growing), and working on projects with an        international scope.",
+    en: "We are a global community of worker cooperatives, specialized in the development of digital technology, communication and design, localted in different countries and working on projects with an international scope.",
     es: "Somos una comunidad global de cooperativas de trabajadoras y trabajadores, especializada en el desarrollo de tecnología digital, comunicación y diseño, ubicadas en países diferentes, y trabajando en proyectos con alcance internacional.",
   },
 };
