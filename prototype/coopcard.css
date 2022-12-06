@@ -19,6 +19,12 @@ body {
 
 .logo {
   align-self: center;
+  padding: 1.5rem;
+}
+
+.logoimg {
+  width: 340px;
+  height: auto;
 }
 
 .info {
