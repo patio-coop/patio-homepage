@@ -1093,9 +1093,9 @@ nav ul li a:hover {
 
 /* footer */
 
-footer {
+.footer__container {
   background-color: rgba(12, 19, 84, 1);
-  padding: 32px 60px;
+  padding: 32px 60px 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1126,4 +1126,22 @@ footer {
 
 .footer__social i {
   color: white;
+}
+
+.footer__intercoop {
+  background-color: rgba(12, 19, 84, 1);
+  height: 30px;
+}
+
+.footer__intercoop__text {
+  background-color: #08f5da;
+  color: rgba(12, 19, 84, 1);
+  font-size: 1rem;
+  text-align: center;
+  line-height: 30px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
