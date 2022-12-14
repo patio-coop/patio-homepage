@@ -465,18 +465,20 @@ nav ul li a:hover {
 
 .main__section2__patio {
   font-family: var(--font-family);
-  font-size: 18px;
+  font-size: 20px;
   color: rgba(12, 19, 84, 1);
   align-self: center;
   text-align: right;
-  line-height: 40px;
+  line-height: 35px;
 
   max-width: 480px;
+  margin-top: 80px;
 }
 .main__section2__hr {
   border: 1px solid rgba(12, 19, 84, 1);
   height: 150px;
   align-self: center;
+  margin-top: 80px;
 }
 .main__section2__coops {
   font-family: var(--font-family);
@@ -485,7 +487,7 @@ nav ul li a:hover {
   color: rgba(12, 19, 84, 1);
   align-self: center;
   line-height: 40px;
-
+  margin-top: 80px;
   max-width: 500px;
 }
 
@@ -925,11 +927,25 @@ nav ul li a:hover {
   color: rgba(12, 19, 84, 1);
 }
 
+.main__section7__paragraph {
+  font-size: var(--font-size-special);
+  font-weight: 400;
+  line-height: 33.6px;
+  color: rgba(12, 19, 84, 1);
+}
+
+.main__section__list__title {
+  color: rgba(12, 19, 84, 1);
+}
+
 .main__section7__list {
   display: flex;
   flex-direction: column;
-
   max-width: 500px;
+}
+
+#specialCheck2 {
+  color: rgba(12, 19, 84, 1);
 }
 
 #specialCheck2 {
