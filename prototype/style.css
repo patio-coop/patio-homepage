@@ -1203,3 +1203,11 @@ nav ul li a:hover {
 .footer__credits a {
   margin-top: 15px;;
 }
+
+.no_logo_just_text {
+  font-size: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-family: "Ubuntu", sans-serif !important;
+}
