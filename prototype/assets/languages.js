@@ -434,4 +434,10 @@ data.languages = {
     hr: "Mi smo globalna zajednica radničkih zadruga specijaliziranih za rad s digitalnim tehnologijama,dizajn i komunikacije. Imamo članove iz 20 zemalja (taj broj raste) te radimo na projektima koji su internacionalnog karaktera.",
     pt: "Somos uma comunidade global de cooperativas de trabalhadores especializados em desenvolvimento de tecnologias digitais, comunicação e design, de 20 países diferentes (e em crescimento), e trabalhando em projetos de âmbito global.",
   },
+  "footer-intercoop":{
+    en: "This website was made inter-cooperatively by",
+    es: "Este sitio fue realizado de manera intercooperativa por",
+    hr: "Ovu web stranicu izradila je ova zadruga",
+    pt: "Este site foi feito inter-cooperativamente por"
+  },
 };

@@ -1179,6 +1179,7 @@ nav ul li a:hover {
   align-items: center;
   margin-top: 0.5rem;
   height: 230px;
+  margin-bottom: 30px;
 }
 
 .footer__cooplogo {
@@ -1187,4 +1188,18 @@ nav ul li a:hover {
   max-height: 67%;
   width: auto;
   height: auto;
+}
+
+.footer__cooplogo__medium {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer__cooplogo__large {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footer__credits a {
+  margin-top: 15px;;
 }

@@ -379,7 +379,6 @@
             <script>t("section7-pmain")</script>
           </p>
         </div>
-
         <div class="main__section7__list">
           <h3 class="main__section__list__title">
             <script>t("section7-list-title")</script>
@@ -489,22 +488,14 @@
             <a href="" class="btn1" type="submit" value="Send">
               <script>t("section8-btn-send")</script>
             </a>
-
           </form>
         </div>
       </div>
-
     </section>
-
   </main>
 
   <!-- FOOTER -->
-
   <footer>
-
-
-
-
     <div class="footer__container">
       <div class="container">
         <!-- Remplace the text for an IMG -->
@@ -526,27 +517,26 @@
     </div>
 
     <div class="footer__intercoop">
-      <p class="footer__intercoop__text"><strong>This website was made inter-cooperatively by:</strong>
+      <p class="footer__intercoop__text"><strong><script>t("footer-intercoop")</script></strong>
       </p>
     </div>
 
     <div class="container">
       <div class="footer__credits">
-        <img class="footer__cooplogo" src="./media/logos/agaric.png" alt="Agaric">
-        <img class="footer__cooplogo" src="./media/logos/albatros.png" alt="Albatros">
-        <img class="footer__cooplogo" src="./media/logos/animus.png" alt="Animus">
-        <img class="footer__cooplogo" src="./media/logos/camplight.png" alt="Camplight">
-        <img class="footer__cooplogo" src="./media/logos/chicommons.png" alt="Chicommons">
-        <img class="footer__cooplogo" src="./media/logos/colab.png" alt="Colab">
-        <img class="footer__cooplogo" src="./media/logos/fiqus.png" alt="Fiqus">
-        <img class="footer__cooplogo" src="./media/logos/librecode.png" alt="Libre Code">
-        <img class="footer__cooplogo" src="./media/logos/redjar.png" alt="Redjar">
-        <img class="footer__cooplogo" src="./media/logos/slobodnadomena.png" alt="Slobodna Domena">
-        <img class="footer__cooplogo" src="./media/logos/tierracomun.png" alt="Tierra Común">
-        <img class="footer__cooplogo" src="./media/logos/tng.png" alt="TNG">
+        <a href="https://agaric.coop/" target="_blank"><img class="footer__cooplogo footer__cooplogo__medium" src="./media/logos/agaric.png" alt="Agaric"></a>
+        <a href="https://albatros.coop/en/" target="_blank"><img class="footer__cooplogo" src="./media/logos/albatros.png" alt="Albatros"></a>
+        <a href="https://animus.coop/en/" target="_blank"><img class="footer__cooplogo" src="./media/logos/animus.png" alt="Animus"></a>
+        <a href="https://camplight.net/" target="_blank"><img class="footer__cooplogo footer__cooplogo__medium" src="./media/logos/camplight.png" alt="Camplight"></a>
+        <a href="https://www.chicommons.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/chicommons.png" alt="Chicommons"></a>
+        <a href="https://colab.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/colab.png" alt="Colab"></a>
+        <a href="https://fiqus.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/fiqus.png" alt="Fiqus"></a>
+        <a href="https://librecode.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/librecode.png" alt="Libre Code"></a>
+        <a href="https://redjar.com.ar/" target="_blank"><img class="footer__cooplogo" src="./media/logos/redjar.png" alt="Redjar"></a>
+        <a href="https://slobodnadomena.hr/en" target="_blank"><img class="footer__cooplogo footer__cooplogo__large" src="./media/logos/slobodnadomena.png" alt="Slobodna Domena"></a>
+        <a href="https://tierracomun.org/" target="_blank"><img class="footer__cooplogo footer__cooplogo__large" src="./media/logos/tierracomun.png" alt="Tierra Común"></a>
+        <a href="https://tng.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/tng.png" alt="TNG"></a>
       </div>
     </div>
-
 
   </footer>
 
@@ -570,11 +560,8 @@
     // APPEND LIST TO CONTAINER
     document.getElementById("coops_by_country_list_container").appendChild(countries_list);
 
-  </script>
-
-  <script type="text/javascript">
+    // STICKY NAVBAR
     const navbar = document.querySelector('.navbar-fixed')
-
     window.addEventListener('scroll', function (e) {
       const lastPosition = window.scrollY
       if (lastPosition > 110) {
@@ -584,8 +571,19 @@
       } else {
         navbar.classList.remove('scrolled')
       }
-    })
-  </script>
+    });
+
+    document.getElementById("3dglobe-target").addEventListener("keydown", touchHandler, false);
+    function touchHandler(e) {
+      if (e.type == "touchstart") {
+        alert("You touched the screen!");
+      } else if (e.type == "touchmove") {
+        alert("You moved your finger!");
+      } else if (e.type == "touchend" || e.type == "touchcancel") {
+        alert("You removed your finger from the screen!");
+      }
+    }
+    </script>
 </body>
 
 </html>
