@@ -439,8 +439,12 @@
           </div>
         </div>
         <div class="main__section8__form__container">
-          <form class="main__section8__form__content">
-
+          <form id="contact-form" 
+          name="contact-form" 
+          action="/success-form-page.html" 
+          class="main__section8__form__content"
+          method="POST"
+          data-netlify="true" netlify>
             <label class="form_label_1" for="why">
               <script>t("section8-why")</script>
             </label>
@@ -459,35 +463,28 @@
             <label class="form_label_2" for="name">
               <script>t("section8-name")</script>
             </label>
-            <input class="form_input_2" type="text" id="name" name="name">
+            <input class="form_input_2" type="text" id="name" name="name" required>
 
             <label class="form_label_3" for="surname">
               <script>t("section8-surname")</script>
             </label>
-            <input class="form_input_3" type="text" id="surname" name="surname">
+            <input class="form_input_3" type="text" id="surname" name="surname" required>
 
             <label class="form_label_4" for="email">
               <script>t("section8-email")</script>
             </label>
-            <input class="form_input_4" type="text" id="email" name="email">
-
-            <label class="form_label_5" for="phone">
-              <script>t("section8-phone")</script>
-            </label>
-            <input class="form_input_5" type="text" id="phone" name="phone">
+            <input class="form_input_4" type="text" id="email" name="email" required>
 
             <label class="form_label_6" for="subject">
               <script>t("section8-subject")</script>
             </label>
-            <input class="form_input_6" type="text" id="subject" name="subject">
+            <input class="form_input_6" type="text" id="subject" name="subject" required>
 
             <label class="form_label_7" for="message">
               <script>t("section8-message")</script>
             </label>
-            <textarea class="form_input_7" name="message" id="message" cols="30" rows="10"></textarea>
-            <a href="" class="btn1" type="submit" value="Send">
-              <script>t("section8-btn-send")</script>
-            </a>
+            <textarea class="form_input_7" name="message" id="message" cols="30" rows="10" required></textarea>
+            <button class="btn btn1"><script>t("section8-btn-send")</script></button>
           </form>
         </div>
       </div>
