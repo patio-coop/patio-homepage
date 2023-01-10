@@ -20,6 +20,7 @@ function initLanguageSelector() {
 }
 
 data.languages = {
+  // Site - Main page translations
   "navbar-who-we-are-button": {
     en: "Who we are",
     es: "Quiénes somos",
@@ -439,5 +440,163 @@ data.languages = {
     es: "Este sitio fue realizado de manera intercooperativa por",
     hr: "Ovu web stranicu izradila je ova zadruga",
     pt: "Este site foi feito inter-cooperativamente por"
+  },
+
+  // Cooperatives taglines & descriptions translations
+  "fiqus-tagline": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "fiqus-description": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "redjar-tagline": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "redjar-description": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "albatros-tagline": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "albatros-description": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "camplight-tagline": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "camplight-description": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "tng-tagline": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "tng-description": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "librecode-tagline": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "librecode-description": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "sofi-tagline": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "sofi-description": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "animorph-tagline": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "animorph-description": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "sociality-tagline": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "sociality-description": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "slobodnadomena-tagline": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "slobodnadomena-description": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "tierracomun-tagline": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "tierracomun-description": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "agaric-tagline": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "agaric-description": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "colab-tagline": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
+  },
+  "colab-description": {
+    en: "",
+    es: "",
+    hr: "",
+    pt: ""
   },
 };

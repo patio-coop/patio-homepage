@@ -7,11 +7,31 @@ data.countries = [
       {
         "name": "Fiqus",
         "url": "https://www.fiqus.coop",
+        "logo": "",
+        "tagline": "fiqus-tagline",
+        "description": "fiqus-description",
+        "services": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+        },
       },
       {
         "name": "Redjar",
         "url": "https://redjar.com.ar/",
-      },
+        "logo": "",
+        "tagline": "redjar-tagline",
+        "description": "redjar-description",
+        "services": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+        },
+      }
     ]
   },
   {
@@ -22,6 +42,15 @@ data.countries = [
       {
         "name": "Albatros",
         "url": "https://albatros.coop/en/",
+        "tagline": "albatros-tagline",
+        "description": "albatros-description",
+        "services": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+        },
       },
     ]
   },
@@ -31,8 +60,17 @@ data.countries = [
     "latitude": "42.683333",
     "coops": [
       {
-        "name": "Albatros",
-        "url": "https://albatros.coop/en/",
+        "name": "Camplight",
+        "url": "https://camplight.net/",
+        "tagline": "camplight-tagline",
+        "description": "camplight-description",
+        "services": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+        },
       },
     ]
   },
@@ -44,6 +82,15 @@ data.countries = [
       {
         "name": "Tng",
         "url": "https://tng.coop/",
+        "tagline": "tng-tagline",
+        "description": "tng-description",
+        "services": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+        },
       },
     ]
   },
@@ -53,8 +100,17 @@ data.countries = [
     "longitude": "-52",
     "coops": [
       {
-        "name": "Tng",
+        "name": "Libre Code",
         "url": "https://librecode.coop/",
+        "tagline": "librecode-tagline",
+        "description": "librecode-description",
+        "services": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+        },
       },
     ]
   },
@@ -66,6 +122,15 @@ data.countries = [
       {
         "name": "Sofi",
         "url": "https://www.sofi.coop/",
+        "tagline": "sofi-tagline",
+        "description": "sofi-description",
+        "services": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+        },
       },
     ]
   },
@@ -77,6 +142,15 @@ data.countries = [
       {
         "name": "Animorph",
         "url": "https://animorph.coop/",
+        "tagline": "animorph-tagline",
+        "description": "animorph-description",
+        "services": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+        },
       },
     ]
   },
@@ -228,6 +302,15 @@ data.countries = [
       {
         "name": "Sociality",
         "url": "https://sociality.coop/",
+        "tagline": "sociality-tagline",
+        "description": "sociality-description",
+        "services": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+        },
       },
     ]
   },
@@ -244,6 +327,15 @@ data.countries = [
       {
         "name": "Slobodnadomena",
         "url": "https://slobodnadomena.hr/",
+        "tagline": "slobodnadomena-tagline",
+        "description": "slobodnadomena-description",
+        "services": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+        },
       },
     ]
   },
@@ -290,6 +382,15 @@ data.countries = [
       {
         "name": "Tierra común",
         "url": "https://tierracomun.org/",
+        "tagline": "tierracomun-tagline",
+        "description": "tierracomun-description",
+        "services": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+        },
       },
     ]
   },
@@ -301,10 +402,28 @@ data.countries = [
       {
         "name": "Agaric",
         "url": "https://agaric.coop/",
+        "tagline": "agaric-tagline",
+        "description": "agaric-description",
+        "services": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+        },
       },
       {
         "name": "Colab",
         "url": "https://colab.coop/",
+        "tagline": "colab-tagline",
+        "description": "colab-description",
+        "services": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+        },
       },
     ]
   },
