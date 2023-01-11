@@ -7,16 +7,10 @@ data.countries = [
       {
         "name": "Fiqus",
         "url": "https://www.fiqus.coop",
-        "logo": "",
+        "logo": "fiqus.png",
         "tagline": "fiqus-tagline",
         "description": "fiqus-description",
-        "services": {
-          "0": "",
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-        },
+        "services": ["Custom Development", "Backend", "Data Science", "Machine Learning", "Blockchain"],
       },
       {
         "name": "Redjar",
@@ -24,13 +18,7 @@ data.countries = [
         "logo": "",
         "tagline": "redjar-tagline",
         "description": "redjar-description",
-        "services": {
-          "0": "",
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-        },
+        "services": [],
       }
     ]
   },
@@ -44,13 +32,7 @@ data.countries = [
         "url": "https://albatros.coop/en/",
         "tagline": "albatros-tagline",
         "description": "albatros-description",
-        "services": {
-          "0": "",
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-        },
+        "services": [],
       },
     ]
   },
@@ -64,13 +46,7 @@ data.countries = [
         "url": "https://camplight.net/",
         "tagline": "camplight-tagline",
         "description": "camplight-description",
-        "services": {
-          "0": "",
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-        },
+        "services": [],
       },
     ]
   },
@@ -84,13 +60,7 @@ data.countries = [
         "url": "https://tng.coop/",
         "tagline": "tng-tagline",
         "description": "tng-description",
-        "services": {
-          "0": "",
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-        },
+        "services": [],
       },
     ]
   },
@@ -104,13 +74,7 @@ data.countries = [
         "url": "https://librecode.coop/",
         "tagline": "librecode-tagline",
         "description": "librecode-description",
-        "services": {
-          "0": "",
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-        },
+        "services": [],
       },
     ]
   },
@@ -124,13 +88,7 @@ data.countries = [
         "url": "https://www.sofi.coop/",
         "tagline": "sofi-tagline",
         "description": "sofi-description",
-        "services": {
-          "0": "",
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-        },
+        "services": [],
       },
     ]
   },
@@ -144,13 +102,7 @@ data.countries = [
         "url": "https://animorph.coop/",
         "tagline": "animorph-tagline",
         "description": "animorph-description",
-        "services": {
-          "0": "",
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-        },
+        "services": [],
       },
     ]
   },
@@ -304,13 +256,7 @@ data.countries = [
         "url": "https://sociality.coop/",
         "tagline": "sociality-tagline",
         "description": "sociality-description",
-        "services": {
-          "0": "",
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-        },
+        "services": [],
       },
     ]
   },
@@ -329,13 +275,7 @@ data.countries = [
         "url": "https://slobodnadomena.hr/",
         "tagline": "slobodnadomena-tagline",
         "description": "slobodnadomena-description",
-        "services": {
-          "0": "",
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-        },
+        "services": [],
       },
     ]
   },
@@ -384,13 +324,7 @@ data.countries = [
         "url": "https://tierracomun.org/",
         "tagline": "tierracomun-tagline",
         "description": "tierracomun-description",
-        "services": {
-          "0": "",
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-        },
+        "services": [],
       },
     ]
   },
@@ -404,26 +338,14 @@ data.countries = [
         "url": "https://agaric.coop/",
         "tagline": "agaric-tagline",
         "description": "agaric-description",
-        "services": {
-          "0": "",
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-        },
+        "services": [],
       },
       {
         "name": "Colab",
         "url": "https://colab.coop/",
         "tagline": "colab-tagline",
         "description": "colab-description",
-        "services": {
-          "0": "",
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": "",
-        },
+        "services": [],
       },
     ]
   },

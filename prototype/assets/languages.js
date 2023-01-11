@@ -8,10 +8,14 @@ function setLang(object_selected) {
   });
 }
 
-function t(key) {
+function getTranslation(key) {
   const currentLang = localStorage.getItem("currentLanguage") || "en";
+  return data.languages[key][currentLang];
+}
+
+function t(key) {
   this.document.currentScript.parentElement.innerHTML =
-    "<span id='" + key + "'>" + data.languages[key][currentLang] + "</span>";
+    "<span id='" + key + "'>" + getTranslation(key) + "</span>";
 }
 
 function initLanguageSelector() {
@@ -49,6 +53,12 @@ data.languages = {
     en: "Get in touch",
     es: "Contacto",
     hr: "Kontakt",
+    pt: "Entre em contato",
+  },
+  "modal-visit-website-btn": {
+    en: "Visit Website",
+    es: "Visitar Sitio",
+    hr: "Posjetite web stranicu",
     pt: "Entre em contato",
   },
   "section1-title-top1": {
@@ -444,16 +454,16 @@ data.languages = {
 
   // Cooperatives taglines & descriptions translations
   "fiqus-tagline": {
-    en: "",
-    es: "",
-    hr: "",
-    pt: ""
+    en: "We are a software cooperative. We are collective construction, culture and minds in constant movement.",
+    es: "Somos una cooperativa de software. Somos construcción colectiva, cultura y mentes en constante movimiento.",
+    hr: "We are a software cooperative. We are collective construction, culture and minds in constant movement.",
+    pt: "Somos uma cooperativa de software. Somos construção coletiva, cultura e mentes em constante movimento."
   },
   "fiqus-description": {
-    en: "",
-    es: "",
-    hr: "",
-    pt: ""
+    en: "Fiqus is not just another job, it is a life project, in which we have built a consolidated team of professionals who are in continuous training to provide high quality technical solutions.",
+    es: "Fiqus no es un trabajo más, es un proyecto de vida ,en el que construimos un equipo consolidado de profesionales que se encuentra en continua capacitación para poder brindar soluciones técnicas de alta calidad. ",
+    hr: "Fiqus is not just another job, it is a life project, in which we have built a consolidated team of professionals who are in continuous training to provide high quality technical solutions.",
+    pt: "A Fiqus não é apenas mais um trabalho, é um projeto de vida, no qual construímos uma equipe consolidada de profissionais que estão em contínuo treinamento para poder fornecer soluções técnicas de alta qualidade."
   },
   "redjar-tagline": {
     en: "",
