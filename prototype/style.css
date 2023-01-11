@@ -1146,7 +1146,8 @@ nav ul li a:hover {
 
 .footer__intercoop {
   background-color: rgba(12, 19, 84, 1);
-  height: 30px;
+  height: 29px;
+  padding: 4px;
 }
 
 .footer__intercoop__text {
@@ -1201,7 +1202,7 @@ nav ul li a:hover {
 }
 
 .footer__credits a {
-  margin-top: 15px;;
+  margin-top: 15px;
 }
 
 .no_logo_just_text {
