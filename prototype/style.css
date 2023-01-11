@@ -1109,9 +1109,9 @@ nav ul li a:hover {
 
 /* footer */
 
-footer {
+.footer__container {
   background-color: rgba(12, 19, 84, 1);
-  padding: 32px 60px;
+  padding: 30px 60px 65px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1128,7 +1128,7 @@ footer {
 }
 
 .footer__text {
-  max-width: 40%;
+  max-width: 45%;
   font-size: var(--font-size-details);
 }
 
@@ -1142,4 +1142,72 @@ footer {
 
 .footer__social i {
   color: white;
+}
+
+.footer__intercoop {
+  background-color: rgba(12, 19, 84, 1);
+  height: 30px;
+}
+
+.footer__intercoop__text {
+  background-color: white;
+  color: rgba(12, 19, 84, 1);
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.footer__credits {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  column-gap: 6rem;
+  row-gap: 2rem;
+  height: 180px;
+  margin: 2rem 1rem; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 3rem;
+  justify-items: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  height: 230px;
+  margin-bottom: 30px;
+}
+
+.footer__cooplogo {
+  object-fit: contain;
+  max-width: 80%;
+  max-height: 67%;
+  width: auto;
+  height: auto;
+}
+
+.footer__cooplogo__medium {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer__cooplogo__large {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footer__credits a {
+  margin-top: 15px;;
+}
+
+.no_logo_just_text {
+  font-size: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-family: "Ubuntu", sans-serif !important;
 }

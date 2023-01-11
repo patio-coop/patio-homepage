@@ -379,7 +379,6 @@
             <script>t("section7-pmain")</script>
           </p>
         </div>
-
         <div class="main__section7__list">
           <h3 class="main__section__list__title">
             <script>t("section7-list-title")</script>
@@ -440,8 +439,12 @@
           </div>
         </div>
         <div class="main__section8__form__container">
-          <form class="main__section8__form__content">
-
+          <form id="contact-form" 
+          name="contact-form" 
+          action="/success-form-page.html" 
+          class="main__section8__form__content"
+          method="POST"
+          data-netlify="true" netlify>
             <label class="form_label_1" for="why">
               <script>t("section8-why")</script>
             </label>
@@ -460,68 +463,78 @@
             <label class="form_label_2" for="name">
               <script>t("section8-name")</script>
             </label>
-            <input class="form_input_2" type="text" id="name" name="name">
+            <input class="form_input_2" type="text" id="name" name="name" required>
 
             <label class="form_label_3" for="surname">
               <script>t("section8-surname")</script>
             </label>
-            <input class="form_input_3" type="text" id="surname" name="surname">
+            <input class="form_input_3" type="text" id="surname" name="surname" required>
 
             <label class="form_label_4" for="email">
               <script>t("section8-email")</script>
             </label>
-            <input class="form_input_4" type="text" id="email" name="email">
-
-            <label class="form_label_5" for="phone">
-              <script>t("section8-phone")</script>
-            </label>
-            <input class="form_input_5" type="text" id="phone" name="phone">
+            <input class="form_input_4" type="text" id="email" name="email" required>
 
             <label class="form_label_6" for="subject">
               <script>t("section8-subject")</script>
             </label>
-            <input class="form_input_6" type="text" id="subject" name="subject">
+            <input class="form_input_6" type="text" id="subject" name="subject" required>
 
             <label class="form_label_7" for="message">
               <script>t("section8-message")</script>
             </label>
-            <textarea class="form_input_7" name="message" id="message" cols="30" rows="10"></textarea>
-            <a href="" class="btn1" type="submit" value="Send">
-              <script>t("section8-btn-send")</script>
-            </a>
-
+            <textarea class="form_input_7" name="message" id="message" cols="30" rows="10" required></textarea>
+            <button class="btn btn1"><script>t("section8-btn-send")</script></button>
           </form>
         </div>
       </div>
-
     </section>
-
   </main>
 
   <!-- FOOTER -->
-
   <footer>
-    <div class="container">
-
-      <!-- Remplace the text for an IMG -->
-      <h2 class="footer__logo">
-        PATIO
-      </h2>
-      <!-- <img src="" alt=""> -->
-      <p class="footer__text">
-        <script>t("footer-text")</script>
-      </p>
-
-      <div class="footer__spaceblank"></div>
-
-      <div class="footer__social">
-        <a href=""><i class="fa-brands fa-facebook-f" title="Facebook" aria-label="Facebook icon"></i></a>
-        <a href=""><i class="fa fa-twitter" title="Twitter" aria-label="Twitter icon"></i></a>
-        <a href=""><i class="fa fa-instagram" title="Instagram" aria-label="Instagram icon"></i></a>
-        <a href=""><i class="fa fa-youtube-play" title="Youtube" aria-label="Youtube icon"></i></a>
+    <div class="footer__container">
+      <div class="container">
+        <!-- Remplace the text for an IMG -->
+        <h2 class="footer__logo">
+          PATIO
+        </h2>
+        <!-- <img src="" alt=""> -->
+        <p class="footer__text">
+          <script>t("footer-text")</script>
+        </p>
+        <div class="footer__spaceblank"></div>
+        <div class="footer__social">
+          <a href=""><i class="fa-brands fa-facebook-f" title="Facebook" aria-label="Facebook icon"></i></a>
+          <a href=""><i class="fa fa-twitter" title="Twitter" aria-label="Twitter icon"></i></a>
+          <a href=""><i class="fa fa-instagram" title="Instagram" aria-label="Instagram icon"></i></a>
+          <a href=""><i class="fa fa-youtube-play" title="Youtube" aria-label="Youtube icon"></i></a>
+        </div>
       </div>
-
     </div>
+
+    <div class="footer__intercoop">
+      <p class="footer__intercoop__text"><strong><script>t("footer-intercoop")</script></strong>
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="footer__credits">
+        <a href="https://agaric.coop/" target="_blank"><img class="footer__cooplogo footer__cooplogo__medium" src="./media/logos/agaric.png" alt="Agaric"></a>
+        <a href="https://albatros.coop/en/" target="_blank"><img class="footer__cooplogo" src="./media/logos/albatros.png" alt="Albatros"></a>
+        <a href="https://animus.coop/en/" target="_blank"><img class="footer__cooplogo" src="./media/logos/animus.png" alt="Animus"></a>
+        <a href="https://camplight.net/" target="_blank"><img class="footer__cooplogo footer__cooplogo__medium" src="./media/logos/camplight.png" alt="Camplight"></a>
+        <a href="https://www.chicommons.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/chicommons.png" alt="Chicommons"></a>
+        <a href="https://colab.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/colab.png" alt="Colab"></a>
+        <a href="https://fiqus.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/fiqus.png" alt="Fiqus"></a>
+        <a href="https://librecode.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/librecode.png" alt="Libre Code"></a>
+        <a href="https://redjar.com.ar/" target="_blank"><img class="footer__cooplogo" src="./media/logos/redjar.png" alt="Redjar"></a>
+        <a href="https://slobodnadomena.hr/en" target="_blank"><img class="footer__cooplogo footer__cooplogo__large" src="./media/logos/slobodnadomena.png" alt="Slobodna Domena"></a>
+        <a href="https://tierracomun.org/" target="_blank"><img class="footer__cooplogo footer__cooplogo__large" src="./media/logos/tierracomun.png" alt="Tierra Común"></a>
+        <a href="https://tng.coop/" target="_blank" class="no_logo_just_text">TNG</a>
+      </div>
+    </div>
+
   </footer>
 
   <script type="text/javascript">
@@ -544,11 +557,8 @@
     // APPEND LIST TO CONTAINER
     document.getElementById("coops_by_country_list_container").appendChild(countries_list);
 
-  </script>
-
-  <script type="text/javascript">
+    // STICKY NAVBAR
     const navbar = document.querySelector('.navbar-fixed')
-
     window.addEventListener('scroll', function (e) {
       const lastPosition = window.scrollY
       if (lastPosition > 110) {
@@ -558,8 +568,19 @@
       } else {
         navbar.classList.remove('scrolled')
       }
-    })
-  </script>
+    });
+
+    document.getElementById("3dglobe-target").addEventListener("keydown", touchHandler, false);
+    function touchHandler(e) {
+      if (e.type == "touchstart") {
+        alert("You touched the screen!");
+      } else if (e.type == "touchmove") {
+        alert("You moved your finger!");
+      } else if (e.type == "touchend" || e.type == "touchcancel") {
+        alert("You removed your finger from the screen!");
+      }
+    }
+    </script>
 </body>
 
 </html>

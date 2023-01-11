@@ -1,6 +1,6 @@
 body {
-  background-color: #0c1354;
-  color: white;
+  background-color: #f8f8f8;
+  color: #0c1354;
 }
 
 .card {
@@ -32,8 +32,8 @@ body {
 }
 
 .place {
-  background-color: white;
-  color: #0c1354;
+  background-color: #0c1354;
+  color: white;
   display: inline;
   padding: 0.5rem;
   border-radius: 1rem;
@@ -45,7 +45,7 @@ h1 {
 }
 
 hr {
-  background-color: white;
+  background-color: #0c1354;
   width: 100px;
   height: 6px;
   margin: 1.5rem 0;
@@ -75,7 +75,8 @@ hr {
   font-size: small;
   font-family: sans-serif;
   list-style: none;
-  border: solid 1px white;
+  background-color: white;
+  border: solid 1px #0c1354;
   border-radius: 0.4rem;
   padding: 0.3rem;
 }
