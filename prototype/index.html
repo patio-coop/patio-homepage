@@ -6,33 +6,25 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords"
-    content="Cooperative, Technology, Digital, Federation, Software, Development, Web Development, Design, International Cooperative Alliance">
+  <meta name="keywords" content="Cooperative, Technology, Digital, Federation, Software, Development, Web Development, Design, International Cooperative Alliance">
+  
   <title>Patio Home</title>
-  <meta name="description"
-    content="Global community of worker owned cooperatives specializing in the development of software, communication and design.">
+  <meta name="description" content="Global community of worker owned cooperatives specializing in the development of software, communication and design.">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="coopcard.css">
 
   <!-- Start 3d globe dependencies -->
   <script src="http://unpkg.com/three"></script>
-  <!-- <script src="http://unpkg.com/three/examples/js/controls/TrackballControls.js"></script> -->
-  <!-- <script src="http://unpkg.com/three-globe"></script> -->
-
   <script src="3dglobe/libs/three.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script> -->
   <script src="3dglobe/libs/dat.gui.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.4.0/Tween.min.js"></script> -->
   <script src="3dglobe/libs/fabric.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.4/chroma.min.js"></script> -->
-  <!-- <script src="https://d3js.org/d3-array.v1.min.js"></script> -->
   <script src="3dglobe/libs/d3-geo.v1.min.js"></script>
-
   <script src="3dglobe/libs/THREE.MeshLine.js"></script>
   <script src="3dglobe/libs/orbit-controls.js"></script>
   <script src="3dglobe/libs/trackball-controls.js"></script>
   <script src="3dglobe/libs/perlin-noise.js"></script>
-
   <!-- -- The customizable JS -->
   <script src="3dglobe/assets/data/processing.js"></script>
   <script src="3dglobe/scripts/config.js"></script>
@@ -46,7 +38,6 @@
   <script src="3dglobe/scripts/lines.js"></script>
   <script src="3dglobe/scripts/dots.js"></script>
   <script src="3dglobe/scripts/utils.js"></script>
-
   <!-- -- The Country and Connection data -->
   <script src="assets/countries.js"></script>
   <script src="assets/languages.js"></script>
@@ -491,6 +482,23 @@
     </section>
   </main>
 
+  <!-- Coop Card Modal -->
+  <div id="cooperative-card-modal" class="coop-card-modal">
+    <div class="coop-card-modal-content">
+      <div class="modal-logo"><img id="modal-coop-logo" src="./media/logos/no-logo.jpg" alt="logo" class="modal-logoimg"></div>
+      <div class="modal-info">
+        <p id="modal-coop-country" class="modal-place"></p>
+        <h1 id="modal-coop-name" class="modal-h1"></h1>
+        <hr class="modal-hr">
+        <p id="modal-coop-tagline" class="modal-slug"></p>
+        <p id="modal-coop-description" class="modal-description"></p>
+        <ul id="modal-coop-services" class="modal-services"></ul>
+        <a id="modal-coop-url" href="#" target="_blank" class="btn1"><script>t("modal-visit-website-btn")</script></a>
+      </div>
+      <a id="modal-close" href="#" class="modal-btn-close">X</a>
+    </div>
+  </div>
+
   <!-- FOOTER -->
   <footer>
     <div class="footer__container">
@@ -536,51 +544,7 @@
     </div>
 
   </footer>
-
-  <script type="text/javascript">
-    // CREATE LIST
-    countries_list = document.getElementById("coops_by_country_list");
-    for (let i of data.countries) {
-      for (let c of i.coops) {
-        // CREATE ITEM LINK
-        let link = document.createElement("a");
-        link.innerHTML = c.name;
-        link.setAttribute('href', c.url);
-
-        // CREATE LIST ITEM
-        let item = document.createElement("li");
-        item.setAttribute('class', "main__section4__list__items__item");
-        item.appendChild(link);
-        countries_list.appendChild(item);
-      }
-    }
-    // APPEND LIST TO CONTAINER
-    document.getElementById("coops_by_country_list_container").appendChild(countries_list);
-
-    // STICKY NAVBAR
-    const navbar = document.querySelector('.navbar-fixed')
-    window.addEventListener('scroll', function (e) {
-      const lastPosition = window.scrollY
-      if (lastPosition > 110) {
-        navbar.classList.add('scrolled')
-      } else if (navbar.classList.contains('scrolled')) {
-        navbar.classList.remove('scrolled')
-      } else {
-        navbar.classList.remove('scrolled')
-      }
-    });
-
-    document.getElementById("3dglobe-target").addEventListener("keydown", touchHandler, false);
-    function touchHandler(e) {
-      if (e.type == "touchstart") {
-        alert("You touched the screen!");
-      } else if (e.type == "touchmove") {
-        alert("You moved your finger!");
-      } else if (e.type == "touchend" || e.type == "touchcancel") {
-        alert("You removed your finger from the screen!");
-      }
-    }
-    </script>
+  <script src="assets/index.js"></script>
 </body>
 
 </html>
