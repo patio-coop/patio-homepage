@@ -25,7 +25,8 @@ function openModal(country, cooperative) {
   setModalElement("modal-coop-tagline", getTranslation(cooperative.tagline));
   setModalElement("modal-coop-description", getTranslation(cooperative.description));
 
-  setModalElementAttr("modal-coop-logo", "src", './media/logos/' + cooperative.logo);
+  logoPath = cooperative.logo ? './media/logos/' + cooperative.logo : './media/logos/no-logo.png';
+  setModalElementAttr("modal-coop-logo", "src", logoPath);
   setModalElementAttr("modal-coop-url", "href", cooperative.url);
 
   setModalServices(cooperative);
@@ -45,7 +46,7 @@ function closeModal(modal) {
   setModalElement("modal-coop-description", "");
   setModalElement("modal-coop-services", "");
 
-  setModalElementAttr("modal-coop-logo", "src", './media/logos/no-logo.jpg');
+  setModalElementAttr("modal-coop-logo", "src", './media/logos/no-logo.png');
   setModalElementAttr("modal-coop-url", "href", '#');
 }
 
