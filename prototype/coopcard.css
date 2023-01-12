@@ -6,9 +6,9 @@
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  overflow: hidden; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
 .coop-card-modal-content {
@@ -17,7 +17,7 @@
   margin: 15% auto; /* 15% from the top and centered */
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
-  min-height: 300px;
+  min-height: 700px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -32,18 +32,21 @@
   margin-top: 6%;
 }
 
-#modal-close {
-  color: #aaa;
+.modal-btn-close {
   float: right;
-  font-size: 28px;
+  color: #aaa;
+  font-family: monospace;
+  font-size: xx-large;
+  text-decoration: none;
   font-weight: bold;
+  margin-top: -4%;
 }
 
-#modal-close:hover,
-#modal-close:focus {
+.modal-btn-close:hover,
+.modal-btn-close:focus {
   color: black;
   text-decoration: none;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .modal-logo {
@@ -108,11 +111,4 @@
   border: solid 1px #0c1354;
   border-radius: 0.4rem;
   padding: 0.3rem;
-}
-
-.modal-btn-close {
-  color: white;
-  font-family: monospace;
-  font-size: xx-large;
-  text-decoration: none;
 }

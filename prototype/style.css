@@ -120,6 +120,10 @@ p {
   filter: drop-shadow(0px 5px 6px rgb(233, 209, 253));
 }
 
+.no_scroll {
+  overflow: hidden;
+}
+
 /*CONTAINER SETTINGS*/
 
 .container {
@@ -196,6 +200,15 @@ Infinite > Larger screen > 1350px
   background-color: #14aded; /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 3px solid transparent; /* creates padding around scroll thumb */
+}
+
+.main__section4__list__items__item {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.main__section4__list__items__link {
+  font-size: 23px;
 }
 
 /* GENERAL CLASS > SCROLLBAR*/
@@ -617,7 +630,7 @@ nav ul li a:hover {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 5% 10% /*64px 0 0 132px*/;
-  min-width: 40%;
+  min-width: 48%;
 }
 
 /*.main__section4__list::after {
@@ -669,7 +682,7 @@ nav ul li a:hover {
 
 .main__section4__list__items a::before {
   content: "• ";
-  color: #0c1354;
+  color: white;
   transition: 300ms;
 }
 .main__section4__list__items a:hover {
@@ -935,7 +948,7 @@ nav ul li a:hover {
 }
 
 .main__section__list__title {
-  color: rgba(12, 19, 84, 1);
+  color: rgba(255, 255, 255);
 }
 
 .main__section7__list {

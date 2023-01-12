@@ -32,6 +32,7 @@ function openModal(country, cooperative) {
   setModalServices(cooperative);
 
   // Show modal
+  document.body.classList.add("no_scroll");
   var modal = document.getElementById("cooperative-card-modal");
   modal.style.display = "block";
 }
@@ -39,6 +40,7 @@ function openModal(country, cooperative) {
 function closeModal(modal) {
   // Hide modal
   modal.style.display = "none";
+  document.body.classList.remove("no_scroll");
 
   setModalElement("modal-coop-country", "");
   setModalElement("modal-coop-name", "")
