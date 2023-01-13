@@ -125,10 +125,10 @@
             <script>t("section1-title-title")</script>
           </h1>
           <div class="main__section1__title__btns">
-            <a href="" class="btn1">
+            <a href="#" class="btn1 work-together">
               <script>t("section1-btn1")</script>
             </a>
-            <a href="" class="btn2">
+            <a href="#" class="btn2 join-community">
               <script>t("section1-btn2")</script>
             </a>
           </div>
@@ -350,7 +350,7 @@
                 <script>t("section6-island-text-2")</script>
               </b>
             </h3>
-            <a href="" class="btn1">
+            <a href="#" class="btn1 work-together">
               <script>t("section6-island-btn")</script>
             </a>
           </div>
@@ -405,7 +405,7 @@
                 <script>t("section7-island-text-2")</script>
               </b>
             </h3>
-            <a href="" class="btn1">
+            <a href="#" class="btn1 join-community">
               <script>t("section7-island-btn")</script>
             </a>
           </div>
@@ -436,45 +436,45 @@
           class="main__section8__form__content"
           method="POST"
           data-netlify="true" netlify>
-            <label class="form_label_1" for="why">
+            <label class="form_label_1" for="form-why-input">
               <script>t("section8-why")</script>
             </label>
-            <select class="form_input_1" id="why" name="Select an option">
-              <option value="Work with us">
+            <select class="form_input_1" id="form-why-input" name="Select an option" required>
+              <option selected value>
+                <script>t("section8-select-option")</script>
+              </option>
+              <option value="work-with-us">
                 <script>t("section8-work")</script>
               </option>
-              <option value="Consulting">
-                <script>t("section8-consulting")</script>
-              </option>
-              <option value="Join Patio Community">
+              <option value="join-patio-community">
                 <script>t("section8-join")</script>
               </option>
             </select>
 
-            <label class="form_label_2" for="name">
+            <label class="form_label_2" for="form-name-input">
               <script>t("section8-name")</script>
             </label>
-            <input class="form_input_2" type="text" id="name" name="name" required>
+            <input class="form_input_2" type="text" id="form-name-input" name="name" required>
 
-            <label class="form_label_3" for="surname">
+            <label class="form_label_3" for="form-surname-input">
               <script>t("section8-surname")</script>
             </label>
-            <input class="form_input_3" type="text" id="surname" name="surname" required>
+            <input class="form_input_3" type="text" id="form-surname-input" name="surname" required>
 
-            <label class="form_label_4" for="email">
+            <label class="form_label_4" for="form-email-input">
               <script>t("section8-email")</script>
             </label>
-            <input class="form_input_4" type="text" id="email" name="email" required>
+            <input class="form_input_4" type="email" id="form-email-input" name="email" required>
 
-            <label class="form_label_6" for="subject">
+            <label class="form_label_6" for="form-subject-input">
               <script>t("section8-subject")</script>
             </label>
-            <input class="form_input_6" type="text" id="subject" name="subject" required>
+            <input class="form_input_6" type="text" id="form-subject-input" name="subject" required>
 
-            <label class="form_label_7" for="message">
+            <label class="form_label_7" for="form-message-input">
               <script>t("section8-message")</script>
             </label>
-            <textarea class="form_input_7" name="message" id="message" cols="30" rows="10" required></textarea>
+            <textarea class="form_input_7" name="message" id="form-message-input" cols="30" rows="10" required></textarea>
             <button class="btn btn1"><script>t("section8-btn-send")</script></button>
           </form>
         </div>

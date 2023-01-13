@@ -104,3 +104,19 @@ window.addEventListener('scroll', function (e) {
     navbar.classList.remove('scrolled')
   }
 });
+
+
+// HANDLE CALL TO ACTIONS FROM BUTTONS
+function addActionToBtns(btnClass, actionValue) {
+  var btns = document.querySelectorAll('a[class$="'+ btnClass+'"]')
+  for (let btn of btns) {
+    btn.addEventListener('click', function(e) {
+      document.getElementById("form-why-input").value = actionValue
+      document.getElementById("get-in-touch").scrollIntoView({behavior: 'smooth'});
+      e.preventDefault();
+    });
+  }
+}
+
+addActionToBtns("join-community", "join-patio-community");
+addActionToBtns("work-together", "work-with-us");
