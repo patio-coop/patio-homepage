@@ -7,7 +7,7 @@ data.countries = [
       {
         "name": "Fiqus",
         "url": "https://www.fiqus.coop",
-        "logo": "fiqus.png",
+        "logo_url": "./media/logos/fiqus.png",
         "tagline": "fiqus-tagline",
         "description": "fiqus-description",
         "services": ["Custom Development", "Backend", "Data Science", "Machine Learning", "Blockchain"],
@@ -15,7 +15,7 @@ data.countries = [
       {
         "name": "Redjar",
         "url": "https://redjar.com.ar/",
-        "logo": "",
+        "logo_url": "./media/logos/redjar.png",
         "tagline": "redjar-tagline",
         "description": "redjar-description",
         "services": [],
@@ -30,6 +30,7 @@ data.countries = [
       {
         "name": "Albatros",
         "url": "https://albatros.coop/en/",
+        "logo_url": "./media/logos/albatros.png",
         "tagline": "albatros-tagline",
         "description": "albatros-description",
         "services": [],
@@ -44,6 +45,8 @@ data.countries = [
       {
         "name": "Camplight",
         "url": "https://camplight.net/",
+        "logo_url": "./media/logos/camplight.png",
+        "logo_modifier": "medium",
         "tagline": "camplight-tagline",
         "description": "camplight-description",
         "services": [],
@@ -56,8 +59,9 @@ data.countries = [
     "longitude": "138",
     "coops": [
       {
-        "name": "Tng",
+        "name": "TNG",
         "url": "https://tng.coop/",
+        "logo_url": "./media/logos/tng.png",
         "tagline": "tng-tagline",
         "description": "tng-description",
         "services": [],
@@ -72,6 +76,7 @@ data.countries = [
       {
         "name": "Libre Code",
         "url": "https://librecode.coop/",
+        "logo_url": "./media/logos/librecode.png",
         "tagline": "librecode-tagline",
         "description": "librecode-description",
         "services": [],
@@ -271,8 +276,10 @@ data.countries = [
     "longitude": "15.9614",
     "coops": [
       {
-        "name": "Slobodnadomena",
+        "name": "Slobodna Domena",
         "url": "https://slobodnadomena.hr/",
+        "logo_url": "./media/logos/slobodnadomena.png",
+        "logo_modifier": "large",
         "tagline": "slobodnadomena-tagline",
         "description": "slobodnadomena-description",
         "services": [],
@@ -322,6 +329,8 @@ data.countries = [
       {
         "name": "Tierra común",
         "url": "https://tierracomun.org/",
+        "logo_url": "./media/logos/tierracomun.png",
+        "logo_modifier": "large",
         "tagline": "tierracomun-tagline",
         "description": "tierracomun-description",
         "services": [],
@@ -336,6 +345,8 @@ data.countries = [
       {
         "name": "Agaric",
         "url": "https://agaric.coop/",
+        "logo_url": "./media/logos/agaric.png",
+        "logo_modifier": "medium",
         "tagline": "agaric-tagline",
         "description": "agaric-description",
         "services": [],
@@ -343,6 +354,7 @@ data.countries = [
       {
         "name": "Colab",
         "url": "https://colab.coop/",
+        "logo_url": "./media/logos/colab.png",
         "tagline": "colab-tagline",
         "description": "colab-description",
         "services": [],

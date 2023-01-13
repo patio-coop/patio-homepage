@@ -70,27 +70,30 @@ window.onclick = function(event) {
 
 
 // MANAGE COOPS BY COUNTRY LIST
-countries_list = document.getElementById("coops_by_country_list");
+countries_list = document.getElementById("coops_by_country_list_container");
 for (let country of data.countries) {
   for (let c of country.coops) {
-    // CREATE ITEM LINK
-    let link = document.createElement("a");
-    link.innerHTML = c.name;
-    link.setAttribute('class', 'main__section4__list__items__link');
-    link.onclick = function() {
-      openModal(country.name, c);
+    // CREATE ITEM LINK (if logo exists)
+    if (c.logo_url) {
+      let link = document.createElement("a");
+      let img = document.createElement("img");
+      let imgClass = 'footer__cooplogo'
+      link.setAttribute('href', c.url);
+      link.setAttribute('target', "_blank");
+      img.setAttribute('src', c.logo_url);
+      if (c.logo_modifier == "medium") {
+        imgClass += ' footer__cooplogo__medium'
+      }
+      if (c.logo_modifier == "large") {
+        imgClass += ' footer__cooplogo__large'
+      }
+      img.setAttribute('class', imgClass);
+      img.setAttribute('alt', c.name);
+      link.appendChild(img);
+      countries_list.appendChild(link);
     }
-
-    // CREATE LIST ITEM
-    let item = document.createElement("li");
-    item.setAttribute('class', "main__section4__list__items__item");
-    item.appendChild(link);
-    countries_list.appendChild(item);
   }
 }
-// APPEND LIST TO CONTAINER
-document.getElementById("coops_by_country_list_container").appendChild(countries_list);
-
 
 // STICKY NAVBAR
 const navbar = document.querySelector('.navbar-fixed')

@@ -1202,6 +1202,11 @@ nav ul li a:hover {
   max-height: 67%;
   width: auto;
   height: auto;
+  transition: transform .2s;
+}
+
+.footer__cooplogo:hover {
+  transform: scale(1.5);
 }
 
 .footer__cooplogo__medium {
