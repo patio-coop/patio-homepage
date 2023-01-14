@@ -25,12 +25,14 @@ function openModal(country, cooperative) {
   setModalElement("modal-coop-tagline", getTranslation(cooperative.tagline));
   setModalElement("modal-coop-description", getTranslation(cooperative.description));
 
-  setModalElementAttr("modal-coop-logo", "src", './media/logos/' + cooperative.logo);
+  logoPath = cooperative.logo ? './media/logos/' + cooperative.logo : './media/logos/no-logo.png';
+  setModalElementAttr("modal-coop-logo", "src", logoPath);
   setModalElementAttr("modal-coop-url", "href", cooperative.url);
 
   setModalServices(cooperative);
 
   // Show modal
+  document.body.classList.add("no_scroll");
   var modal = document.getElementById("cooperative-card-modal");
   modal.style.display = "block";
 }
@@ -38,6 +40,7 @@ function openModal(country, cooperative) {
 function closeModal(modal) {
   // Hide modal
   modal.style.display = "none";
+  document.body.classList.remove("no_scroll");
 
   setModalElement("modal-coop-country", "");
   setModalElement("modal-coop-name", "")
@@ -45,7 +48,7 @@ function closeModal(modal) {
   setModalElement("modal-coop-description", "");
   setModalElement("modal-coop-services", "");
 
-  setModalElementAttr("modal-coop-logo", "src", './media/logos/no-logo.jpg');
+  setModalElementAttr("modal-coop-logo", "src", './media/logos/no-logo.png');
   setModalElementAttr("modal-coop-url", "href", '#');
 }
 
@@ -101,3 +104,19 @@ window.addEventListener('scroll', function (e) {
     navbar.classList.remove('scrolled')
   }
 });
+
+
+// HANDLE CALL TO ACTIONS FROM BUTTONS
+function addActionToBtns(btnClass, actionValue) {
+  var btns = document.querySelectorAll('a[class$="'+ btnClass+'"]')
+  for (let btn of btns) {
+    btn.addEventListener('click', function(e) {
+      document.getElementById("form-why-input").value = actionValue
+      document.getElementById("get-in-touch").scrollIntoView({behavior: 'smooth'});
+      e.preventDefault();
+    });
+  }
+}
+
+addActionToBtns("join-community", "join-patio-community");
+addActionToBtns("work-together", "work-with-us");

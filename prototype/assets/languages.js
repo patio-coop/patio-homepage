@@ -439,6 +439,12 @@ data.languages = {
     hr: "Pošalji",
     pt: "Enviar",
   },
+  "section8-select-option": {
+    en: "Select an option",
+    es: "Seleccione una opción",
+    hr: "Odaberite opciju",
+    pt: "Selecione uma opção",
+  },
   "footer-text": {
     en: "We are a global community of worker cooperatives, specialized in the development of digital technology, communication and design, localted in different countries and working on projects with an international scope.",
     es: "Somos una comunidad global de cooperativas de trabajadoras y trabajadores, especializada en el desarrollo de tecnología digital, comunicación y diseño, ubicadas en países diferentes, y trabajando en proyectos con alcance internacional.",
