@@ -102,7 +102,7 @@ To deploy, you must have the latest version of the site. The steps to follow are
 
 2- Update the branch with the latest version of "main".
 
- `git pull origin master` 
+ `git pull origin main` 
 
 3- Update "production" with the latest version of "main".
 
