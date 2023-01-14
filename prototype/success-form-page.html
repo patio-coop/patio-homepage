@@ -5,175 +5,77 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords"
-    content="Cooperative, Technology, Digital, Federation, Software, Development, Web Development, Design, International Cooperative Alliance">
-  <title>Patio Home</title>
+  <title>Patio Form Fill Success</title>
   <meta name="description"
-    content="Global community of worker owned cooperatives specializing in the development of software, communication and design.">
+    content="Patio is a global community of worker owned cooperatives specializing in the development of software, communication and design.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html body {
+    background: linear-gradient(180deg, #0c1354 0%, #14aded 100%);
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .contenedor {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+
+    height: 40%;
+    width: 38%;
+  }
+
+  .contenido {
+    padding: 3rem 2.5rem;
+    line-height: 1.6rem;
+  }
+
+  .contenido h2 {
+    margin-bottom: 2rem;
+    letter-spacing: -0.1rem;
+    color: rgba(12, 19, 84, 1);
+  }
+
+  .contenido p {
+    padding: 0 0 2.5rem 0;
+    font-size: 1.3125rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: rgb(50, 50, 50);
+  }
+
+  .contenido a span {
+    font-weight: 950;
+  }
+</style>
+
 <body>
 
-  <!-- HEADER -->
-
-  <header class="navbar-fixed" disabled>
-    <div class="container">
-      <div class="header__logo">
-        <!-- Remplace the text for an IMG -->
-        <p class="header__logo__holder"><a href="#top">PATIO</a></p>
-        <!-- <img src="" alt=""> -->
-      </div>
-
-      <div class="header__navbar" id="header">
-        <div class="header__navbar__socialmedia">
-          <ul>
-            <li><a href=""><i class="fa fa-facebook-square" title="Facebook" aria-label="Facebook icon"
-                  aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-twitter" title="Twitter" aria-label="Twitter icon"
-                  aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-instagram" title="Instagram" aria-label="Instagram icon"
-                  aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-youtube-play" title="Youtube" aria-label="Youtube icon"
-                  aria-hidden="true"></i></a></li>
-          </ul>
-          <hr>
-          <select name="language" id="language-selector" onchange="setLang(this)">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="hr">Hrvatski</option>
-            <option value="pt">Português</option>
-            <option value="jp">日本語</option>
-          </select>
-          <script>initLanguageSelector()</script>
-        </div>
-        <nav class="navigation header__navbar__sections">
-          <ul>
-            <li><a href="#who-we-are">
-                <script>t("navbar-who-we-are-button")</script>
-              </a></li>
-            <li><a href="#what-we-do">
-                <script>t("navbar-what-we-do-button")</script>
-              </a></li>
-            <li><a href="#how-we-work">
-                <script>t("navbar-how-we-work")</script>
-              </a></li>
-            <li><a href="#our-philosophy">
-                <script>t("navbar-our-philosophy")</script>
-              </a></li>
-            <li><a href="#get-in-touch">
-                <script>t("navbar-get-in-touch")</script>
-              </a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-
   <!-- MAIN -->
-
   <main>
-    <section class="main__success__message">
-      <div class="container">
-        <div class="main__success__message__content">
-          Mail enviado!
-          <a href="https://patio-homepage.netlify.app/"> Volver!</a>
-        </div>
+    <div class="contenedor">
+      <div class="contenido">
+        <h2>Thank you!</h2>
+        <p>We received your message and we'll get back to you shortly.</p>
+        <a class="btn1" href="index.html"><span>←</span> Back to our site</a>
       </div>
     </div>
   </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer__container">
-      <div class="container">
-        <!-- Remplace the text for an IMG -->
-        <h2 class="footer__logo">
-          PATIO
-        </h2>
-        <!-- <img src="" alt=""> -->
-        <p class="footer__text">
-          <script>t("footer-text")</script>
-        </p>
-        <div class="footer__spaceblank"></div>
-        <div class="footer__social">
-          <a href=""><i class="fa-brands fa-facebook-f" title="Facebook" aria-label="Facebook icon"></i></a>
-          <a href=""><i class="fa fa-twitter" title="Twitter" aria-label="Twitter icon"></i></a>
-          <a href=""><i class="fa fa-instagram" title="Instagram" aria-label="Instagram icon"></i></a>
-          <a href=""><i class="fa fa-youtube-play" title="Youtube" aria-label="Youtube icon"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer__intercoop">
-      <p class="footer__intercoop__text"><strong><script>t("footer-intercoop")</script></strong>
-      </p>
-    </div>
-
-    <div class="container">
-      <div class="footer__credits">
-        <a href="https://agaric.coop/" target="_blank"><img class="footer__cooplogo footer__cooplogo__medium" src="./media/logos/agaric.png" alt="Agaric"></a>
-        <a href="https://albatros.coop/en/" target="_blank"><img class="footer__cooplogo" src="./media/logos/albatros.png" alt="Albatros"></a>
-        <a href="https://animus.coop/en/" target="_blank"><img class="footer__cooplogo" src="./media/logos/animus.png" alt="Animus"></a>
-        <a href="https://camplight.net/" target="_blank"><img class="footer__cooplogo footer__cooplogo__medium" src="./media/logos/camplight.png" alt="Camplight"></a>
-        <a href="https://www.chicommons.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/chicommons.png" alt="Chicommons"></a>
-        <a href="https://colab.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/colab.png" alt="Colab"></a>
-        <a href="https://fiqus.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/fiqus.png" alt="Fiqus"></a>
-        <a href="https://librecode.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/librecode.png" alt="Libre Code"></a>
-        <a href="https://redjar.com.ar/" target="_blank"><img class="footer__cooplogo" src="./media/logos/redjar.png" alt="Redjar"></a>
-        <a href="https://slobodnadomena.hr/en" target="_blank"><img class="footer__cooplogo footer__cooplogo__large" src="./media/logos/slobodnadomena.png" alt="Slobodna Domena"></a>
-        <a href="https://tierracomun.org/" target="_blank"><img class="footer__cooplogo footer__cooplogo__large" src="./media/logos/tierracomun.png" alt="Tierra Común"></a>
-        <a href="https://tng.coop/" target="_blank" class="no_logo_just_text">TNG</a>
-      </div>
-    </div>
-
-  </footer>
-
-  <script type="text/javascript">
-    // CREATE LIST
-    countries_list = document.getElementById("coops_by_country_list");
-    for (let i of data.countries) {
-      for (let c of i.coops) {
-        // CREATE ITEM LINK
-        let link = document.createElement("a");
-        link.innerHTML = c.name;
-        link.setAttribute('href', c.url);
-
-        // CREATE LIST ITEM
-        let item = document.createElement("li");
-        item.setAttribute('class', "main__section4__list__items__item");
-        item.appendChild(link);
-        countries_list.appendChild(item);
-      }
-    }
-    // APPEND LIST TO CONTAINER
-    document.getElementById("coops_by_country_list_container").appendChild(countries_list);
-
-    // STICKY NAVBAR
-    const navbar = document.querySelector('.navbar-fixed')
-    window.addEventListener('scroll', function (e) {
-      const lastPosition = window.scrollY
-      if (lastPosition > 110) {
-        navbar.classList.add('scrolled')
-      } else if (navbar.classList.contains('scrolled')) {
-        navbar.classList.remove('scrolled')
-      } else {
-        navbar.classList.remove('scrolled')
-      }
-    });
-
-    document.getElementById("3dglobe-target").addEventListener("keydown", touchHandler, false);
-    function touchHandler(e) {
-      if (e.type == "touchstart") {
-        alert("You touched the screen!");
-      } else if (e.type == "touchmove") {
-        alert("You moved your finger!");
-      } else if (e.type == "touchend" || e.type == "touchcancel") {
-        alert("You removed your finger from the screen!");
-      }
-    }
-    </script>
 </body>
 
 </html>
