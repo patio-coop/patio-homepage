@@ -6,11 +6,13 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="Cooperative, Technology, Digital, Federation, Software, Development, Web Development, Design, International Cooperative Alliance">
-  
+  <meta name="keywords"
+    content="Cooperative, Technology, Digital, Federation, Software, Development, Web Development, Design, International Cooperative Alliance">
+
   <title>Patio Home</title>
-  <meta name="description" content="Global community of worker owned cooperatives specializing in the development of software, communication and design.">
-  
+  <meta name="description"
+    content="Global community of worker owned cooperatives specializing in the development of software, communication and design.">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="coopcard.css">
@@ -61,22 +63,39 @@
       <div class="header__navbar" id="header">
         <div class="header__navbar__socialmedia">
           <ul>
-            <li><a href=""><i class="fa fa-facebook-square" title="Facebook" aria-label="Facebook icon"
-                  aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-twitter" title="Twitter" aria-label="Twitter icon"
-                  aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-instagram" title="Instagram" aria-label="Instagram icon"
-                  aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-youtube-play" title="Youtube" aria-label="Youtube icon"
-                  aria-hidden="true"></i></a></li>
+            <li>
+              <a href="https://patio.coop/" target="_blank" aria-label="Follow Patio at Facebook.">
+                <i class="fa fa-facebook-square" title="Facebook" aria-label="Facebook icon" aria-hidden="true">
+                </i>
+              </a>
+            </li>
+            <li>
+              <a href="https://patio.coop/" target="_blank" aria-label="Follow Patio at Twitter.">
+                <i class="fa fa-twitter" title="Twitter" aria-label="Twitter icon" aria-hidden="true">
+                </i>
+              </a>
+            </li>
+            <li>
+              <a href="https://patio.coop/" target="_blank" aria-label="Follow Patio at Instagram.">
+                <i class="fa fa-instagram" title="Instagram" aria-label="Instagram icon" aria-hidden="true">
+                </i>
+              </a>
+            </li>
+            <li>
+              <a href="https://patio.coop/" target="_blank" aria-label="Follow Patio at Youtube.">
+                <i class="fa fa-youtube-play" title="Youtube" aria-label="Youtube icon" aria-hidden="true">
+                </i>
+              </a>
+            </li>
           </ul>
           <hr>
-          <select name="language" id="language-selector" onchange="setLang(this)">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="hr">Hrvatski</option>
-            <option value="pt">Português</option>
-            <option value="jp">日本語</option>
+          <select name="language" id="language-selector" onchange="setLang(this)" title="Languages"
+            aria-label="Languages menu.">
+            <option value="en" title="English" aria-label="English">English</option>
+            <option value="es" title="Español" aria-label="Español">Español</option>
+            <option value="hr" title="Hrvatski" aria-label="Hrvatski">Hrvatski</option>
+            <option value="pt" title="Português" aria-label="Português">Português</option>
+            <option value="jp" title="日本語" aria-label="日本語">日本語</option>
           </select>
           <script>initLanguageSelector()</script>
         </div>
@@ -430,12 +449,8 @@
           </div>
         </div>
         <div class="main__section8__form__container">
-          <form id="contact-form" 
-          name="contact-form" 
-          action="/success-form-page.html" 
-          class="main__section8__form__content"
-          method="POST"
-          data-netlify="true" netlify>
+          <form id="contact-form" name="contact-form" action="/success-form-page.html"
+            class="main__section8__form__content" method="POST" data-netlify="true" netlify>
             <label class="form_label_1" for="form-why-input">
               <script>t("section8-why")</script>
             </label>
@@ -474,8 +489,11 @@
             <label class="form_label_7" for="form-message-input">
               <script>t("section8-message")</script>
             </label>
-            <textarea class="form_input_7" name="message" id="form-message-input" cols="30" rows="10" required></textarea>
-            <button class="btn btn1"><script>t("section8-btn-send")</script></button>
+            <textarea class="form_input_7" name="message" id="form-message-input" cols="30" rows="10"
+              required></textarea>
+            <button class="btn btn1">
+              <script>t("section8-btn-send")</script>
+            </button>
           </form>
         </div>
       </div>
@@ -485,7 +503,8 @@
   <!-- Coop Card Modal -->
   <div id="cooperative-card-modal" class="coop-card-modal">
     <div class="coop-card-modal-content">
-      <div class="modal-logo"><img id="modal-coop-logo" src="./media/logos/no-logo.jpg" alt="logo" class="modal-logoimg"></div>
+      <div class="modal-logo"><img id="modal-coop-logo" src="./media/logos/no-logo.jpg" alt="logo"
+          class="modal-logoimg"></div>
       <div class="modal-info">
         <p id="modal-coop-country" class="modal-place"></p>
         <h1 id="modal-coop-name" class="modal-h1"></h1>
@@ -493,7 +512,9 @@
         <p id="modal-coop-tagline" class="modal-slug"></p>
         <p id="modal-coop-description" class="modal-description"></p>
         <ul id="modal-coop-services" class="modal-services"></ul>
-        <a id="modal-coop-url" href="#" target="_blank" class="btn1"><script>t("modal-visit-website-btn")</script></a>
+        <a id="modal-coop-url" href="#" target="_blank" class="btn1">
+          <script>t("modal-visit-website-btn")</script>
+        </a>
       </div>
       <a id="modal-close" href="#" class="modal-btn-close">X</a>
     </div>
@@ -522,23 +543,36 @@
     </div>
 
     <div class="footer__intercoop">
-      <p class="footer__intercoop__text"><strong><script>t("footer-intercoop")</script></strong>
+      <p class="footer__intercoop__text"><strong>
+          <script>t("footer-intercoop")</script>
+        </strong>
       </p>
     </div>
 
     <div class="container">
       <div class="footer__credits">
-        <a href="https://agaric.coop/" target="_blank"><img class="footer__cooplogo footer__cooplogo__medium" src="./media/logos/agaric.png" alt="Agaric"></a>
-        <a href="https://albatros.coop/en/" target="_blank"><img class="footer__cooplogo" src="./media/logos/albatros.png" alt="Albatros"></a>
-        <a href="https://animus.coop/en/" target="_blank"><img class="footer__cooplogo" src="./media/logos/animus.png" alt="Animus"></a>
-        <a href="https://camplight.net/" target="_blank"><img class="footer__cooplogo footer__cooplogo__medium" src="./media/logos/camplight.png" alt="Camplight"></a>
-        <a href="https://www.chicommons.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/chicommons.png" alt="Chicommons"></a>
-        <a href="https://colab.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/colab.png" alt="Colab"></a>
-        <a href="https://fiqus.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/fiqus.png" alt="Fiqus"></a>
-        <a href="https://librecode.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/librecode.png" alt="Libre Code"></a>
-        <a href="https://redjar.com.ar/" target="_blank"><img class="footer__cooplogo" src="./media/logos/redjar.png" alt="Redjar"></a>
-        <a href="https://slobodnadomena.hr/en" target="_blank"><img class="footer__cooplogo footer__cooplogo__large" src="./media/logos/slobodnadomena.png" alt="Slobodna Domena"></a>
-        <a href="https://tierracomun.org/" target="_blank"><img class="footer__cooplogo footer__cooplogo__large" src="./media/logos/tierracomun.png" alt="Tierra Común"></a>
+        <a href="https://agaric.coop/" target="_blank"><img class="footer__cooplogo footer__cooplogo__medium"
+            src="./media/logos/agaric.png" alt="Agaric"></a>
+        <a href="https://albatros.coop/en/" target="_blank"><img class="footer__cooplogo"
+            src="./media/logos/albatros.png" alt="Albatros"></a>
+        <a href="https://animus.coop/en/" target="_blank"><img class="footer__cooplogo" src="./media/logos/animus.png"
+            alt="Animus"></a>
+        <a href="https://camplight.net/" target="_blank"><img class="footer__cooplogo footer__cooplogo__medium"
+            src="./media/logos/camplight.png" alt="Camplight"></a>
+        <a href="https://www.chicommons.coop/" target="_blank"><img class="footer__cooplogo"
+            src="./media/logos/chicommons.png" alt="Chicommons"></a>
+        <a href="https://colab.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/colab.png"
+            alt="Colab"></a>
+        <a href="https://fiqus.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/fiqus.png"
+            alt="Fiqus"></a>
+        <a href="https://librecode.coop/" target="_blank"><img class="footer__cooplogo"
+            src="./media/logos/librecode.png" alt="Libre Code"></a>
+        <a href="https://redjar.com.ar/" target="_blank"><img class="footer__cooplogo" src="./media/logos/redjar.png"
+            alt="Redjar"></a>
+        <a href="https://slobodnadomena.hr/en" target="_blank"><img class="footer__cooplogo footer__cooplogo__large"
+            src="./media/logos/slobodnadomena.png" alt="Slobodna Domena"></a>
+        <a href="https://tierracomun.org/" target="_blank"><img class="footer__cooplogo footer__cooplogo__large"
+            src="./media/logos/tierracomun.png" alt="Tierra Común"></a>
         <a href="https://tng.coop/" target="_blank" class="no_logo_just_text">TNG</a>
       </div>
     </div>
