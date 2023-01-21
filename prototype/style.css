@@ -528,6 +528,8 @@ nav ul li a:hover {
   align-items: flex-start;
   justify-content: center;
 
+  padding: 2rem;
+
   max-width: 30%;
   min-width: 30%;
   z-index: 3;
