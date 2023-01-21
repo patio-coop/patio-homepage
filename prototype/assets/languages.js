@@ -451,11 +451,11 @@ data.languages = {
     hr: "Mi smo globalna zajednica radničkih zadruga specijaliziranih za rad s digitalnim tehnologijama,dizajn i komunikacije. Imamo članove iz 20 zemalja (taj broj raste) te radimo na projektima koji su internacionalnog karaktera.",
     pt: "Somos uma comunidade global de cooperativas de trabalhadores especializados em desenvolvimento de tecnologias digitais, comunicação e design, de 20 países diferentes (e em crescimento), e trabalhando em projetos de âmbito global.",
   },
-  "footer-intercoop":{
+  "footer-intercoop": {
     en: "This website was made inter-cooperatively by",
     es: "Este sitio fue realizado de manera intercooperativa por",
     hr: "Ovu web stranicu izradila je ova zadruga",
-    pt: "Este site foi feito inter-cooperativamente por"
+    pt: "Este site foi feito inter-cooperativamente por",
   },
 
   // Cooperatives taglines & descriptions translations
@@ -463,156 +463,176 @@ data.languages = {
     en: "We are a software cooperative. We are collective construction, culture and minds in constant movement.",
     es: "Somos una cooperativa de software. Somos construcción colectiva, cultura y mentes en constante movimiento.",
     hr: "We are a software cooperative. We are collective construction, culture and minds in constant movement.",
-    pt: "Somos uma cooperativa de software. Somos construção coletiva, cultura e mentes em constante movimento."
+    pt: "Somos uma cooperativa de software. Somos construção coletiva, cultura e mentes em constante movimento.",
   },
   "fiqus-description": {
     en: "Fiqus is not just another job, it is a life project, in which we have built a consolidated team of professionals who are in continuous training to provide high quality technical solutions.",
     es: "Fiqus no es un trabajo más, es un proyecto de vida ,en el que construimos un equipo consolidado de profesionales que se encuentra en continua capacitación para poder brindar soluciones técnicas de alta calidad. ",
     hr: "Fiqus is not just another job, it is a life project, in which we have built a consolidated team of professionals who are in continuous training to provide high quality technical solutions.",
-    pt: "A Fiqus não é apenas mais um trabalho, é um projeto de vida, no qual construímos uma equipe consolidada de profissionais que estão em contínuo treinamento para poder fornecer soluções técnicas de alta qualidade."
+    pt: "A Fiqus não é apenas mais um trabalho, é um projeto de vida, no qual construímos uma equipe consolidada de profissionais que estão em contínuo treinamento para poder fornecer soluções técnicas de alta qualidade.",
   },
   "redjar-tagline": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "redjar-description": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "albatros-tagline": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "albatros-description": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "camplight-tagline": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "camplight-description": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "tng-tagline": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "tng-description": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "librecode-tagline": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "librecode-description": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "sofi-tagline": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "sofi-description": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "animorph-tagline": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "animorph-description": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "sociality-tagline": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "sociality-description": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "slobodnadomena-tagline": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "slobodnadomena-description": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "tierracomun-tagline": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "tierracomun-description": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "agaric-tagline": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "agaric-description": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "colab-tagline": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
   },
   "colab-description": {
     en: "",
     es: "",
     hr: "",
-    pt: ""
+    pt: "",
+  },
+
+  // Success Form Page Translations
+  "success-thankyou": {
+    en: "Thank you!",
+    es: "Gracias!",
+    hr: "Hvala!",
+    pt: "Gracias!",
+  },
+  "success-message": {
+    en: "We received your message and we'll get back to you shortly.",
+    es: "Recibimos tu mensaje y te responderemos pronto.",
+    hr: "Primili smo vašu poruku i ubrzo ćemo vam se javiti.",
+    pt: "Recebemos sua mensagem e retornaremos em breve.",
+  },
+  "success-btn": {
+    en: "Back to our site",
+    es: "Volver a nuestro sitio",
+    hr: "Povratak na našu stranicu",
+    pt: "Voltar ao nosso site",
   },
 };
