@@ -4,49 +4,12 @@ window.onload = app.init;
 window.onresize = app.handleResize;
 
 const loader = new THREE.TextureLoader();
-const controls = {}
 const data = {}
 
 function setup(app) {
-  const controllers = [];
-
-  app.addControlGui(gui => {
-    const colorFolder = gui.addFolder('Colors');
-    controllers.push(colorFolder.addColor(config.colors, 'globeDotColor'))
-    controllers.push(colorFolder.addColor(config.colors, 'globeMarkerColor'))
-    controllers.push(colorFolder.addColor(config.colors, 'globeMarkerGlow'))
-    controllers.push(colorFolder.addColor(config.colors, 'globeLines'))
-    controllers.push(colorFolder.addColor(config.colors, 'globeLinesDots'))
-    
-    const sizeFolder = gui.addFolder('Sizes')
-    controllers.push(sizeFolder.add(config.sizes, 'globeDotSize', 1, 5))
-    controllers.push(sizeFolder.add(config.scale, 'globeScale', 0.1, 1))
-    
-    const displayFolder = gui.addFolder('Display');
-    controllers.push(displayFolder.add(config.display, 'map'))
-    controllers.push(displayFolder.add(config.display, 'points'))
-    controllers.push(displayFolder.add(config.display, 'markers'))
-    controllers.push(displayFolder.add(config.display, 'markerLabel'))
-    controllers.push(displayFolder.add(config.display, 'markerPoint'))
-    
-    const animationsFolder = gui.addFolder('Animations');
-    controllers.push(animationsFolder.add(animations, 'rotateGlobe'))
-
-    
-    sizeFolder.open();
-  });
-
-  controllers.forEach(controller => {
-    controller.onChange((event) => {
-      controls.changed = true;
-    })
-  })
-
-  app.camera.position.z = config.sizes.globe * 2.85;
-  app.camera.position.y = config.sizes.globe * 0;
-  app.controls.enableDamping = true;
-  app.controls.dampingFactor = 0.05;
-  app.controls.rotateSpeed = 0.07;
+  app.camera.position.z = config.sizes.globe * 1.75;
+  app.camera.position.x = config.sizes.globe * 0;
+  app.camera.position.y = config.sizes.globe * 1;
 
   groups.main = new THREE.Group();
   groups.main.name = 'Main';
@@ -68,46 +31,6 @@ function setup(app) {
 
 
 function animate(app) {
-  if(controls.changed) {
-    if(elements.globePoints) {
-      elements.globePoints.material.size = config.sizes.globeDotSize;
-      elements.globePoints.material.color.set(config.colors.globeDotColor);
-    }
-
-    if(elements.globe) {
-      elements.globe.scale.set(
-        config.scale.globeScale, 
-        config.scale.globeScale, 
-        config.scale.globeScale
-      );
-    }
-
-    if(elements.lines) {
-      for(let i = 0; i < elements.lines.length; i++) {
-        const line = elements.lines[i];
-        line.material.color.set(config.colors.globeLines);
-      }
-    }
-
-    groups.map.visible = config.display.map;
-    groups.markers.visible = config.display.markers;
-    groups.points.visible = config.display.points;
-
-    for(let i = 0; i < elements.markerLabel.length; i++) {
-      const label = elements.markerLabel[i];
-      label.visible = config.display.markerLabel;
-    }
-
-    for(let i = 0; i < elements.markerPoint.length; i++) {
-      const point = elements.markerPoint[i];
-      point.visible = config.display.markerPoint;
-    }
-
-    controls.changed = false
-  }
-
-
-
   if(elements.lineDots) {
     for(let i = 0; i < elements.lineDots.length; i++) {
       const dot = elements.lineDots[i];
@@ -128,7 +51,8 @@ function animate(app) {
 
   if(animations.rotateGlobe) {
     groups.globe.rotation.y -= 0.0025;
-    groups.globe.rotation.x += 0.0005;
+    groups.globe.rotation.x -= 0.0025;
+    groups.globe.rotation.z -= 0.0025;
   }
 }
 
