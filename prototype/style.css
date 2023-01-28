@@ -1190,6 +1190,7 @@ textarea {
   width: 20%;
   justify-content: space-evenly;
   color: white;
+  list-style: none;
 }
 
 .footer__social i {
