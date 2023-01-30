@@ -450,14 +450,14 @@ data.languages = {
     es: "Trabajar con nosotras",
     hr: "Želim raditi s vama",
     pt: "Trabalhe conosco",
-    jp: "協業ししたい,
+    jp: "協業ししたい",
   },
   "section8-join": {
     en: "Join the community",
     es: "Unirse a la comunidad",
     hr: "Želim se priključiti u Patio zajednicu",
     pt: "Junte-se à comunidade Pátio",
-    jp: "PATIOコミュニティーに入りたい,
+    jp: "PATIOコミュニティーに入りたい",
   },
   "section8-consulting": {
     en: "Consulting",
