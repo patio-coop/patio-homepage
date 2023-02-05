@@ -317,13 +317,20 @@ header {
 
 .header__navbar__socialmedia {
   display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* .header__navbar__socialmedia {
+  display: flex;
   justify-content: right;
   justify-items: right;
   align-items: center;
   width: 300px;
 
   margin: 15px 0 0 0;
-}
+} */
 
 .header__navbar__socialmedia ul {
   display: flex;
@@ -634,7 +641,7 @@ nav ul li a:hover {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 5% 10% /*64px 0 0 132px*/;
-  min-width: 48%;
+  min-width: 43%;
 }
 
 /*.main__section4__list::after {
