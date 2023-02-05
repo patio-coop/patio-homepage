@@ -1,84 +1,163 @@
 data.countries = [
   {
-    "name": "Argentina",
-    "longitude": "-58.383333",
-    "latitude": "-34.6",
-    "coops": [
+    name: "Argentina",
+    longitude: "-58.383333",
+    latitude: "-34.6",
+    coops: [
       {
-        "name": "Fiqus",
-        "url": "https://www.fiqus.coop",
+        name: "Animus",
+        url: "https://animus.coop/",
+        logo: "animus.png",
+        tagline: "animus-tagline",
+        description: "animus-description",
+        services: [
+          "Software Development",
+          "Content Management Systems",
+          "UX / UI",
+          "Web Portals, Apps and Services",
+          "Accessibility Consulting ",
+        ],
       },
       {
-        "name": "Redjar",
-        "url": "https://redjar.com.ar/",
+        name: "Fiqus",
+        url: "https://www.fiqus.coop",
+        logo: "fiqus.png",
+        tagline: "fiqus-tagline",
+        description: "fiqus-description",
+        services: [
+          "Software Development",
+          "Crypto & Blockchain",
+          "Machine Learning",
+          "ICT Consulting",
+          "Data Management",
+        ],
       },
-    ]
+      {
+        name: "Redjar",
+        url: "https://redjar.com.ar/",
+        logo: "redjar.png",
+        tagline: "redjar-tagline",
+        description: "redjar-description",
+        services: [
+          "Software Development",
+          "Mobile Development",
+          "Devops",
+          "IoT",
+          "Web Portals, Apps and Services",
+        ],
+      },
+    ],
   },
   {
-    "name": "Turkey",
-    "longitude": "35",
-    "latitude": "39",
-    "coops": [
+    name: "Turkey",
+    longitude: "35",
+    latitude: "39",
+    coops: [
       {
-        "name": "Albatros",
-        "url": "https://albatros.coop/en/",
+        name: "Albatros",
+        url: "https://albatros.coop/en/",
+        logo: "albatros.png",
+        tagline: "albatros-tagline",
+        description: "albatros-description",
+        services: [
+          "Software Development",
+          "Mobile Development",
+          "Websites",
+          "Data Management",
+        ],
       },
-    ]
+    ],
   },
   {
-    "name": "Bulgaria",
-    "longitude": "23.316667",
-    "latitude": "42.683333",
-    "coops": [
+    name: "Bulgaria",
+    longitude: "23.316667",
+    latitude: "42.683333",
+    coops: [
       {
-        "name": "Albatros",
-        "url": "https://albatros.coop/en/",
+        name: "Camplight",
+        url: "https://camplight.net/",
+        logo: "camplight.png",
+        tagline: "camplight-tagline",
+        description: "camplight-description",
+        services: [
+          "Software Development",
+          "Mobile Development",
+          "Web Portals, Apps and Services",
+          "ICT Consulting",
+          "Training",
+        ],
       },
-    ]
+    ],
   },
   {
-    "name": "Japan",
-    "latitude": "36",
-    "longitude": "138",
-    "coops": [
+    name: "Japan",
+    latitude: "36",
+    longitude: "138",
+    coops: [
       {
-        "name": "Tng",
-        "url": "https://tng.coop/",
+        name: "Tng",
+        url: "https://tng.coop/",
+        tagline: "tng-tagline",
+        description: "tng-description",
+        services: [],
       },
-    ]
+    ],
   },
   {
-    "name": "Brazil",
-    "latitude": "-10",
-    "longitude": "-52",
-    "coops": [
+    name: "Brazil",
+    latitude: "-10",
+    longitude: "-52",
+    coops: [
       {
-        "name": "Tng",
-        "url": "https://librecode.coop/",
+        name: "Libre Code",
+        url: "https://librecode.coop/",
+        logo: "librecode.png",
+        tagline: "librecode-tagline",
+        description: "librecode-description",
+        services: [
+          "Software Development",
+          "Web Portals, Apps and Services",
+          "Technical Support",
+          "Server Installation and Configuration",
+          "ICT Consulting",
+        ],
       },
-    ]
+    ],
   },
   {
-    "name": "Israel",
-    "latitude": "31",
-    "longitude": "35",
-    "coops": [
+    name: "Israel",
+    latitude: "31",
+    longitude: "35",
+    coops: [
       {
-        "name": "Sofi",
-        "url": "https://www.sofi.coop/",
+        name: "Sofi",
+        url: "https://www.sofi.coop/",
+        logo: "sofi.png",
+        tagline: "sofi-tagline",
+        description: "sofi-description",
+        services: [
+          "Software Development",
+          "Mobile Development",
+          "Websites",
+          "UX / UI",
+          " Branding & Identity",
+        ],
       },
-    ]
+    ],
   },
   {
-    "name": "United Kingdom",
-    "latitude": "55",
-    "longitude": "-3",
-    "coops": [
+    name: "United Kingdom",
+    latitude: "55",
+    longitude: "-3",
+    coops: [
       {
-        "name": "Animorph",
-        "url": "https://animorph.coop/",
+        name: "Animorph",
+        url: "https://animorph.coop/",
+        tagline: "animorph-tagline",
+        description: "animorph-description",
+        services: [],
       },
-    ]
+    ],
   },
   // {
   //   "name": "Pakistan",
@@ -221,15 +300,18 @@ data.countries = [
   //   "longitude": "10.7387"
   // },
   {
-    "name": "Greece",
-    "latitude": "37.9792",
-    "longitude": "23.7166",
-    "coops": [
+    name: "Greece",
+    latitude: "37.9792",
+    longitude: "23.7166",
+    coops: [
       {
-        "name": "Sociality",
-        "url": "https://sociality.coop/",
+        name: "Sociality",
+        url: "https://sociality.coop/",
+        tagline: "sociality-tagline",
+        description: "sociality-description",
+        services: [],
       },
-    ]
+    ],
   },
   // {
   //   "name": "Serbia",
@@ -237,15 +319,25 @@ data.countries = [
   //   "longitude": "20.4656"
   // },
   {
-    "name": "Croatia",
-    "latitude": "45.8069",
-    "longitude": "15.9614",
-    "coops": [
+    name: "Croatia",
+    latitude: "45.8069",
+    longitude: "15.9614",
+    coops: [
       {
-        "name": "Slobodnadomena",
-        "url": "https://slobodnadomena.hr/",
+        name: "Slobodna Domena",
+        url: "https://slobodnadomena.hr/",
+        logo: "slobodnadomena.png",
+        tagline: "slobodnadomena-tagline",
+        description: "slobodnadomena-description",
+        services: [
+          "Web Portals, Apps and Services",
+          "Mobile Development",
+          "Branding & Identity",
+          "Illustration",
+          "ICT Consulting",
+        ],
       },
-    ]
+    ],
   },
   // {
   //   "name": "Spain",
@@ -283,30 +375,58 @@ data.countries = [
   //   "longitude": "26.0979"
   // },
   {
-    "name": "Mexico",
-    "latitude": "19.427",
-    "longitude": "-99.1276",
-    "coops": [
+    name: "Mexico",
+    latitude: "19.427",
+    longitude: "-99.1276",
+    coops: [
       {
-        "name": "Tierra común",
-        "url": "https://tierracomun.org/",
+        name: "Tierra Común",
+        url: "https://tierracomun.org/",
+        logo: "tierracomun.png",
+        tagline: "tierracomun-tagline",
+        description: "tierracomun-description",
+        services: [
+          "ICT Consulting",
+          "Websites",
+          "Technical Support",
+          "IT Security",
+          "Digitalization",
+        ],
       },
-    ]
+    ],
   },
   {
-    "name": "United States",
-    "latitude": "38.8895",
-    "longitude": "-77.032",
-    "coops": [
+    name: "United States",
+    latitude: "38.8895",
+    longitude: "-77.032",
+    coops: [
       {
-        "name": "Agaric",
-        "url": "https://agaric.coop/",
+        name: "Agaric",
+        url: "https://agaric.coop/",
+        logo: "agaric.png",
+        tagline: "agaric-tagline",
+        description: "agaric-description",
+        services: [
+          "Content Management Systems",
+          "Software Development",
+          "Databases",
+        ],
       },
       {
-        "name": "Colab",
-        "url": "https://colab.coop/",
+        name: "Colab",
+        url: "https://colab.coop/",
+        logo: "colab.png",
+        tagline: "colab-tagline",
+        description: "colab-description",
+        services: [
+          "Web Portals, Apps and Services",
+          "Websites",
+          "User Research",
+          "UX / UI",
+          "ICT Consulting",
+        ],
       },
-    ]
+    ],
   },
   // {
   //   "name": "Greenland",
@@ -403,5 +523,4 @@ data.countries = [
   //   "latitude": "-8.6314877",
   //   "longitude": "179.089567"
   // }
-]
-
+];

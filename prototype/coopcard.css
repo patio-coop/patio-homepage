@@ -1,0 +1,114 @@
+.coop-card-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10000000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+.coop-card-modal-content {
+  background-color: #fefefe;
+  color: #0c1354;
+  margin: 15% auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  min-height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  width: 85%;
+  height: 80%;
+  padding: 0.9rem;
+  gap: 4rem;
+  margin-top: 6%;
+}
+
+.modal-btn-close {
+  float: right;
+  color: #aaa;
+  font-family: monospace;
+  font-size: xx-large;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: -4%;
+}
+
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer !important;
+}
+
+.modal-logo {
+  align-self: center;
+  padding: 1.5rem;
+}
+
+.modal-logoimg {
+  width: 340px;
+  height: auto;
+}
+
+.modal-info {
+  width: 40%;
+}
+
+.modal-place {
+  background-color: #0c1354;
+  color: white;
+  display: inline;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.modal-h1 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-hr {
+  background-color: #0c1354;
+  width: 100px;
+  height: 6px;
+  margin: 1.5rem 0;
+}
+
+.modal-slug {
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.modal-description {
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+
+.modal-services li {
+  font-size: small;
+  font-family: sans-serif;
+  list-style: none;
+  background-color: white;
+  border: solid 1px #0c1354;
+  border-radius: 0.4rem;
+  padding: 0.3rem;
+}

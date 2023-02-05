@@ -9,7 +9,6 @@ class App {
     this.initScene();
     this.initRenderer();
     this.initCamera();
-    this.initControls();
 
     this.render();
     this.update();
@@ -22,21 +21,17 @@ class App {
   initRenderer = () => {
     this.renderer = new THREE.WebGLRenderer({alpha: true});
     this.renderer.setClearColor(0x0C1354, 1.0);
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.renderer.setSize(window.innerWidth, 800);
     this.renderer.setPixelRatio(window.devicePixelRatio * 1.5);
     this.renderer.shadowMap.enabled = true;
     this.renderer.antialias = true;
   }
 
   initCamera = () => {
-    this.ratio = window.innerWidth / window.innerHeight;
+    this.ratio = window.innerWidth / 800;
     this.camera = new THREE.PerspectiveCamera(60, this.ratio, 0.1, 10000);
     this.camera.lookAt(this.scene.position);
     this.camera.position.set(0, 15, 30);
-  }
-
-  initControls = () => {
-    this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
   }
 
   render = () => {
@@ -48,7 +43,6 @@ class App {
   // REQUESTANIMATIONFRAME IS HERE
   update = () => {
     this.animate(this);
-    this.controls.update();
     this.renderer.render(this.scene, this.camera);
     requestAnimationFrame(this.update);
   }
@@ -60,8 +54,8 @@ class App {
   }
 
   handleResize = () => {
-    this.camera.aspect = window.innerWidth / window.innerHeight;
+    this.camera.aspect = window.innerWidth / 800;
     this.camera.updateProjectionMatrix();
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.renderer.setSize(window.innerWidth, 800);
   }
 }

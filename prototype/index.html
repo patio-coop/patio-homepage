@@ -6,31 +6,27 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="Cooperative, Software, Development, International cooperative alliance">
+  <meta name="keywords"
+    content="Cooperative, Technology, Digital, Federation, Software, Development, Web Development, Design, International Cooperative Alliance">
+
   <title>Patio Home</title>
-  <meta name="description" content="Coop Tech home. Software Development services by Coops around the world.">
+  <meta name="description"
+    content="Global community of worker owned cooperatives specializing in the development of software, communication and design.">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="coopcard.css">
 
   <!-- Start 3d globe dependencies -->
   <script src="http://unpkg.com/three"></script>
-  <!-- <script src="http://unpkg.com/three/examples/js/controls/TrackballControls.js"></script> -->
-  <!-- <script src="http://unpkg.com/three-globe"></script> -->
-
   <script src="3dglobe/libs/three.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script> -->
   <script src="3dglobe/libs/dat.gui.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.4.0/Tween.min.js"></script> -->
   <script src="3dglobe/libs/fabric.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.4/chroma.min.js"></script> -->
-  <!-- <script src="https://d3js.org/d3-array.v1.min.js"></script> -->
   <script src="3dglobe/libs/d3-geo.v1.min.js"></script>
-
   <script src="3dglobe/libs/THREE.MeshLine.js"></script>
   <script src="3dglobe/libs/orbit-controls.js"></script>
   <script src="3dglobe/libs/trackball-controls.js"></script>
   <script src="3dglobe/libs/perlin-noise.js"></script>
-
   <!-- -- The customizable JS -->
   <script src="3dglobe/assets/data/processing.js"></script>
   <script src="3dglobe/scripts/config.js"></script>
@@ -44,7 +40,6 @@
   <script src="3dglobe/scripts/lines.js"></script>
   <script src="3dglobe/scripts/dots.js"></script>
   <script src="3dglobe/scripts/utils.js"></script>
-
   <!-- -- The Country and Connection data -->
   <script src="assets/countries.js"></script>
   <script src="assets/languages.js"></script>
@@ -68,17 +63,45 @@
       <div class="header__navbar" id="header">
         <div class="header__navbar__socialmedia">
           <ul>
-            <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li>
+              <a href="https://patio.coop/" target="_blank" aria-label="Follow Patio at Facebook.">
+                <i class="fa fa-facebook-square" title="Facebook" aria-label="Facebook icon" aria-hidden="true">
+                </i>
+              </a>
+            </li>
+            <li>
+              <a href="https://patio.coop/" target="_blank" aria-label="Follow Patio at Twitter.">
+                <i class="fa fa-twitter" title="Twitter" aria-label="Twitter icon" aria-hidden="true">
+                </i>
+              </a>
+            </li>
+            <li>
+              <a href="https://patio.coop/" target="_blank" aria-label="Follow Patio at Instagram.">
+                <i class="fa fa-instagram" title="Instagram" aria-label="Instagram icon" aria-hidden="true">
+                </i>
+              </a>
+            </li>
+            <li>
+              <a href="https://patio.coop/" target="_blank" aria-label="Follow Patio at Youtube.">
+                <i class="fa fa-youtube-play" title="Youtube" aria-label="Youtube icon" aria-hidden="true">
+                </i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/patio-coop" target="_blank" aria-label="Follow Patio at Github.">
+                <i class="fa fa-github " title="Github" aria-label="Github icon" aria-hidden="true">
+                </i>
+              </a>
+            </li>
           </ul>
           <hr>
-          <select name="language" id="language-selector" onchange="setLang(this)">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="hr">Hrvatski</option>
-            <option value="jp">日本語</option>
+          <select name="language" id="language-selector" onchange="setLang(this)" title="Languages"
+            aria-label="Languages menu.">
+            <option value="en" title="English" aria-label="English">English</option>
+            <option value="es" title="Español" aria-label="Español">Español</option>
+            <option value="hr" title="Hrvatski" aria-label="Hrvatski">Hrvatski</option>
+            <option value="pt" title="Português" aria-label="Português">Português</option>
+            <option value="jp" title="日本語" aria-label="日本語">日本語</option>
           </select>
           <script>initLanguageSelector()</script>
         </div>
@@ -127,10 +150,10 @@
             <script>t("section1-title-title")</script>
           </h1>
           <div class="main__section1__title__btns">
-            <a href="" class="btn1">
+            <a href="#" class="btn1 work-together">
               <script>t("section1-btn1")</script>
             </a>
-            <a href="" class="btn2">
+            <a href="#" class="btn2 join-community">
               <script>t("section1-btn2")</script>
             </a>
           </div>
@@ -154,23 +177,19 @@
       </div>
     </section>
 
-    <section id="who-we-are" class="main__section3" id="WhoWeAre">
-      <div class="container">
-        <div class="main__section3__text">
-          <h3 class="main__section3__h2">
-            <script>t("section3-title")</script>
-          </h3>
-          <p class="main__section__pmain">
-            <script>t("section3-pmain")</script>
-          </p>
-          <p class="main__section__p">
-            <script>t("section3-p")</script>
-          </p>
-        </div>
-        <div class="main__section3__globe">
-          <div id="3dglobe-target" class="main__section3__globe"></div>
-        </div>
+    <section id="who-we-are" class="main__section3">
+      <div class="main__section3__text">
+        <h3 class="main__section3__h2">
+          <script>t("section3-title")</script>
+        </h3>
+        <p class="main__section__pmain">
+          <script>t("section3-pmain")</script>
+        </p>
+        <p class="main__section__p">
+          <script>t("section3-p")</script>
+        </p>
       </div>
+      <div id="3dglobe-target" class="main__section3__globe"></div>
     </section>
 
     <section id="what-we-do" class="main__section4">
@@ -352,7 +371,7 @@
                 <script>t("section6-island-text-2")</script>
               </b>
             </h3>
-            <a href="" class="btn1">
+            <a href="#" class="btn1 work-together">
               <script>t("section6-island-btn")</script>
             </a>
           </div>
@@ -368,11 +387,10 @@
           <h2 class="main__section7__title">
             <script>t("section7-title")</script>
           </h2>
-          <p class="main__section__pmain">
+          <p class="main__section7__paragraph">
             <script>t("section7-pmain")</script>
           </p>
         </div>
-
         <div class="main__section7__list">
           <h3 class="main__section__list__title">
             <script>t("section7-list-title")</script>
@@ -408,7 +426,7 @@
                 <script>t("section7-island-text-2")</script>
               </b>
             </h3>
-            <a href="" class="btn1">
+            <a href="#" class="btn1 join-community">
               <script>t("section7-island-btn")</script>
             </a>
           </div>
@@ -433,126 +451,162 @@
           </div>
         </div>
         <div class="main__section8__form__container">
-          <form class="main__section8__form__content">
-
-            <label class="form_label_1" for="why">
+          <form id="contact-form" name="contact-form" action="/success-form-page.html"
+            class="main__section8__form__content" method="POST" data-netlify="true" netlify>
+            <label class="form_label_1" for="form-why-input">
               <script>t("section8-why")</script>
             </label>
-            <select class="form_input_1" id="why" name="Select an option">
-              <option value="Work with us">
+            <select class="form_input_1" id="form-why-input" name="Select an option" required>
+              <option selected value>
+                <script>t("section8-select-option")</script>
+              </option>
+              <option value="work-with-us">
                 <script>t("section8-work")</script>
               </option>
-              <option value="Consulting">
-                <script>t("section8-consulting")</script>
-              </option>
-              <option value="Join Patio Community">
+              <option value="join-patio-community">
                 <script>t("section8-join")</script>
               </option>
             </select>
 
-            <label class="form_label_2" for="name">
+            <label class="form_label_2" for="form-name-input">
               <script>t("section8-name")</script>
             </label>
-            <input class="form_input_2" type="text" id="name" name="name">
+            <input class="form_input_2" type="text" id="form-name-input" name="name" required>
 
-            <label class="form_label_3" for="surname">
+            <label class="form_label_3" for="form-surname-input">
               <script>t("section8-surname")</script>
             </label>
-            <input class="form_input_3" type="text" id="surname" name="surname">
+            <input class="form_input_3" type="text" id="form-surname-input" name="surname" required>
 
-            <label class="form_label_4" for="email">
+            <label class="form_label_4" for="form-email-input">
               <script>t("section8-email")</script>
             </label>
-            <input class="form_input_4" type="text" id="email" name="email">
+            <input class="form_input_4" type="email" id="form-email-input" name="email" required>
 
-            <label class="form_label_5" for="phone">
-              <script>t("section8-phone")</script>
-            </label>
-            <input class="form_input_5" type="text" id="phone" name="phone">
-
-            <label class="form_label_6" for="subject">
+            <label class="form_label_6" for="form-subject-input">
               <script>t("section8-subject")</script>
             </label>
-            <input class="form_input_6" type="text" id="subject" name="subject">
+            <input class="form_input_6" type="text" id="form-subject-input" name="subject" required>
 
-            <label class="form_label_7" for="message">
+            <label class="form_label_7" for="form-message-input">
               <script>t("section8-message")</script>
             </label>
-            <textarea class="form_input_7" name="message" id="message" cols="30" rows="10"></textarea>
-            <a href="" class="btn1" type="submit" value="Send">
+            <textarea class="form_input_7" name="message" id="form-message-input" cols="30" rows="10"
+              required></textarea>
+            <button class="btn btn1">
               <script>t("section8-btn-send")</script>
-            </a>
-
+            </button>
           </form>
         </div>
       </div>
-
     </section>
-
   </main>
 
-  <!-- FOOTER -->
-
-  <footer>
-    <div class="container">
-
-      <!-- Remplace the text for an IMG -->
-      <h2 class="footer__logo">
-        PATIO
-      </h2>
-      <!-- <img src="" alt=""> -->
-      <p class="footer__text">
-        <script>t("footer-text")</script>
-      </p>
-
-      <div class="footer__spaceblank"></div>
-
-      <div class="footer__social">
-        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-        <a href=""><i class="fa fa-twitter"></i></a>
-        <a href=""><i class="fa fa-instagram"></i></a>
-        <a href=""><i class="fa fa-youtube-play"></i></a>
+  <!-- Coop Card Modal -->
+  <div id="cooperative-card-modal" class="coop-card-modal">
+    <div class="coop-card-modal-content">
+      <div class="modal-logo"><img id="modal-coop-logo" src="./media/logos/no-logo.jpg" alt="logo"
+          class="modal-logoimg"></div>
+      <div class="modal-info">
+        <p id="modal-coop-country" class="modal-place"></p>
+        <h1 id="modal-coop-name" class="modal-h1"></h1>
+        <hr class="modal-hr">
+        <p id="modal-coop-tagline" class="modal-slug"></p>
+        <p id="modal-coop-description" class="modal-description"></p>
+        <ul id="modal-coop-services" class="modal-services"></ul>
+        <a id="modal-coop-url" href="#" target="_blank" class="btn1">
+          <script>t("modal-visit-website-btn")</script>
+        </a>
       </div>
-
+      <a id="modal-close" href="#" class="modal-btn-close">X</a>
     </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__container">
+      <div class="container">
+        <!-- Remplace the text for an IMG -->
+        <h2 class="footer__logo">
+          PATIO
+        </h2>
+        <!-- <img src="" alt=""> -->
+        <p class="footer__text">
+          <script>t("footer-text")</script>
+        </p>
+        <div class="footer__spaceblank"></div>
+        <div class="footer__social">
+          <li>
+            <a href="https://patio.coop/" target="_blank" aria-label="Follow Patio at Facebook.">
+              <i class="fa fa-facebook-square" title="Facebook" aria-label="Facebook icon" aria-hidden="true">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="https://patio.coop/" target="_blank" aria-label="Follow Patio at Twitter.">
+              <i class="fa fa-twitter" title="Twitter" aria-label="Twitter icon" aria-hidden="true">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="https://patio.coop/" target="_blank" aria-label="Follow Patio at Instagram.">
+              <i class="fa fa-instagram" title="Instagram" aria-label="Instagram icon" aria-hidden="true">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="https://patio.coop/" target="_blank" aria-label="Follow Patio at Youtube.">
+              <i class="fa fa-youtube-play" title="Youtube" aria-label="Youtube icon" aria-hidden="true">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/patio-coop" target="_blank" aria-label="Follow Patio at Github.">
+              <i class="fa fa-github " title="Github" aria-label="Github icon" aria-hidden="true">
+              </i>
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__intercoop">
+      <p class="footer__intercoop__text"><strong>
+          <script>t("footer-intercoop")</script>
+        </strong>
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="footer__credits">
+        <a href="https://agaric.coop/" target="_blank"><img class="footer__cooplogo footer__cooplogo__medium"
+            src="./media/logos/agaric.png" alt="Agaric"></a>
+        <a href="https://albatros.coop/en/" target="_blank"><img class="footer__cooplogo"
+            src="./media/logos/albatros.png" alt="Albatros"></a>
+        <a href="https://animus.coop/en/" target="_blank"><img class="footer__cooplogo" src="./media/logos/animus.png"
+            alt="Animus"></a>
+        <a href="https://camplight.net/" target="_blank"><img class="footer__cooplogo footer__cooplogo__medium"
+            src="./media/logos/camplight.png" alt="Camplight"></a>
+        <a href="https://www.chicommons.coop/" target="_blank"><img class="footer__cooplogo"
+            src="./media/logos/chicommons.png" alt="Chicommons"></a>
+        <a href="https://colab.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/colab.png"
+            alt="Colab"></a>
+        <a href="https://fiqus.coop/" target="_blank"><img class="footer__cooplogo" src="./media/logos/fiqus.png"
+            alt="Fiqus"></a>
+        <a href="https://librecode.coop/" target="_blank"><img class="footer__cooplogo"
+            src="./media/logos/librecode.png" alt="Libre Code"></a>
+        <a href="https://redjar.com.ar/" target="_blank"><img class="footer__cooplogo" src="./media/logos/redjar.png"
+            alt="Redjar"></a>
+        <a href="https://slobodnadomena.hr/en" target="_blank"><img class="footer__cooplogo footer__cooplogo__large"
+            src="./media/logos/slobodnadomena.png" alt="Slobodna Domena"></a>
+        <a href="https://tierracomun.org/" target="_blank"><img class="footer__cooplogo footer__cooplogo__large"
+            src="./media/logos/tierracomun.png" alt="Tierra Común"></a>
+        <a href="https://tng.coop/" target="_blank" class="no_logo_just_text">TNG</a>
+      </div>
+    </div>
+
   </footer>
-
-  <script type="text/javascript">
-    // CREATE LIST
-    countries_list = document.getElementById("coops_by_country_list");
-    for (let i of data.countries) {
-      for (let c of i.coops) {
-        // CREATE ITEM LINK
-        let link = document.createElement("a");
-        link.innerHTML = c.name;
-        link.setAttribute('href', c.url);
-
-        // CREATE LIST ITEM
-        let item = document.createElement("li");
-        item.setAttribute('class', "main__section4__list__items__item");
-        item.appendChild(link);
-        countries_list.appendChild(item);
-      }
-    }
-    // APPEND LIST TO CONTAINER
-    document.getElementById("coops_by_country_list_container").appendChild(countries_list);
-
-  </script>
-
-  <script type="text/javascript">
-    const navbar = document.querySelector('.navbar-fixed')
-
-    window.addEventListener('scroll', function (e) {
-      const lastPosition = window.scrollY
-      if (lastPosition > 110) {
-        navbar.classList.add('scrolled')
-      } else if (navbar.classList.contains('scrolled')) {
-        navbar.classList.remove('scrolled')
-      } else {
-        navbar.classList.remove('scrolled')
-      }
-    })
-  </script>
+  <script src="assets/index.js"></script>
 </body>
 
 </html>
