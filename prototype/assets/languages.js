@@ -720,7 +720,7 @@ data.languages = {
     pt: "",
   },
   "slobodnadomena-tagline": {
-    en: "We bring together designers, developers, artists, engineers and the like to offer a full professional service and work on projects we care about.",
+    en: "We bring together designers, developers, artists, engineers and the like to offer a full professional service.",
     es: "",
     hr: "",
     pt: "",
