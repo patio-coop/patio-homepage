@@ -31,6 +31,7 @@ data.languages = {
     hr: "Tko smo",
     pt: "Quem somos",
     jp: "私どもについて",
+    tr: "Biz kimiz",
   },
   "navbar-what-we-do-button": {
     en: "What we do",
@@ -38,6 +39,7 @@ data.languages = {
     hr: "Što radimo",
     pt: "O que fazemos",
     jp: "なにをやっているか",
+    tr: "Neler yapıyoruz",
   },
   "navbar-how-we-work": {
     en: "How we work",
@@ -45,6 +47,7 @@ data.languages = {
     hr: "Kako radimo",
     pt: "Como trabalhamos",
     jp: "どうやるか",
+    tr: "Nasıl çalışıyoruz",
   },
   "navbar-our-philosophy": {
     en: "Our philosophy",
@@ -52,6 +55,7 @@ data.languages = {
     hr: "Filozofija",
     pt: "Nossa filosofia",
     jp: "考え方",
+    tr: "Felsefemiz",
   },
   "navbar-get-in-touch": {
     en: "Get in touch",
@@ -59,6 +63,7 @@ data.languages = {
     hr: "Kontakt",
     pt: "Entre em contato",
     jp: "連絡",
+    tr: "Bize ulaşın",
   },
   "modal-visit-website-btn": {
     en: "Visit Website",
@@ -66,6 +71,7 @@ data.languages = {
     hr: "Posjetite web stranicu",
     pt: "Visite o site",
     jp: "ウェブサイトを訪問",
+    tr: "Siteyi ziyaret et",
   },
   "section1-title-top1": {
     en: "We are",
@@ -73,6 +79,7 @@ data.languages = {
     hr: "Mi smo",
     pt: "Nós somos a",
     jp: "ーです",
+    tr: "Biz PATIO",
   },
   "section1-title-top2": {
     en: "PATIO Community",
@@ -80,6 +87,7 @@ data.languages = {
     hr: "PATIO zajednica",
     pt: "comunidade PATIO",
     jp: "PATIOコミュニティ",
+    tr: "Topluluğu'yuz",
   },
   "section1-title-middle": {
     en: "and we",
@@ -87,6 +95,7 @@ data.languages = {
     hr: "te mi",
     pt: "e nós",
     jp: "私達は",
+    tr: "ve bizler",
   },
   "section1-title-title": {
     en: "are tech cooperatives from all over the world",
@@ -94,6 +103,7 @@ data.languages = {
     hr: "okupljamo tehnološke zadruge iz cijelog svijeta",
     pt: "somos cooperativas de tecnologia do mundo todo",
     jp: "世界のIT労働者協同組合の集まり",
+    tr: "tüm dünyadan bilişim kooperatifleriyiz",
   },
   "section1-btn1": {
     en: "Let's work together",
@@ -101,6 +111,7 @@ data.languages = {
     hr: "Surađujmo",
     pt: "Vamos trabalhar juntos",
     jp: "一緒に仕事しましょう",
+    tr: "Birlikte çalışalım",
   },
   "section1-btn2": {
     en: "Join the community",
@@ -108,6 +119,7 @@ data.languages = {
     hr: "Pridruži nam se",
     pt: "Junte-se à comunidade",
     jp: "コミュニティーに入りましょう",
+    tr: "Topluluğa katılın",
   },
   "section2-patio": {
     en: "We collaborate by sharing knowledge, job opportunities and human resources. Patio provides the best experience for both co-op members and our partners.",
@@ -115,6 +127,7 @@ data.languages = {
     hr: "Članovi zajednice surađuju dijeleći znanje, poslovne prilike i ljudske resurse. Patio doprinosi kvaliteti rada svojih članica i njihovih partnera.",
     pt: "Nós colaboramos compartilhando conhecimento, oportunidades de trabalho e recursos humanos. A Patio proporciona a melhor experiência para  cooperados e parceiros.",
     jp: "知識、仕事、人材などを共有するなどの協同をしています。PATIOを通じて、組合員とパートナーとの良い関係をめざしています。",
+    tr: "Bilgiyi, iş fırsatlarını ve insan kaynaklarını paylaşarak işbirliği yapıyoruz.Patio, hem kooperatif üyeleri, hem de partnerlerimiz için en iyi deneyimi sağlar.",
   },
   "section2-coops": {
     en: "Patio is a network comprised of tech cooperatives, from all corners of the globe, working together in solidarity to democratize the tech sector.",
@@ -122,6 +135,7 @@ data.languages = {
     hr: "Patio je mreža tehnološki orjentiranih zadruga iz cijelog svijeta koje solidarno surađuju u smjeru demokratizacije tehnološkog sektora.",
     pt: "A Patio é uma rede formada por cooperativas de tecnologia, de todos os cantos do globo, trabalhando juntas, em solidariedade, para democratizar o setor de tecnologia.",
     jp: "ITセクターの民主化をめざし、世界中のIT労協が連帯しています。",
+    tr: "Patio, dünyanın her köşesinden gelen ve bilişim işkolunu demokratikleştirmek için birlikte dayanışma ile çalışan, bilişim kooperatiflerinden oluşan bir ağdır.",
   },
   "section3-title": {
     en: "Who we are",
@@ -129,6 +143,7 @@ data.languages = {
     hr: "Tko smo",
     pt: "Quem somos",
     jp: "私どもについて",
+    tr: "Biz kimiz",
   },
   "section3-pmain": {
     en: "We are a global community of worker owned cooperatives from all over the world, specializing in the development of digital technology, communication and design.",
@@ -136,6 +151,7 @@ data.languages = {
     hr: "Mi smo globalna zajednica radničkih zadruga specijaliziranih za rad s digitalnim tehnologijama, dizajn i komunikacije.",
     pt: "Somos uma comunidade global de cooperativas de trabalho de todo o mundo, especializadas em desenvolvimento de tecnologias digitais, comunicação e design.",
     jp: "デザイン、コミュニケーション、デジタル技術の応用に特化した世界中のITの労協が集まっています。",
+    tr: "Biz, dijital teknoloji geliştirmede, iletişim ve tasarımda özelleşmiş, tüm dünyadan çalışan ortaklı bir kooperatifler topluluğuyuz.",
   },
   "section3-p": {
     en: "Working together allows us to have multidisciplinary teams that collaborate on international projects.",
@@ -143,6 +159,7 @@ data.languages = {
     hr: "Suradnja kroz zajednicu omogućuje nam stvaranje multidisciplinarnih timova koji rade na projektima internacionalnog karaktera.",
     pt: "Trabalhar em conjunto nos permite ter equipes multidisciplinares que colaboram em projetos internacionais.",
     jp: "世界にまたがったプロジェクトで、異なる領域を担当する組織が共同しています。",
+    tr: "Birlikte çalışmak, uluslararası projelerde işbirliği yapan disiplinlerarası takımlar oluşturmamıza olanak sağlıyor.",
   },
   "section4-coops": {
     en: "cooperatives",
@@ -150,6 +167,7 @@ data.languages = {
     hr: "zadruga",
     pt: "cooperativas",
     jp: "組合",
+    tr: "Kooperatif",
   },
   "section4-coopers": {
     en: "cooperators",
@@ -157,6 +175,7 @@ data.languages = {
     hr: "zadrugara",
     pt: "cooperados",
     jp: "組合員",
+    tr: "Kooperatif üyesi",
   },
   "section4-countries": {
     en: "countries",
@@ -164,6 +183,7 @@ data.languages = {
     hr: "zemalja",
     pt: "países",
     jp: "国",
+    tr: "Ülke",
   },
   "section4-servicios": {
     en: "digital services",
@@ -171,6 +191,7 @@ data.languages = {
     hr: "digitalne usluge",
     pt: "serviços digitais",
     jp: "デジタル技術サービス",
+    tr: "Dijital teknoloji hizmeti",
   },
   "section4-list-title": {
     en: "Members of Patio:",
@@ -178,6 +199,7 @@ data.languages = {
     hr: "Članovi Patio zajednice:",
     pt: "Integrantes do Pátio:",
     jp: "PATIOの組合員",
+    tr: "Patio Üyeleri:",
   },
   "section4-list-slugline": {
     en: "Click for more info of each coop",
@@ -185,6 +207,7 @@ data.languages = {
     hr: "Saznaj više o svakom članu",
     pt: "Clique para mais informações",
     jp: "クリックすると、それぞれの組合についての詳細がでます。",
+    tr: "Her kooperatif hakkında daha fazla bilgi için tıklayın",
   },
   "section5-title": {
     en: "What we do",
@@ -192,6 +215,7 @@ data.languages = {
     hr: "Što radimo",
     pt: "O que fazemos",
     jp: "なにをやっているか",
+    tr: "Neler yapıyoruz",
   },
   "section5-subtitle": {
     en: "We innovate and implement the latest technologies to produce digital products and services.",
@@ -199,6 +223,7 @@ data.languages = {
     hr: "Primjenjujemo suvremenu tehnologiju na inovativan način kako bi stvorili kvalitetne digitalne proizvode i usluge.",
     pt: "Inovamos e implementamos as mais recentes tecnologias para produzir produtos e serviços digitais.",
     jp: "技術革新、応用を通じたデジタル製品やサービスの開発をしています。",
+    tr: "Dijital ürün ve hizmetler üretmek için en son teknolojileri geliştiriyor ve kuruyoruz.",
   },
   "section5-content": {
     en: "Our diverse global community stands behind us to help in each phase of the project as needed, so we can deliver the finest results and maintain the highest standards.",
@@ -206,6 +231,7 @@ data.languages = {
     hr: "Patio je raznolika međunarodna zajednica organizacija koje si međusobno pomažu u raznim fazama projekata na kojima radimo, kako bi postigli što bolje rezultate i kvalitetu.",
     pt: "Nossa comunidade diversa e global nos apoia em cada fase do projeto, para que possamos oferecer os melhores resultados e manter os mais altos padrões.",
     jp: "背後に世界にまたがった組合が、最良の結果、品質をもたらします。",
+    tr: "Kapsayıcı küresel topluluğumuz, projenin her aşamasında yardımcı olmak için arkamızdadır; böylece en iyi sonuçları temin edebiliyor ve en yüksek standartları sağlayabiliyoruz.",
   },
   "section5-services-title": {
     en: "Some of",
@@ -213,6 +239,7 @@ data.languages = {
     hr: "Neke od",
     pt: "Alguns de",
     jp: "サー",
+    tr: "Bazı",
   },
   "section5-services-title-bolder": {
     en: "our services",
@@ -220,6 +247,7 @@ data.languages = {
     hr: "naših usluga",
     pt: "nossos serviços",
     jp: "ビスの一部",
+    tr: "hizmetlerimiz",
   },
   "services-full-stack": {
     en: "Full-stack Development",
@@ -227,6 +255,7 @@ data.languages = {
     hr: "Full-stack Programiranje",
     pt: "Desenvolvimento Full-stack",
     jp: "フルスタック開発",
+    tr: "Full-stack geliştirme",
   },
   "services-design": {
     en: "UX/UI Design & Animation",
@@ -234,6 +263,7 @@ data.languages = {
     hr: "UX/UI dizajn i Animacija",
     pt: "Design UX/UI & Animação",
     jp: "UX/UIデザインとアニメーション",
+    tr: "UX/UI Tasarım ve Animasyon",
   },
   "services-branding": {
     en: "Branding & Creative",
@@ -241,6 +271,7 @@ data.languages = {
     hr: "Brendiranje i Creativa",
     pt: "Marca & Criação",
     jp: "ブランディングとクリエイティブ",
+    tr: "Branding ve Yaratıcı Hizmetler",
   },
   "services-mobile": {
     en: "Mobile Development",
@@ -248,6 +279,7 @@ data.languages = {
     hr: "Razvoj Mobilnih Aplikacija",
     pt: "Desenvolvimento para Móveis",
     jp: "モバイル開発",
+    tr: "Mobil geliştirme",
   },
   "services-iot": {
     en: "Software & Hardware for IoT",
@@ -255,6 +287,7 @@ data.languages = {
     hr: "Softver i hardver za IoT",
     pt: "Software e hardware para IoT",
     jp: "IOT向けソフトウェアとハードウェア",
+    tr: "IoT için Yazılım ve Donanım",
   },
   "services-pm": {
     en: "Project & Product Management",
@@ -262,6 +295,7 @@ data.languages = {
     hr: "Upravljanje Projektima i Razvoj Proizvoda",
     pt: "Gestão de Projetos e Produtos",
     jp: "プロジェクトとプロダクト管理",
+    tr: "Proje ve Ürün Yönetimi",
   },
   "section6-title": {
     en: "How we work",
@@ -269,6 +303,7 @@ data.languages = {
     hr: "Kako radimo",
     pt: "Como trabalhamos",
     jp: "どうやるか",
+    tr: "Nasıl çalışıyoruz",
   },
   "section6-pmain": {
     en: "When we receive a request, we share it transparently within the entire community. From this base, we can scale teams to provide whatever is required for a specific project. Also, we can put interdisciplinary, remote teams together to accommodate any required specialized technical capacities.",
@@ -276,6 +311,7 @@ data.languages = {
     hr: "Nakon što stigne upit transparentno ga podijelimo sa svim članovima zajednice te zatim stvaramo tim koji će odgovoriti na potrebe projekta. Interdisciplinarni timovi koje čine osobe iz cijelog svijeta s lakoćom mogu priskrbiti sva potrebna tehnička znanja i kapacitet.",
     pt: "Quando recebemos uma solicitação, compartilhamos ela de forma transparente, com toda a comunidade. A partir daí, podemos escalar equipes para fornecer o que for necessário para um projeto específico. Além disso, podemos reunir equipes interdisciplinares para prover quaisquer capacidades técnicas especializadas necessárias.",
     jp: "案件の連絡を受けたあと、透明性をもってPATIOコミュニティー全体に共有します。プロジェクトに合った大きさ、幅広い専門性を持つ遠隔チームを組成します。",
+    tr: "Bize bir talep geldiğinde, bu talebi tüm toplulukla şeffaf olarak paylaşıyoruz. Bu yolla, belirli bir proje için ne gerekiyorsa sağlayacak şekilde takımları ölçeklendirebiliyoruz. Aynı zamanda disiplinlerarası, uzaktan çalışan takımları biraraya getirip istenen özelleşmiş teknik yetkinlikleri temin edebiliyoruz.",
   },
   "section6-list-title": {
     en: "Some of the benefits of working with us:",
@@ -283,6 +319,7 @@ data.languages = {
     hr: "Neke prednosti suradnje s nama:",
     pt: "Vantagens de trabalhar conosco:",
     jp: "私達と一緒に仕事をする利点は、例えば",
+    tr: "Bizimle çalışmanın bazı avantajları:",
   },
   "section6-list-1": {
     en: "Our large portfolio",
@@ -290,6 +327,7 @@ data.languages = {
     hr: "Naš portfolio",
     pt: "Nosso amplo portfólio",
     jp: "私達の持つ大きなポートフォリオ",
+    tr: "Geniş portfolyomuz",
   },
   "section6-list-2": {
     en: "International teams and cultural diversity",
@@ -297,6 +335,7 @@ data.languages = {
     hr: "Internacionalni timovi i kulturna raznolikost",
     pt: "Equipes internacionais e diversidade cultural",
     jp: "国際的、異文化にまたがったチーム",
+    tr: "Uluslararası takımlar ve kültürel çeşitlilik",
   },
   "section6-list-3": {
     en: "Wide range of technologies",
@@ -304,6 +343,7 @@ data.languages = {
     hr: "Širok raspon tehnologija",
     pt: "Ampla gama de tecnologias",
     jp: "幅広いIT技術に対応",
+    tr: "Geniş teknoloji yelpazesi",
   },
   "section6-list-4": {
     en: "Pool of knowledge and experience",
@@ -311,6 +351,7 @@ data.languages = {
     hr: "Bazen znanja i iskustva",
     pt: "Repositório de conhecimento e experiência",
     jp: "経験と知識の集積",
+    tr: "Bilgi ve deneyim havuzu",
   },
   "section6-list-5": {
     en: "Socially responsible and linked to local communities",
@@ -318,6 +359,7 @@ data.languages = {
     hr: "Društvena odgovornost i povezanost s lokalnom zajednicom",
     pt: "Socialmente responsável e ligado às suas comunidades locais",
     jp: "社会、コミュニティーなどとの接点の多さ",
+    tr: "Sosyal sorumluluk ve yerel topluluklarla bağlantı",
   },
   "section6-island-text-1": {
     en: "Make us your organization's",
@@ -325,6 +367,7 @@ data.languages = {
     hr: "Želimo biti tehnološki partner",
     pt: "Nos torne o parceiro tecnológico",
     jp: "みなさまの組織のITパートナーにしてください",
+    tr: "Bizi organizasyonunuzun teknoloji ortağı yapın",
   },
   "section6-island-text-2": {
     en: "technology partner",
@@ -332,6 +375,7 @@ data.languages = {
     hr: "tvoje organizacije.",
     pt: "da sua organização.",
     jp: "",
+    tr: "ortağı yapın",
   },
   "section6-island-btn": {
     en: "Get in touch and ask for a quote",
@@ -339,6 +383,7 @@ data.languages = {
     hr: "Javi se i zatraži ponudu",
     pt: "Solicite um orçamento",
     jp: "連絡、見積もりなど",
+    tr: "Bize ulaşın ve bir teklif isteyin",
   },
   "section7-title": {
     en: "Our philosophy",
@@ -346,6 +391,7 @@ data.languages = {
     hr: "Filozofija",
     pt: "Nossa filosofia",
     jp: "考え方",
+    tr: "Felsefemiz",
   },
   "section7-pmain": {
     en: "Patio is a community that aims to scale worker-ownership towards a more democratic society. Whether you are a small or large cooperative, or a person interested in exploring the cooperative world, let's share some experience together in our cooperative virtual networking sessions. We want to inspire more people to create technical cooperatives. If you need help, let us know! We can share our experience.",
@@ -353,6 +399,7 @@ data.languages = {
     hr: "Patio zajednica želi kroz radničko zadrugarstvo postići višu razinu demokracije u društvu. Bez obzira jeste li malena ili velika zadruga ili pak osoba koju zanima zadrugarstvo, kroz sudjelovanje i umrežavanje u zajednici podijeliti ćemo iskustva. Želimo potaknuti druge da i oni pokrenu tehničke zadruge. Ako trebaš pomoć, javi se! Naše iskustvo ti može pomoći.",
     pt: "Pátio é uma comunidade que visa escalar iniciativas de propriedade dos trabalhadores em direção a uma sociedade mais democrática. Seja você uma cooperativa pequena ou grande, ou uma pessoa interessada em explorar o mundo cooperativo, vamos compartilhar alguma experiência juntos em nossas sessões de networking virtual cooperativo. Queremos inspirar mais pessoas a criar cooperativas tecnológicas. Se precisar de ajuda, conte conosco! Podemos compartilhar nossa experiência.",
     jp: "PATIOは労働者所有を拡大し、より民主的な社会を目指しています。大小の協同組合や、協同組合に興味をお持ちの個人の方を含め、ビデオ会議などで経験を共有しましょう。もっと多くの方々をIT労協へご招待したいです。どんな相談でも対応いたします。",
+    tr: "Patio, daha demoktarik bir toplum için, çalışan-ortaklı olmayı ölçeklendirmeyi amaçlayan bir topluluktur. Küçük ya da büyük bir kooperatifseniz, ya da kooperatif dünyasını keşfetmekle ilgilenen bir kişi iseniz, gelin kooperatif sanal örgütlenme oturumlarımızda birlikte deneyimlerimizi paylaşalım. Daha fazla insana bilişim kooperatifleri kurmaları için ilham olmak istiyoruz. Eğer yardıma ihtiyacınız olursa, bize haber verin! Deneyimimizi paylaşabiliriz. ",
   },
   "section7-list-title": {
     en: "Key benefits:",
@@ -360,6 +407,7 @@ data.languages = {
     hr: "Ključne prednosti:",
     pt: "Principais benefícios:",
     jp: "主な利点",
+    tr: "Ana faydalar:",
   },
   "section7-list-1": {
     en: "Having a supportive and healthy community environment that helps cooperatives thrive",
@@ -367,6 +415,7 @@ data.languages = {
     hr: "Zdravo okruženje u kojem možeš naći podršku za razvoj svoje zadruge",
     pt: "Ter um ambiente comunitário, solidário e saudável, que ajude as cooperativas a prosperar",
     jp: "建設的、協力的なコミュニティー環境が、協同組合の繁栄を支えます。",
+    tr: "Kooperatiflerin serpilmesine yardımcı olan, destekleyici ve sağlıklı bir topluluğa sahip olmak",
   },
   "section7-list-2": {
     en: "Learning from each other and innovating together by having a hub for knowledge sharing",
@@ -374,6 +423,7 @@ data.languages = {
     hr: "Prostor u kojem možeš puno naučiti od drugih, sebi ravnih, jer dijelimo znanje",
     pt: "Aprender uns com os outros e inovar juntos tendo um polo para compartilhamento de conhecimento",
     jp: "お互いから学び、変革を重ねることにより共有知識を作ります。",
+    tr: "Birbirimizden öğrenmek ve birlikte yenilik yapmak için bir bilgi paylaşımı merkezine sahip olmak",
   },
   "section7-list-3": {
     en: "Allowing diverse approaches based on unique points of view",
@@ -381,6 +431,7 @@ data.languages = {
     hr: "Raznolik pristup i metode rješavanja problema",
     pt: "Permitir diversas abordagens baseadas em pontos de vista diferentes",
     jp: "いろいろな視点からアプローチできます。",
+    tr: "Özgün bakış açılarına dayanan kapsayıcı yaklaşımlara izin vermek",
   },
   "section7-list-4": {
     en: "Accessing different experts and specializations in a variety of fields",
@@ -388,6 +439,7 @@ data.languages = {
     hr: "Pristup cijelom nizu eksperata i specijalista u raznim poljima",
     pt: "Acesso a diferentes especialistas e especialidades em diversas áreas",
     jp: "さまざまな領域を得意とする方々に会えます。",
+    tr: "Çeşitli alanlarda farklı uzman ve uzmanlıklara erişmek",
   },
   "section7-list-5": {
     en: "Providing opportunities to join multidisciplinary set of teams",
@@ -395,6 +447,7 @@ data.languages = {
     hr: "Prilika za rad u multidisciplinarnim timovima",
     pt: "Oferecer oportunidades de integrar um conjunto de equipes multidisciplinares",
     jp: "幅広い専門性を持つチームの一員になれます。",
+    tr: "Disiplinlerarası takımlara katılmak için fırsat yaratmak",
   },
   "section7-island-text-1": {
     en: "If you are part of a",
@@ -402,6 +455,7 @@ data.languages = {
     hr: "Ako si član ili članica",
     pt: "Se você faz parte de uma",
     jp: "IT協同組合員の方々、",
+    tr: "Eğer bir bilişim kooperatifinin parçasıysanız",
   },
   "section7-island-text-2": {
     en: "tech cooperative",
@@ -409,6 +463,7 @@ data.languages = {
     hr: "tehnološke zadruge",
     pt: "cooperativa de tecnologia",
     jp: "",
+    tr: "",
   },
   "section7-island-btn": {
     en: "Join our community",
@@ -416,6 +471,7 @@ data.languages = {
     hr: "Pridruži se Patio zajednici",
     pt: "Junte-se à nossa comunidade",
     jp: "ぜひコミュニティーに入ってみてはどうでしょうか？",
+    tr: "Topluluğumuza katılın",
   },
   "section8-title": {
     en: "Get in touch",
@@ -423,6 +479,7 @@ data.languages = {
     hr: "Kontakt",
     pt: "Entre em contato",
     jp: "連絡",
+    tr: "Bize ulaşın",
   },
   "section8-pmain": {
     en: "with a brief description of how you want to collaborate. After we hear from you, a representative from our community will get back to you to work together on the details.",
@@ -430,6 +487,7 @@ data.languages = {
     hr: "Javi nam se s kratkim opisom kako vidiš našu buduću suradnju. Netko od članova Patio zajednice javit će ti se povratno kako bi razradili detalje.",
     pt: "com uma breve descrição de como você deseja colaborar. Após ouvirmos você, um representante da nossa comunidade entrará em contato com você para trabalharmos juntos nos detalhes.",
     jp: "どのように協業をお考えか、簡潔にお書きください。ご連絡のあと、私どもからご詳細についてご連絡させていただきます。",
+    tr: "bizimle nasıl iletişime geçmek istediğinize dair kısa bir açıklama ile birlikte. Sizden haber aldıktan sonra, topluluğumuzun bir temsilcisi, ayrıntılar üzerine çalışmak için size dönüş yapacaktır.",
   },
   "section8-why": {
     en: "Why do you want to contact us?",
@@ -437,6 +495,7 @@ data.languages = {
     hr: "Napiši zašto nam se želiš javiti?",
     pt: "Por que você quer entrar em contato conosco?",
     jp: "ご連絡の理由",
+    tr: "Bizimle neden iletişime geçmek istiyorsunuz?",
   },
   "section8-select-option": {
     en: "Select an option",
@@ -444,20 +503,23 @@ data.languages = {
     hr: "Odaberite opciju",
     pt: "Selecione uma opção",
     jp: "選択肢一つを選択してください",
+    tr: "Bir seçenek seçin",
   },
   "section8-work": {
     en: "Work with us",
     es: "Trabajar con nosotras",
     hr: "Želim raditi s vama",
     pt: "Trabalhe conosco",
-    jp: "協業しましょう",
+    jp: "協業ししたい",
+    tr: "Bizimle çalışın",
   },
   "section8-join": {
     en: "Join the community",
     es: "Unirse a la comunidad",
     hr: "Želim se priključiti u Patio zajednicu",
     pt: "Junte-se à comunidade Pátio",
-    jp: "PATIOコミュニティーに入りましょう",
+    jp: "PATIOコミュニティーに入りたい",
+    tr: "Patio Topluluğu'na katılın",
   },
   "section8-consulting": {
     en: "Consulting",
@@ -465,6 +527,7 @@ data.languages = {
     hr: "Trebam savjet ili imam upit",
     pt: "Fale conosco",
     jp: "コンサルティング",
+    tr: "Danışma",
   },
 
   "section8-name": {
@@ -473,6 +536,7 @@ data.languages = {
     hr: "Ime",
     pt: "Nome",
     jp: "お名前",
+    tr: "Adı",
   },
   "section8-surname": {
     en: "Surname",
@@ -480,6 +544,7 @@ data.languages = {
     hr: "Prezime",
     pt: "Sobrenome",
     jp: "名字",
+    tr: "Soyadı",
   },
   "section8-email": {
     en: "Email",
@@ -487,6 +552,7 @@ data.languages = {
     hr: "E-mail",
     pt: "E-mail",
     jp: "Email",
+    tr: "E-posta",
   },
   "section8-phone": {
     en: "Phone",
@@ -494,6 +560,7 @@ data.languages = {
     hr: "Telefon",
     pt: "Telefone",
     jp: "電話",
+    tr: "Telefon",
   },
   "section8-subject": {
     en: "Subject",
@@ -501,6 +568,7 @@ data.languages = {
     hr: "Naslov",
     pt: "Assunto",
     jp: "件名",
+    tr: "Konu",
   },
   "section8-message": {
     en: "Message",
@@ -508,6 +576,7 @@ data.languages = {
     hr: "Poruka",
     pt: "Mensagem",
     jp: "メッセージ",
+    tr: "İleti",
   },
   "section8-btn-send": {
     en: "Send",
@@ -515,6 +584,7 @@ data.languages = {
     hr: "Pošalji",
     pt: "Enviar",
     jp: "送る",
+    tr: "Gönder",
   },
 
   "footer-text": {
@@ -523,6 +593,7 @@ data.languages = {
     hr: "Mi smo globalna zajednica radničkih zadruga specijaliziranih za rad s digitalnim tehnologijama,dizajn i komunikacije. Imamo članove iz 20 zemalja (taj broj raste) te radimo na projektima koji su internacionalnog karaktera.",
     pt: "Somos uma comunidade global de cooperativas de trabalhadores especializados em desenvolvimento de tecnologias digitais, comunicação e design, de 20 países diferentes (e em crescimento), e trabalhando em projetos de âmbito global.",
     jp: "私どもは、世界中のITの労働者協同組合の集まりで、デジタル技術、コミュニケーション、デザインなどに専門性を持ち、１７カ国（増加中）に存在、国際的なスコープをもつプロジェクトで仕事をしています。",
+    tr: "Bizler, dijital teknoloji geliştirme, iletişim ve tasarım konusunda uzmanlaşmış çalışan ortaklı kooperatiflerden oluşan küresel bir topluluğuz. 17 farklı ülkeden (ve artmakta) uluslararası bir yelpazede projeler üzerinde çalışmaktayız.",
   },
   "footer-intercoop": {
     en: "This website was made inter-cooperatively by",
@@ -530,6 +601,7 @@ data.languages = {
     hr: "Ovu web stranicu izradila je ova zadruga",
     pt: "Este site foi feito inter-cooperativamente por",
     jp: "このウェブサイトは相互協力により作成されました",
+    tr: "Bu web sitesi işbirliği ile yapılmıştır",
   },
 
   // Cooperatives taglines & descriptions translations
@@ -648,7 +720,7 @@ data.languages = {
     pt: "",
   },
   "slobodnadomena-tagline": {
-    en: "We brings together designers, developers, artists, engineers and the like to offer a full professional service and work on projects we care about.",
+    en: "We bring together designers, developers, artists, engineers and the like to offer a full professional service and work on projects we care about.",
     es: "",
     hr: "",
     pt: "",
