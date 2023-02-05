@@ -1096,8 +1096,8 @@ textarea {
   font-size: var(--font-size-standard);
   color: rgba(12, 19, 84, 1);
   padding: 0.5rem;
+  border: 1.5px solid rgba(12, 19, 84, 1);
   border-radius: 6px;
-  border-color: rgba(12, 19, 84, 1);
   background-color: transparent;
   margin-bottom: 1.5rem;
 }
