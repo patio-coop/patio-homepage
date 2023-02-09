@@ -537,9 +537,9 @@ nav ul li a:hover {
   align-items: flex-start;
   justify-content: center;
 
-  padding: 2rem;
+  padding-left: 15%;
 
-  max-width: 30%;
+  max-width: 50%;
   min-width: 30%;
   z-index: 3;
 }
@@ -566,7 +566,7 @@ nav ul li a:hover {
   pointer-events: none;
   user-select: none;
   display: flex;
-  margin: 0 auto 0 -20%;
+  margin: 0 auto 0 -30%;
   background-color: transparent;
   overflow: hidden;
   /* min-width: 73vw; */
