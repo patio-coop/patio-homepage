@@ -1,3 +1,5 @@
+const HEIGHT = 600;
+
 class App {
   constructor({animate, setup}) {
     this.animate = animate;
@@ -21,17 +23,17 @@ class App {
   initRenderer = () => {
     this.renderer = new THREE.WebGLRenderer({alpha: true});
     this.renderer.setClearColor(0x0C1354, 1.0);
-    this.renderer.setSize(window.innerWidth, 800);
-    this.renderer.setPixelRatio(window.devicePixelRatio * 1.5);
+    this.renderer.setSize(window.innerWidth, HEIGHT);
+    this.renderer.setPixelRatio(window.devicePixelRatio * 1);
     this.renderer.shadowMap.enabled = true;
     this.renderer.antialias = true;
   }
 
   initCamera = () => {
-    this.ratio = window.innerWidth / 800;
-    this.camera = new THREE.PerspectiveCamera(60, this.ratio, 0.1, 10000);
+    this.ratio = window.innerWidth / HEIGHT;
+    this.camera = new THREE.PerspectiveCamera(60, this.ratio, 10, 5000);
     this.camera.lookAt(this.scene.position);
-    this.camera.position.set(0, 15, 30);
+    this.camera.position.set(0, 20, 30);
   }
 
   render = () => {
@@ -54,8 +56,8 @@ class App {
   }
 
   handleResize = () => {
-    this.camera.aspect = window.innerWidth / 800;
+    this.camera.aspect = window.innerWidth / HEIGHT;
     this.camera.updateProjectionMatrix();
-    this.renderer.setSize(window.innerWidth, 800);
+    this.renderer.setSize(window.innerWidth, HEIGHT);
   }
 }
