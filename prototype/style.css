@@ -177,17 +177,22 @@ Infinite > Larger screen > 1350px
 /*GENERAL CLASS > LISTS*/
 
 .main__section__list__items {
-  list-style-type: "";
-  list-style-image: url(./media/CheckList1.png);
-  padding-inline-start: 6rem;
+  /* list-style-type: "";
+  list-style-image: url(./media/CheckList1.png); */
+  padding-inline-start: 2.5rem;
+}
+
+.main__section__list__items span {
+  display: inline-block;
+  transform: translate(10px, -13px);
+  line-height: 2.5rem;
 }
 
 .main__section__list__items__item {
   font-family: var(--font-family);
   font-size: var(--font-size-standard);
   color: rgb(255, 255, 255);
-
-  margin: 1.625rem 0 0;
+  /* margin: 1.625rem 0 0; */
 }
 
 .main__section4__list__items::-webkit-scrollbar {
@@ -889,7 +894,6 @@ nav ul li a:hover {
 .main__section6__list {
   display: flex;
   flex-direction: column;
-
   max-width: 500px;
 }
 
@@ -922,11 +926,12 @@ nav ul li a:hover {
 }
 
 #specialCheck {
-  font-weight: 200;
+  font-weight: 400;
 }
 
 #specialCheck::marker {
-  content: "✓       "; /*url(./media/icon_check.png);*/
+  content: "✓       ";
+  content: url(./media/icon_check.png);
   font-size: 100%;
   vertical-align: center;
 }
@@ -968,6 +973,13 @@ nav ul li a:hover {
   max-width: 500px;
 }
 
+.main__section7__list span {
+  display: inline-block;
+  padding-top: 1.5rem;
+  line-height: 1.5rem;
+  transform: translate(10px, -5px);
+}
+
 #specialCheck2 {
   color: rgba(12, 19, 84, 1);
 }
@@ -977,7 +989,8 @@ nav ul li a:hover {
 }
 
 #specialCheck2::marker {
-  content: "✓       "; /*url(./media/icon_check.png);*/
+  /* content: "✓       "; */
+  content: url(./media/icon_check_2.png);
   font-size: 100%;
   vertical-align: center;
 }
@@ -991,7 +1004,7 @@ nav ul li a:hover {
 }
 
 .main__section__island7__content {
-  width: 500px;
+  width: 600px;
 }
 
 .main__section7__island__img {
@@ -999,7 +1012,8 @@ nav ul li a:hover {
   background-color: #ffffff;
   background-image: url(./media/Coop7.png);
   height: 100%;
-  width: 60%;
+  width: 100%;
+  background-position: center left;
   border-top-right-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem;
   -webkit-mask-image: -webkit-linear-gradient(
