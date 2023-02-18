@@ -684,13 +684,13 @@ data.languages = {
     pt: "",
   },
   "sofi-tagline": {
-    en: "We are a social & environmental software cooperative specializing in creating apps, websites, and everything tech.",
+    en: "We are a social & environmental software cooperative specializing in apps, websites, and everything tech.",
     es: "",
     hr: "",
     pt: "",
   },
   "sofi-description": {
-    en: "SOFI is a social & environmental software cooperative. We supply tailor-made software solutions for projects that positively impact our society and environment. We work with entrepreneurs, NGOs, start-ups and public entities. Our purpose is to create precise technological products that matter.",
+    en: "We supply tailor-made software solutions for projects that positively impact our society and environment. We work with entrepreneurs, NGOs, start-ups and public entities. Our purpose is to create precise technological products that matter.",
     es: "",
     hr: "",
     pt: "",
@@ -726,7 +726,7 @@ data.languages = {
     pt: "",
   },
   "slobodnadomena-description": {
-    en: "Slobodna domena is a transparent, democratic and socially responsible organization, founded to set up and support various initiatives with the common goal of defending and expanding the definition of common goods, the just distribution of surplus values, promoting equality, fighting discrimination and nurturing democratic decision-making.",
+    en: "We are a transparent, democratic and socially responsible organization, founded to set up and support various initiatives with the common goal of defending and expanding the definition of common goods, the just distribution of surplus values, promoting equality, fighting discrimination and nurturing democratic decision-making.",
     es: "",
     hr: "",
     pt: "",
