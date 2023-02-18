@@ -4,8 +4,10 @@
   z-index: 10000000; /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
+  /* Full width */
+  width: 100%;
   height: 100%; /* Full height */
+
   overflow: hidden; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
@@ -14,6 +16,16 @@
 .coop-card-modal-content {
   background-color: #fefefe;
   color: #0c1354;
+  margin: 1% auto;
+
+  max-height: 95%;
+
+  border: 1px solid #888;
+  /* width: 90%; */
+  /* Could be more or less, depending on screen size */
+  /* min-height: 98%; */
+  max-width: 80%;
+
   margin: 0.4% auto; /* 15% from the top and centered */
   border: 1px solid #888;
   width: 90%; /* Could be more or less, depending on screen size */
@@ -22,9 +34,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  padding: 1rem;
+  padding: 3rem 0.5rem;
   gap: 4rem;
   position: relative;
+  border-radius: 0.75rem;
 }
 
 .modal-btn-close {
@@ -47,12 +60,13 @@
 
 .modal-logo {
   align-self: center;
-  padding: 1.5rem;
 }
 
 .modal-logoimg {
-  width: 340px;
+  width: auto;
   height: auto;
+  max-height: 325px;
+  max-width: 350px;
 }
 
 .modal-info {
