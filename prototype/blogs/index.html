@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Patio Blogs Experimental</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const md = urlParams.get('md');
+        function loadFile() {
+            if (md) {
+                document.getElementById('blog-title').style = 'display: block'
+                document.getElementById('blog-title').innerHTML = `<h1>${md}</h1>`
+                document.getElementById('blog-index').style = 'display: none'
+                document.getElementById('blog-post').style = 'display: block'
+                document.getElementById('footer-to-blog-index').style = 'display: block'
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        var markdown = xhr.responseText;
+                        var html = marked.parse(markdown);
+                        document.getElementById('blog-post').innerHTML = html;
+                    }
+                };
+                xhr.open('GET', `${md}.md`, true);
+                xhr.send();
+            } else {
+                document.getElementById('blog-title').style = 'display: none'
+                document.getElementById('blog-title').innerHTML = ''
+                document.getElementById('blog-index').style = 'display: block'
+                document.getElementById('blog-post').style = 'display: none'
+                document.getElementById('footer-to-blog-index').style = 'display: none'
+            }
+        }
+    </script>
+</head>
+
+<body onload="loadFile()">
+    <div id="blog-index" style="display: none;">
+            <h1>Patio Blogs Experimental</h1>
+            <ul>
+                <li><a href="?md=haskell-blog1">Blog Post 1</a></li>
+            </ul>
+    </div>
+    <p id="blog-title" style="display: none;"></p>
+    <div id="blog-post" style="display: none;"></div>
+    <footer id="footer-to-blog-index" style="display: none;">
+		<a href="?">Go to Blog Index</a>
+	</footer>
+</body>
+
+</html>
