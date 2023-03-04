@@ -19,6 +19,20 @@ data.countries = [
         ],
       },
       {
+        name: "Cambá",
+        url: "https://camba.coop/",
+        logo: "camba.png",
+        tagline: "camba-tagline",
+        description: "camba-description",
+        services: [
+          "Software Development",
+          "Mobile Development",
+          "Web Portals, Apps and Services",
+          "Learning Management Systems (LMS)",
+          "Artificial Intelligence",
+        ],
+      },
+      {
         name: "Fiqus",
         url: "https://www.fiqus.coop",
         logo: "fiqus.png",
@@ -33,6 +47,20 @@ data.countries = [
         ],
       },
       {
+        name: "Gcoop",
+        url: "https://www.gcoop.coop/",
+        logo: "gcoop.png",
+        tagline: "gcoop-tagline",
+        description: "gcoop-description",
+        services: [
+          "Software Development",
+          "Mobile Development",
+          "Cloud Computing",
+          "Web Portals, Apps and Services",
+          "Customer Relationship Management (CRM)",
+        ],
+      },
+      {
         name: "Redjar",
         url: "https://redjar.com.ar/",
         logo: "redjar.png",
@@ -44,6 +72,19 @@ data.countries = [
           "Devops",
           "IoT",
           "Web Portals, Apps and Services",
+        ],
+      },
+      {
+        name: "Tecso",
+        url: "https://tecso.coop/",
+        logo: "tecso.png",
+        tagline: "tecso-tagline",
+        description: "tecso-description",
+        services: [
+          "Software Development",
+          "Mobile Development",
+          "IoT",
+          "Machine Learning",
         ],
       },
     ],
@@ -380,6 +421,20 @@ data.countries = [
     longitude: "-99.1276",
     coops: [
       {
+        name: "Cooperos",
+        url: "https://cooperos.com/",
+        logo: "cooperos.png",
+        tagline: "cooperos-tagline",
+        description: "cooperos-description",
+        services: [
+          "Software Development",
+          "Websites",
+          "Enterprise Resource Planning (ERP)",
+          "Illustration",
+          "Copywriting",
+        ],
+      },
+      {
         name: "Tierra Común",
         url: "https://tierracomun.org/",
         logo: "tierracomun.png",
@@ -410,6 +465,20 @@ data.countries = [
           "Content Management Systems",
           "Software Development",
           "Databases",
+        ],
+      },
+      {
+        name: "ChiCommons",
+        url: "https://www.chicommons.coop/",
+        logo: "chicommons.png",
+        tagline: "chicommons-tagline",
+        description: "chicommons-description",
+        services: [
+          "ICT Consulting",
+          "Networking, Wired and Wireless Services",
+          "Websites",
+          "Software Development",
+          "ICT Project Management",
         ],
       },
       {
@@ -486,13 +555,29 @@ data.countries = [
   // {
   //   "name": "New Caledonia",
   //   "latitude": "-22.2677",
-  //   "longitude": "166.464"
+  //   "longitude": "166.464",
   // },
-  // {
-  //   "name": "New Zealand",
-  //   "latitude": "-41.2865",
-  //   "longitude": "174.776"
-  // },
+  {
+    name: "New Zealand",
+    latitude: "-41.2865",
+    longitude: "174.776",
+    coops: [
+      {
+        name: "Optimi",
+        url: "https://www.optimi.co.nz/",
+        logo: "optimi.png",
+        tagline: "optimi-tagline",
+        description: "optimi-description",
+        services: [
+          "ICT Consulting",
+          "Community Building and Management",
+          "Enterprise Applications",
+          "Software Installation and Configuration",
+          "System Administration",
+        ],
+      },
+    ],
+  },
   // {
   //   "name": "Tonga",
   //   "latitude": "-21.136",
