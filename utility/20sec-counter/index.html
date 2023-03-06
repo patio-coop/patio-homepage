@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: transparent;
+    }
+
+    h1 {
+      font-size: 64px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 0 0 4px black;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    const maxCount=23
+    let count = maxCount;
+    async function startCountdown() {
+      while (count >= 0) {
+        document.getElementById('counter').innerHTML = count;
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        count--;
+      }
+      // document.getElementById('counter').innerHTML = "Time's up!";
+    }
+    function resetCountdown() {
+      if (count > 0) {
+        count = maxCount+1;
+        console.log(count)
+      } else {
+        count = maxCount;
+        startCountdown()
+      }
+      // document.getElementById('counter').innerHTML = count;
+    }
+  </script>
+  </script>
+</head>
+
+<body onload="startCountdown()" id="body"  onclick="resetCountdown()" >
+  <h1 id="counter"">20</h1>
+  <script>
+    // include the ipc module to communicate with main process.
+    const ipcRenderer = require('electron').ipcRenderer;
+
+    const btnclick = document.getElementById('body');
+    btnclick.addEventListener('dblclick', function () {
+      console.log("bb")
+      //send the info to main process . we can pass any arguments as second param.
+      ipcRenderer.send("toggleMenu"); // ipcRender.send will pass the information to main process
+    });
+  </script>
+</body>
+
+</html>
