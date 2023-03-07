@@ -1,0 +1,66 @@
+.comment-box {
+  border: 3px solid lightgray; /* sets the border to a blue color that is not too thin */
+  padding: 10px; /* adds space inside the box */
+  margin: 10px; /* adds space outside the box */
+}
+
+
+.comment-section {
+  flex-basis: 100%;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.comment-section h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  color: #007aff;
+}
+
+.comment-form-section {
+  flex-basis: 100%;
+}
+
+.comment-form-section h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  color: #007aff;
+}
+
+.comment-form-section form {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.comment-form-section form label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #007aff;
+}
+
+.comment-form-section form input, .comment-form-section form textarea {
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 0.5rem;
+  color: #555;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.comment-form-section form input[type="submit"] {
+  background-color: #007aff;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+.comment-form-section form input[type="submit"]:hover {
+  background-color: #0052cc;
+}
+
