@@ -1,5 +1,11 @@
 .coop-card-modal {
   display: none;
+  
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
   position: fixed;
   z-index: 10000000;
   left: 0;
@@ -24,7 +30,7 @@
 
   min-height: 85%;
 
-  padding: 2.5rem 0rem;
+  padding: 4.5rem 0rem;
 
   display: flex;
   flex-wrap: wrap;

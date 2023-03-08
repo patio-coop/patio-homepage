@@ -34,7 +34,7 @@ function openModal(country, cooperative) {
   // Show modal
   document.body.classList.add("no_scroll");
   var modal = document.getElementById("cooperative-card-modal");
-  modal.style.display = "block";
+  modal.style.display = "flex";
 }
 
 function closeModal(modal) {
