@@ -51,9 +51,9 @@ function updateClock() {
     // tickSound.frequency.value = 500;
     // oscillator.connect(audioContext.destination);
     // Connect the oscillator to the AudioContext output
-    // if (!isMuted){
-    oscillator.connect(audioContext.destination);
-    // }
+    if (!isMuted) {
+        oscillator.connect(audioContext.destination);
+    }
     setTimeout(() => {
         oscillator.disconnect();
     }, 50);
