@@ -11,11 +11,16 @@ const wave = audioContext.createPeriodicWave(real, imag);
 const oscillator = audioContext.createOscillator();
 oscillator.setPeriodicWave(wave);
 oscillator.frequency.value = 500; // Adjust this value to change the pitch of the tick sound
-oscillator.start();
+// oscillator.start();
 // Global variable to toggle mute on/off
-var isMuted = false;
+let isMuted = false;
+let oscillatorInitialized = false
 
 function toggleMute() {
+    if (!oscillatorInitialized) {
+        oscillator.start();
+        oscillatorInitialized = true
+    }
     isMuted = !isMuted; // Toggle the value of the variable
     console.log('Mute toggled:', isMuted);
     // Other actions to perform when mute is toggled
@@ -46,9 +51,9 @@ function updateClock() {
     // tickSound.frequency.value = 500;
     // oscillator.connect(audioContext.destination);
     // Connect the oscillator to the AudioContext output
-    if (!isMuted){
+    // if (!isMuted){
     oscillator.connect(audioContext.destination);
-    }
+    // }
     setTimeout(() => {
         oscillator.disconnect();
     }, 50);
