@@ -108,7 +108,11 @@ function submitForm(event) {
     }).then(response => {
         if (response.ok) {
             // If the response is OK, show a success message
-            alert('Comment submitted successfully!');
+
+            const commentsNode= document.getElementById('comments');
+            commentsNode.innerHTML=''
+            displayComments()
+            // alert('Comment submitted successfully!');
         } else {
             // If there is an error, show an error message
             alert('Error submitting comment. Please try again later.');
