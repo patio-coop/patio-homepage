@@ -6,10 +6,33 @@
 
 
 .comment-section {
-  flex-basis: 100%;
-  margin-bottom: 2rem;
-  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
 }
+
+.comment-container {
+  padding: 10px;
+  margin: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+.load-more-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.load-more-button:hover {
+  background-color: #444;
+}
+
 
 .comment-section h2 {
   font-size: 2rem;
