@@ -87,3 +87,38 @@
   background-color: #0052cc;
 }
 
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #f7dc6f; /* light yellow */
+  border: 2px solid #f1c40f; /* yellow */
+  border-radius: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #f1c40f; /* yellow */
+}
+
+th {
+  background-color: #f1c40f; /* yellow */
+  color: white;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+td {
+  background-color: white;
+  color: #2c3e50; /* dark blue */
+}
+
+tr:hover {
+  background-color: #f7dc6f; /* light yellow */
+}
+

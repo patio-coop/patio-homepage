@@ -1,5 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const md = urlParams.get('md') || '';
+const html = urlParams.get('html') || '';
 const COMMENTS_PER_PAGE = 500;
 let currentPage = 1;
 
@@ -52,7 +53,7 @@ async function displayComments() {
 }
 
 function loadFile() {
-    if (md) {
+    if (md || html) {
         document.getElementById('blog-title').style = 'display: block'
         document.getElementById('blog-title').innerHTML = `<h1>${md}</h1>`
         document.getElementById('blog-index').style = 'display: none'
@@ -61,12 +62,21 @@ function loadFile() {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
-                var markdown = xhr.responseText;
-                var html = marked.parse(markdown);
+                if (html) {
+                    var html = xhr.responseText;
+                } else {
+                    var markdown = xhr.responseText;
+                    var html = marked.parse(markdown);
+                }
+                xhr.open('GET', `${html}.html`, true);
                 document.getElementById('blog-post').innerHTML = html;
             }
         };
-        xhr.open('GET', `${md}.md`, true);
+        if (html) {
+            xhr.open('GET', `${html}.html`, true);
+        } else {
+            xhr.open('GET', `${md}.md`, true);
+        }
         xhr.send();
     } else {
         document.getElementById('blog-title').style = 'display: none'
@@ -109,8 +119,8 @@ function submitForm(event) {
         if (response.ok) {
             // If the response is OK, show a success message
 
-            const commentsNode= document.getElementById('comments');
-            commentsNode.innerHTML=''
+            const commentsNode = document.getElementById('comments');
+            commentsNode.innerHTML = ''
             displayComments()
             // alert('Comment submitted successfully!');
         } else {
