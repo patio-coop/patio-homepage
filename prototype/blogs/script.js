@@ -3,13 +3,17 @@ const md = urlParams.get('md') || '';
 const html = urlParams.get('html') || '';
 const COMMENTS_PER_PAGE = 500;
 let currentPage = 1;
+function getParameterByName(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+}
 
-async function displayComments() {
+async function displayComments(post_id) {
     // Get the comment section container element
     const commentSection = document.querySelector('.comment-section');
 
     // Retrieve the comments from the REST API
-    const comments = await fetchComments();
+    const comments = await fetchComments(post_id || '');
 
     // Calculate the start and end indices of the current page
     const startIndex = (currentPage - 1) * COMMENTS_PER_PAGE;
@@ -45,7 +49,7 @@ async function displayComments() {
 
         loadMoreButton.addEventListener('click', () => {
             currentPage++;
-            displayComments();
+            displayComments(post_id);
         });
 
         commentSection.appendChild(loadMoreButton);
@@ -87,9 +91,9 @@ function loadFile() {
     }
 
 }
-async function fetchComments() {
+async function fetchComments(post_id) {
     // Make a GET request to the comments REST API
-    const response = await fetch('https://tng.coop/p2.php');
+    const response = await fetch(`https://tng.coop/p2.php?post_id=${post_id}`);
     const comments = await response.json();
     return comments;
 }
@@ -98,7 +102,7 @@ async function fetchComments() {
 function submitForm(event) {
     event.preventDefault()
     // Get the form data
-    const postId = md
+    const postId = md || html
     const username = document.getElementById('name').value;
     const content = document.getElementById('comment').value;
 
@@ -121,7 +125,7 @@ function submitForm(event) {
 
             const commentsNode = document.getElementById('comments');
             commentsNode.innerHTML = ''
-            displayComments()
+            displayComments(postId)
             // alert('Comment submitted successfully!');
         } else {
             // If there is an error, show an error message

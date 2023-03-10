@@ -8,7 +8,7 @@
     <script src="script.js"></script>
 </head>
 
-<body onload="loadFile(); displayComments().catch(error => console.error(error));">
+<body onload="loadFile(); displayComments(getParameterByName('md')).catch(error => console.error(error));">
     <div id="blog-index" style="display: none;">
         <h2>Patio Blogs Experimental</h2>
         <ul>
