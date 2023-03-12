@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Embedding Coq Theorem using CDN and JavaScript</title>
+    <script src="https://unpkg.com/coq-js-gui@2.0.0/dist/coq-js-gui.js"></script>
+  </head>
+  <body>
+    <h1>Socrates Syllogism Theorem</h1>
+    <p>
+      Theorem: If all men are mortal and Socrates is a man, then Socrates is mortal.
+    </p>
+    <div id="coq-top"></div>
+    <script>
+      // Load the Coq script
+      const coq = new Coq();
+      const script = `
+        Theorem socrates_syllogism :
+          forall {O: Type}
+          {P Q : O -> Prop}
+          (x : O ),
+          (forall y : O, P y -> Q y) ->
+          P x->
+          Q x.
+        Proof.
+          intros object Man Mortal Socrates H1 H2.
+          apply H1.
+          apply H2.
+        Qed.
+      `;
+      coq.compile(script);
+
+      // Attach the Coq top to the page
+      const coqTop = coq.createTop({
+        topId: 'coq-top',
+        width: '100%',
+        height: '500px'
+      });
+      coqTop.loadScript(script);
+    </script>
+  </body>
+</html>
