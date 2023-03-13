@@ -244,13 +244,13 @@ const languages = {
     tr: "Bazı",
   },
   "section5-services-title-bolder": {
-    en: "our services",
-    es: "nuestros servicios",
-    el: "Υπηρεσίες μας",
-    hr: "naših usluga",
-    pt: "nossos serviços",
-    jp: "ビスの一部",
-    tr: "hizmetlerimiz",
+    en: "our services:",
+    es: "nuestros servicios:",
+    el: "Υπηρεσίες μας:",
+    hr: "naših usluga:",
+    pt: "nossos serviços:",
+    jp: "ビスの一部:",
+    tr: "hizmetlerimiz:",
   },
   "services-full-stack": {
     en: "Full-stack Development",
@@ -1044,7 +1044,6 @@ const languages = {
     tr: "Sitemize geri dön",
   },
 };
-
 
 function setLang(object_selected) {
   localStorage.setItem("currentLanguage", object_selected.value);
