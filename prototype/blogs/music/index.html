@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SuperCollider Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+    <script src="https://raw.githubusercontent.com/crucialfelix/supercolliderjs/master/dist/supercollider.js"></script>
+  </head>
+  <body>
+    <h1>SuperCollider Example</h1>
+    <canvas id="scCanvas"></canvas>
+    <script>
+      sc.lang.boot({
+        serverOptions: {
+          "device": "default",
+          "numInputBusChannels": 0,
+          "numOutputBusChannels": 2
+        },
+        canvas: document.getElementById("scCanvas")
+      }).then(function(scsynth) {
+        var synthDef = {
+          name: "sine",
+          consts: [0, 0],
+          paramValues: {},
+          paramIndices: {},
+          units: [
+            ["SinOsc", 2, 0, 1],
+            ["Out", 2, 0, 0]
+          ]
+        };
+        scsynth.synthDef(synthDef);
+        scsynth.play({args: {freq: 440}, synthDef: "sine"});
+      });
+    </script>
+  </body>
+</html>

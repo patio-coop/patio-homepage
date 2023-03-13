@@ -7,7 +7,7 @@ const loader = new THREE.TextureLoader();
 const data = {}
 
 function setup(app) {
-  app.camera.position.z = config.sizes.globe * 1.75;
+  app.camera.position.z = config.sizes.globe * 1.2;
   app.camera.position.x = config.sizes.globe * 0;
   app.camera.position.y = config.sizes.globe * 1;
 

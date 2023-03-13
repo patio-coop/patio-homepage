@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>BBC Work Service Ticking Clock</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="clock-container">
+        <div style="display: flex; flex-direction: column;">
+          <button  style="align-self: center;" onclick="toggleMute()">&#x1F508;</button>
+          <!-- Items here will be displayed from top to bottom -->
+        <svg class="clock" viewBox="0 0 400 400">
+          <circle class="clock-face" cx="200" cy="200" r="180"></circle>
+          <rect class="hour-hand" x="198" y="60" width="4" height="140" rx="2" ry="2" transform="rotate(0, 200, 200)"></rect>
+          <rect class="minute-hand" x="199" y="40" width="2" height="180" rx="1" ry="1" transform="rotate(0, 200, 200)"></rect>
+          <rect class="second-hand" x="200" y="30" width="1" height="190" rx="0.5" ry="0.5" transform="rotate(0, 200, 200)"></rect>
+          <circle class="center" cx="200" cy="200" r="6"></circle>
+
+          <!-- Roman numerals -->
+          <text class="roman-numeral" x="200" y="42" transform="rotate(30, 200, 200)">&#8544;</text>
+          <text class="roman-numeral" x="200" y="42" transform="rotate(60, 200, 200)">&#8545;</text>
+          <text class="roman-numeral" x="200" y="42" transform="rotate(90, 200, 200)">&#8546;</text>
+          <text class="roman-numeral" x="200" y="42" transform="rotate(120, 200, 200)">&#8547;</text>
+          <text class="roman-numeral" x="200" y="42" transform="rotate(150, 200, 200)">&#8548;</text>
+          <text class="roman-numeral" x="200" y="42" transform="rotate(180, 200, 200)">&#8549;</text>
+          <text class="roman-numeral" x="200" y="42" transform="rotate(210, 200, 200)">&#8550;</text>
+          <text class="roman-numeral" x="200" y="42" transform="rotate(240, 200, 200)">&#8551;</text>
+          <text class="roman-numeral" x="200" y="42" transform="rotate(270, 200, 200)">&#8552;</text>
+          <text class="roman-numeral" x="200" y="42" transform="rotate(300, 200, 200)">&#8553;</text>
+          <text class="roman-numeral" x="200" y="42" transform="rotate(330, 200, 200)">&#8554;</text>
+          <text class="roman-numeral" x="200" y="42" transform="rotate(0, 200, 200)">&#8555;</text>
+        </svg>
+
+
+        </div>
+
+
+
+      </div>
+      <div class="schedule-container">
+        <h2>Program Schedule</h2>
+        <ul class="schedule">
+          <li>13:00 UTC - Outreach & Communications</li>
+          <li>10:00 AM - Documentary</li>
+          <li>11:00 AM - Interview</li>
+          <li>12:00 PM - Sports</li>
+        </ul>
+      </div>
+    </div>
+    <audio id="tick-sound"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

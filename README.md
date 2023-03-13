@@ -113,6 +113,8 @@ To deploy, you must have the latest version of the site. The steps to follow are
 5- To continue working, make sure to go back to the main branch
 
  `git checkout main`
+ 
+ **Note: Currently it deploys to Netlify.**
 
 
 <!-------------------------------------------------------------------->
