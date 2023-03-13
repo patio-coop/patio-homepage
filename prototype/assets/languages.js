@@ -1,29 +1,4 @@
-function setLang(object_selected) {
-  localStorage.setItem("currentLanguage", object_selected.value);
-  Object.keys(data.languages).forEach((key) => {
-    const elem = document.getElementById(key);
-    if (elem) {
-      elem.innerHTML = data.languages[key][object_selected.value];
-    }
-  });
-}
-
-function getTranslation(key) {
-  const currentLang = localStorage.getItem("currentLanguage") || "en";
-  return data.languages[key][currentLang];
-}
-
-function t(key) {
-  this.document.currentScript.parentElement.innerHTML =
-    "<span id='" + key + "'>" + getTranslation(key) + "</span>";
-}
-
-function initLanguageSelector() {
-  document.getElementById("language-selector").value =
-    localStorage.getItem("currentLanguage") || "en";
-}
-
-data.languages = {
+const languages = {
   // Site - Main page translations
   "navbar-who-we-are-button": {
     en: "Who we are",
@@ -116,13 +91,13 @@ data.languages = {
     tr: "tüm dünyadan bilişim kooperatifleriyiz",
   },
   "section1-btn1": {
-    en: "Let's work together",
-    es: "Trabajemos juntas",
+    en: "Ask for a quote",
+    es: "Solicitar presupuesto",
     el: "Ας δουλέψουμε μαζί",
     hr: "Surađujmo",
-    pt: "Vamos trabalhar juntos",
+    pt: "Solicite uma cotação",
     jp: "一緒に仕事しましょう",
-    tr: "Birlikte çalışalım",
+    tr: "Fiyat teklifi iste",
   },
   "section1-btn2": {
     en: "Join the community",
@@ -1069,3 +1044,29 @@ data.languages = {
     tr: "Sitemize geri dön",
   },
 };
+
+
+function setLang(object_selected) {
+  localStorage.setItem("currentLanguage", object_selected.value);
+  Object.keys(languages).forEach((key) => {
+    const elem = document.getElementById(key);
+    if (elem) {
+      elem.innerHTML = languages[key][object_selected.value];
+    }
+  });
+}
+
+function getTranslation(key) {
+  const currentLang = localStorage.getItem("currentLanguage") || "en";
+  return languages[key][currentLang];
+}
+
+function t(key) {
+  this.document.currentScript.parentElement.innerHTML =
+    "<span id='" + key + "'>" + getTranslation(key) + "</span>";
+}
+
+function initLanguageSelector() {
+  document.getElementById("language-selector").value =
+    localStorage.getItem("currentLanguage") || "en";
+}
