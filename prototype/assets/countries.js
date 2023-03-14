@@ -186,20 +186,20 @@ data.countries = [
       },
     ],
   },
-  {
-    name: "United Kingdom",
-    latitude: "55",
-    longitude: "-3",
-    coops: [
-      {
-        name: "Animorph",
-        url: "https://animorph.coop/",
-        tagline: "animorph-tagline",
-        description: "animorph-description",
-        services: [],
-      },
-    ],
-  },
+  // {
+  //   name: "United Kingdom",
+  //   latitude: "55",
+  //   longitude: "-3",
+  //   coops: [
+  //     {
+  //       name: "Animorph",
+  //       url: "https://animorph.coop/",
+  //       tagline: "animorph-tagline",
+  //       description: "animorph-description",
+  //       services: [],
+  //     },
+  //   ],
+  // },
   // {
   //   "name": "Pakistan",
   //   "latitude": "30.5167",
