@@ -136,7 +136,7 @@ data.countries = [
     longitude: "138",
     coops: [
       {
-        name: "Tng",
+        name: "TNG",
         url: "https://tng.coop/",
         logo: "tng.png",
         tagline: "tng-tagline",
