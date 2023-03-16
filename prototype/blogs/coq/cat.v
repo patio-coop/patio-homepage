@@ -41,15 +41,14 @@ Definition People : Category :=
       end
   |}.
 
-Record Functor (C D : Category) := mkFunctor {
+Record Functor (C D : Category) : Type := {
   FObj : Obj C -> Obj D;
-  FHom : forall {A B}, Hom C A B -> Hom D (FObj A) (FObj B);
-  F_id : forall {a : Obj C}, FHom (id C a) = id D (FObj a);
-  F_comp : forall {A B C0 : Obj C} (f : Hom C A B) (g : Hom C B C0),
-    FHom (comp C f g) = comp D (FHom f) (FHom g)
+  FHom : forall {X Y : Obj C}, Hom C X Y -> Hom D (FObj X) (FObj Y);
+  F_id : forall (X : Obj C), FHom (id C X) = id D (FObj X);
+  F_comp : forall {X Y Z : Obj C} (f : Hom C X Y) (g : Hom C Y Z),
+             FHom (comp C f g) = comp D (FHom f) (FHom g)
 }.
-
-Definition L_morphism {A B : person} (r : relationship A B) : relationship A B := r.
+(* Definition L_morphism {A B : person} (r : relationship A B) : relationship A B := r.
 
 Definition F_morphism {A B : person} (r : relationship A B) : relationship A B := r.
 
@@ -67,4 +66,37 @@ Definition F_functor : Functor People People :=
     FHom := fun (A B : Obj People) (r : relationship A B) => F_morphism r;
     F_id := fun p => eq_refl;
     F_comp := fun _ _ _ (f : relationship _ _) (g : relationship _ _) => eq_refl
+  |}. *)
+  (* Functor Instance *)
+Definition people_identity_functor : Functor People People :=
+  {|
+    FObj := fun p => p;
+    FHom := fun _ _ r => r;
+    F_id := fun X => eq_refl;
+    F_comp := fun _ _ _ f g => eq_refl
   |}.
+
+(* Test for Functor Object *)
+Lemma test_functor_object : FObj People People people_identity_functor Alice = Alice.
+  Proof.
+    reflexivity.
+  Qed.
+
+(* Test for Functor Morphism *)
+Lemma test_functor_morphism : FHom People People people_identity_functor (rel Alice Bob) = rel Alice Bob.
+Proof.
+  reflexivity.
+Qed.
+
+(* Test for Functor Preservation of Identity *)
+Lemma test_functor_preservation_identity : FHom People People people_identity_functor (id_rel Alice) = id_rel Alice.
+Proof.
+  reflexivity.
+Qed.
+
+(* Test for Functor Preservation of Composition *)
+Lemma test_functor_preservation_composition :
+  FHom People People people_identity_functor (comp_rel (rel Alice Bob) (rel Bob Carol)) = comp_rel (rel Alice Bob) (rel Bob Carol).
+Proof.
+  reflexivity.
+Qed.
