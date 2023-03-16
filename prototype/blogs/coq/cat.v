@@ -1,3 +1,11 @@
+(*
+% In the realm of Emotia, people experience two kinds of emotional connections:
+% romance and friendship. We will explore the relationships between these
+% emotional states using category theory, functors, and natural
+% transformations.
+%
+% First, let's define the inhabitants of Emotia: Alice, Bob, and Carol.
+*)
 Require Import Coq.Logic.FunctionalExtensionality.
 
 Inductive person :=
@@ -40,6 +48,14 @@ Definition People : Category :=
       | rel _ _ => eq_refl
       end
   |}.
+  (*
+% We represent the intensity of romantic feelings with love-based emotional
+% states (L) and the intensity of friendships with friendship-based emotional
+% states (F).
+*)
+
+Definition L (p : person) := nat.
+Definition F (p : person) := nat.
 
 Record Functor (C D : Category) : Type := {
   FObj : Obj C -> Obj D;
@@ -48,7 +64,7 @@ Record Functor (C D : Category) : Type := {
   F_comp : forall {X Y Z : Obj C} (f : Hom C X Y) (g : Hom C Y Z),
              FHom (comp C f g) = comp D (FHom f) (FHom g)
 }.
-(* Definition L_morphism {A B : person} (r : relationship A B) : relationship A B := r.
+Definition L_morphism {A B : person} (r : relationship A B) : relationship A B := r.
 
 Definition F_morphism {A B : person} (r : relationship A B) : relationship A B := r.
 
@@ -66,7 +82,7 @@ Definition F_functor : Functor People People :=
     FHom := fun (A B : Obj People) (r : relationship A B) => F_morphism r;
     F_id := fun p => eq_refl;
     F_comp := fun _ _ _ (f : relationship _ _) (g : relationship _ _) => eq_refl
-  |}. *)
+  |}.
   (* Functor Instance *)
 Definition people_identity_functor : Functor People People :=
   {|
@@ -115,3 +131,13 @@ Record NaturalTransformation {C D : Category} (F G : Functor C D) := {
   naturality : forall {X Y : Obj C} (f : Hom C X Y),
     @comp D _ _ _ (@FHom C D F _ _ f) (components Y) = @comp D _ _ _ (components X) (@FHom C D G _ _ f)
 }.
+
+(*
+% Our proof of the naturality condition shows that the transformation α from
+% romantic feelings to friendships is indeed natural. In the story of Emotia,
+% this means that the way in which romantic feelings turn into friendships is
+% consistent across all inhabitants and relationships.
+%
+% Through this exploration, we have discovered the underlying structure and
+% consistency in the realm of Emotia, where romance and friendship intertwine.
+*)
