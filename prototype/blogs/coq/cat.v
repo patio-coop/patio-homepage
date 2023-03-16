@@ -100,3 +100,18 @@ Lemma test_functor_preservation_composition :
 Proof.
   reflexivity.
 Qed.
+
+Lemma test_FObj_Alice : FObj People People people_identity_functor Alice = Alice.
+Proof.
+  reflexivity.
+Qed.
+Lemma test_Hom_rel : Hom People Alice Bob.
+Proof.
+  apply rel.
+Qed.
+
+Record NaturalTransformation {C D : Category} (F G : Functor C D) := {
+  components : forall X : Obj C, @Hom D (@FObj C D F X) (@FObj C D G X);
+  naturality : forall {X Y : Obj C} (f : Hom C X Y),
+    @comp D _ _ _ (@FHom C D F _ _ f) (components Y) = @comp D _ _ _ (components X) (@FHom C D G _ _ f)
+}.
