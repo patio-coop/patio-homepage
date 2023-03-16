@@ -52,40 +52,21 @@ Definition People : Category :=
 
 
 
-Definition L_morphism {A B : person} (r : relationship A B) : relationship A B :=
-  rel A B.
+  Definition L_morphism {A B : person} (r : relationship A B) : relationship A B := r.
 
-Definition F_morphism {A B : person} (r : relationship A B) : relationship A B :=
-  rel A B.
+  Definition F_morphism {A B : person} (r : relationship A B) : relationship A B := r.
+  Definition L_functor : Functor People People :=
+    {|
+      FObj := fun p => p;
+      FHom := fun (A B : Obj People) (r : relationship A B) => r;
+      F_id := fun p => eq_refl;
+      F_comp := fun _ _ _ (f : relationship _ _) (g : relationship _ _) => eq_refl
+    |}.
 
-Definition L : Functor People People :=
-  {|
-    FObj := fun p => p;
-    FHom := @L_morphism;
-    F_id := fun A =>
-      match A with
-      | Alice => eq_refl
-      | Bob => eq_refl
-      | Carol => eq_refl
-      end;
-    F_comp := fun A B C f g =>
-      match f, g with
-      | rel _, rel _ => eq_refl
-      end
-  |}.
-
-Definition F : Functor People People :=
-  {|
-    FObj := fun p => p;
-    FHom := @F_morphism;
-    F_id := fun A =>
-      match A with
-      | Alice => eq_refl
-      | Bob => eq_refl
-      | Carol => eq_refl
-      end;
-    F_comp := fun A B C f g =>
-      match f, g with
-      | rel _, rel _ => eq_refl
-      end
-  |}.
+  Definition F_functor : Functor People People :=
+    {|
+      FObj := fun p => p;
+      FHom := fun (A B : Obj People) (r : relationship A B) => r;
+      F_id := fun p => eq_refl;
+      F_comp := fun _ _ _ (f : relationship _ _) (g : relationship _ _) => eq_refl
+    |}.
