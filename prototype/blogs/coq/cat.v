@@ -40,3 +40,52 @@ Definition People : Category :=
       | rel _ _ => eq_refl
       end
   |}.
+
+  Record Functor (C D : Category) := mkFunctor {
+    FObj : Obj C -> Obj D;
+    FHom : forall {A B}, Hom C A B -> Hom D (FObj A) (FObj B);
+    F_id : forall {a : Obj C}, FHom (id C a) = id D (FObj a);
+    F_comp : forall {A B C0 : Obj C} (f : Hom C A B) (g : Hom C B C0),
+      FHom (comp C f g) = comp D (FHom f) (FHom g)
+  }.
+
+
+
+
+Definition L_morphism {A B : person} (r : relationship A B) : relationship A B :=
+  rel A B.
+
+Definition F_morphism {A B : person} (r : relationship A B) : relationship A B :=
+  rel A B.
+
+Definition L : Functor People People :=
+  {|
+    FObj := fun p => p;
+    FHom := @L_morphism;
+    F_id := fun A =>
+      match A with
+      | Alice => eq_refl
+      | Bob => eq_refl
+      | Carol => eq_refl
+      end;
+    F_comp := fun A B C f g =>
+      match f, g with
+      | rel _, rel _ => eq_refl
+      end
+  |}.
+
+Definition F : Functor People People :=
+  {|
+    FObj := fun p => p;
+    FHom := @F_morphism;
+    F_id := fun A =>
+      match A with
+      | Alice => eq_refl
+      | Bob => eq_refl
+      | Carol => eq_refl
+      end;
+    F_comp := fun A B C f g =>
+      match f, g with
+      | rel _, rel _ => eq_refl
+      end
+  |}.
