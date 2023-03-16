@@ -41,32 +41,30 @@ Definition People : Category :=
       end
   |}.
 
-  Record Functor (C D : Category) := mkFunctor {
-    FObj : Obj C -> Obj D;
-    FHom : forall {A B}, Hom C A B -> Hom D (FObj A) (FObj B);
-    F_id : forall {a : Obj C}, FHom (id C a) = id D (FObj a);
-    F_comp : forall {A B C0 : Obj C} (f : Hom C A B) (g : Hom C B C0),
-      FHom (comp C f g) = comp D (FHom f) (FHom g)
-  }.
+Record Functor (C D : Category) := mkFunctor {
+  FObj : Obj C -> Obj D;
+  FHom : forall {A B}, Hom C A B -> Hom D (FObj A) (FObj B);
+  F_id : forall {a : Obj C}, FHom (id C a) = id D (FObj a);
+  F_comp : forall {A B C0 : Obj C} (f : Hom C A B) (g : Hom C B C0),
+    FHom (comp C f g) = comp D (FHom f) (FHom g)
+}.
 
+Definition L_morphism {A B : person} (r : relationship A B) : relationship A B := r.
 
+Definition F_morphism {A B : person} (r : relationship A B) : relationship A B := r.
 
+Definition L_functor : Functor People People :=
+  {|
+    FObj := fun p => p;
+    FHom := fun (A B : Obj People) (r : relationship A B) => L_morphism r;
+    F_id := fun p => eq_refl;
+    F_comp := fun _ _ _ (f : relationship _ _) (g : relationship _ _) => eq_refl
+  |}.
 
-  Definition L_morphism {A B : person} (r : relationship A B) : relationship A B := r.
-
-  Definition F_morphism {A B : person} (r : relationship A B) : relationship A B := r.
-  Definition L_functor : Functor People People :=
-    {|
-      FObj := fun p => p;
-      FHom := fun (A B : Obj People) (r : relationship A B) => r;
-      F_id := fun p => eq_refl;
-      F_comp := fun _ _ _ (f : relationship _ _) (g : relationship _ _) => eq_refl
-    |}.
-
-  Definition F_functor : Functor People People :=
-    {|
-      FObj := fun p => p;
-      FHom := fun (A B : Obj People) (r : relationship A B) => r;
-      F_id := fun p => eq_refl;
-      F_comp := fun _ _ _ (f : relationship _ _) (g : relationship _ _) => eq_refl
-    |}.
+Definition F_functor : Functor People People :=
+  {|
+    FObj := fun p => p;
+    FHom := fun (A B : Obj People) (r : relationship A B) => F_morphism r;
+    F_id := fun p => eq_refl;
+    F_comp := fun _ _ _ (f : relationship _ _) (g : relationship _ _) => eq_refl
+  |}.
