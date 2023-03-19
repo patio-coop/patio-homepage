@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul {
+    list-style-type: none;
+}
+.container {
+    text-align: center;
+    width: 80%;
+}
+
+.main-message {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    background-color: #333;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    transform: rotate(-3deg);
+}
+
+.section {
+    margin: 1rem 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: #444;
+    display: inline-block;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section li {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
