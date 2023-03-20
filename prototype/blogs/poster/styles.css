@@ -1,19 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #222;
-    color: #eee;
+    background-color: #f0f4f8;
+    color: #333;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow:auto;
 }
+
 ul {
     list-style-type: none;
 }
+
 .container {
     text-align: center;
     width: 80%;
@@ -23,7 +23,8 @@ ul {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    background-color: #333;
+    background-color: #4a90e2;
+    color: #fff;
     display: inline-block;
     padding: 0.5rem 1rem;
     transform: rotate(-3deg);
@@ -36,7 +37,8 @@ ul {
 .section h2 {
     font-size: 2rem;
     text-transform: uppercase;
-    background-color: #444;
+    background-color: #4a90e2;
+    color: #fff;
     display: inline-block;
     padding: 0.5rem;
     margin-bottom: 1rem;
@@ -55,4 +57,58 @@ ul {
 .section li {
     font-size: 1.1rem;
     line-height: 1.5;
+}
+
+/* Style the rings */
+.ring {
+    position: absolute;
+    border: 2px solid #4a90e2;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Style the larger ring */
+#ring5 {
+    position: absolute;
+    border: 2px solid #4a90e2;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
+    left: 200px;
+}
+
+/* Position each smaller ring */
+#ring1 {
+    top: 100px;
+    left: 100px;
+}
+
+#ring2 {
+    top: 100px;
+    left: 500px;
+}
+
+#ring3 {
+    top: 500px;
+    left: 100px;
+}
+
+#ring4 {
+    top: 500px;
+    left: 500px;
+}
+
+/* Style the ring wrappers */
+.ring-wrapper {
+    position: relative;
 }
