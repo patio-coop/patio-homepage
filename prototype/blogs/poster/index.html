@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Patio: Global Community of Web-Focused Cooperatives</title>
+    <script>
+
+        function updateMargin() {
+            var myDiv = document.getElementsByClassName('ring-wrapper')[0];
+            var screenWidth = window.innerWidth;
+            var margin = (screenWidth - 1000) / 2
+            myDiv.style.marginLeft = margin+'px';
+        }
+
+        window.onload = function () {
+            updateMargin();
+        };
+
+        window.onresize = function () {
+            updateMargin();
+        };
+
+    </script>
 </head>
 
 <body>
@@ -14,13 +32,21 @@
             <h2>Who We Are</h2>
         </div>
 
-        <p>Patio is an international community of worker cooperatives worldwide, focused on digital technology, communication, and design development. We provide a supportive and collaborative network of like-minded cooperatives dedicated to social responsibility, democratic decision-making, and an alternative to corporate capitalism. As a member of Patio, you can access numerous benefits, including shared resources, opportunities for peer learning, and a platform to showcase your cooperative's work. We collaborate through knowledge-sharing, job opportunities, and shared human resources. Patio delivers an optimal experience for both co-op members and our partners.</p>
+        <p>Patio is an international community of worker cooperatives worldwide, focused on digital technology,
+            communication, and design development. We provide a supportive and collaborative network of like-minded
+            cooperatives dedicated to social responsibility, democratic decision-making, and an alternative to corporate
+            capitalism. As a member of Patio, you can access numerous benefits, including shared resources,
+            opportunities for peer learning, and a platform to showcase your cooperative's work. We collaborate through
+            knowledge-sharing, job opportunities, and shared human resources. Patio delivers an optimal experience for
+            both co-op members and our partners.</p>
         <h1 class="main-message">Join Patio, Our Global Community of Web-Focused Cooperatives</h1>
         <div class="section we-circulate">
             <h2>We Circulate!</h2>
         </div>
         <div class="content">
-            <p>Our organization is structured into four distinct circles, with each having its own set of tasks and objectives. Biweekly, we gather to discuss each circle's progress and make various decisions about our community.</p>
+            <p>Our organization is structured into four distinct circles, with each having its own set of tasks and
+                objectives. Biweekly, we gather to discuss each circle's progress and make various decisions about our
+                community.</p>
             <ul>
                 <li>Internal Organization & Community Support:</li>
                 <li>Outreach & Communication:</li>
@@ -28,13 +54,13 @@
                 <li>External Relations:</li>
             </ul>
         </div>
-    </div>
-    <div class="ring-wrapper">
-      <div class="ring" id="ring1">Outreach & Communications</div>
-      <div class="ring" id="ring2">Business Development</div>
-      <div class="ring" id="ring3">External Relations</div>
-      <div class="ring" id="ring4">Internal Communications & Community Support </div>
-      <div class="ring" id="ring5">Biweekly Gathering</div>
+        <div class="ring-wrapper">
+            <div class="ring" id="ring1">Outreach & Communications</div>
+            <div class="ring" id="ring2">Business Development</div>
+            <div class="ring" id="ring3">External Relations</div>
+            <div class="ring" id="ring4">Internal Communications & Community Support </div>
+            <div class="ring" id="ring5">Biweekly Gathering</div>
+        </div>
     </div>
 
 </body>

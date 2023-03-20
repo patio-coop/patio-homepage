@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    overflow:auto;
+    overflow: auto;
 }
 
 ul {
@@ -17,6 +17,7 @@ ul {
 .container {
     text-align: center;
     width: 80%;
+
 }
 
 .main-message {
@@ -91,6 +92,7 @@ ul {
 #ring1 {
     top: 100px;
     left: 100px;
+
 }
 
 #ring2 {
