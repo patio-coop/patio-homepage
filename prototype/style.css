@@ -614,18 +614,19 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
 
-  min-width: 60%;
+  min-width: 20%;
+  padding: 3rem 0 6rem 3rem;
 }
 
 .main__section4__statsWrapper {
   display: flex;
-  flex-wrap: wrap;
+
   align-items: center;
   justify-content: center;
 
   /* INSETAR MARGEN */
-  gap: 5%;
-  max-width: 1000px;
+  gap: 1%;
+  max-width: 20%;
 }
 
 .main__section4__stats__coops,
@@ -633,6 +634,7 @@ nav ul li a:hover {
 .main__section4__stats__countries,
 .main__section4__stats__digital {
   display: flex;
+
   justify-content: center;
   align-items: center;
 
@@ -734,6 +736,70 @@ nav ul li a:hover {
   content: "• ";
   color: white;
   transition: 300ms;
+}
+
+.main__section4__island__background {
+  background: linear-gradient(
+    180deg,
+    var(--deep-purple) 0%,
+    var(--deep-purple-dark) 100%
+  );
+}
+
+.main__section4__island {
+  margin: -4rem 0 6.25rem 0;
+  padding: 3rem 6rem;
+}
+
+/* .main__section4__island__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 3rem 6rem;
+} */
+
+.main__section4__grid__title {
+  font-family: var(--font-family);
+  font-size: var(--font-size-special);
+  font-weight: 500;
+
+  color: rgb(0, 0, 0);
+  padding: 0 0 1.5rem 0;
+}
+
+.members__credits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 4rem;
+  row-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  /* margin-top: 1rem; */
+  /* height: 230px; */
+  /* margin-bottom: 1rem; */
+}
+
+.members__cooplogo {
+  object-fit: contain;
+  max-width: 80%;
+  max-height: 67%;
+  width: auto;
+  height: auto;
+}
+
+.members__cooplogo__medium {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.members__cooplogo__large {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.members__credits a {
+  margin-top: 15px;
 }
 
 /* SECTION 5 */
