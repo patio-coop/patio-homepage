@@ -60,7 +60,7 @@ const languages = {
     el: "Είμαστε η",
     hr: "Mi smo",
     pt: "Nós somos a",
-    jp: "ーです",
+    jp: "", // It should be left blank for Japanese
     tr: "Biz PATIO",
   },
   "section1-title-top2": {
