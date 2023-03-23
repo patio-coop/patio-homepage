@@ -765,37 +765,32 @@ nav ul li a:hover {
   font-weight: 500;
 
   color: rgb(0, 0, 0);
-  padding: 0 0 1.5rem 0;
+  padding: 0;
 }
 
 .members__credits {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 4rem;
-  row-gap: 2rem;
+  column-gap: 4.5rem;
+  row-gap: 0;
   justify-items: center;
   align-items: center;
-  /* margin-top: 1rem; */
-  /* height: 230px; */
-  /* margin-bottom: 1rem; */
 }
 
 .members__cooplogo {
-  object-fit: contain;
-  max-width: 80%;
-  max-height: 67%;
-  width: auto;
-  height: auto;
+  max-width: 95%;
+}
+
+.members__cooplogo__small {
+  transform: scale(1.4);
 }
 
 .members__cooplogo__medium {
-  padding-left: 20px;
-  padding-right: 20px;
+  transform: scale(1.2);
 }
 
 .members__cooplogo__large {
-  padding-left: 30px;
-  padding-right: 30px;
+  transform: scale(0.7);
 }
 
 .members__credits a {
