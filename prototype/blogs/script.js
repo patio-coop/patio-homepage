@@ -56,41 +56,62 @@ async function displayComments(post_id) {
     }
 }
 
-function loadFile() {
-    if (md || html) {
-        document.getElementById('blog-title').style = 'display: block'
-        document.getElementById('blog-title').innerHTML = `<h1>${md}</h1>`
-        document.getElementById('blog-index').style = 'display: none'
-        document.getElementById('blog-post').style = 'display: block'
-        document.getElementById('footer-to-blog-index').style = 'display: block'
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                if (html) {
-                    var html = xhr.responseText;
-                } else {
-                    var markdown = xhr.responseText;
-                    var html = marked.parse(markdown);
-                }
-                xhr.open('GET', `${html}.html`, true);
-                document.getElementById('blog-post').innerHTML = html;
-            }
-        };
-        if (html) {
-            xhr.open('GET', `${html}.html`, true);
-        } else {
-            xhr.open('GET', `${md}.md`, true);
-        }
-        xhr.send();
-    } else {
-        document.getElementById('blog-title').style = 'display: none'
-        document.getElementById('blog-title').innerHTML = ''
-        document.getElementById('blog-index').style = 'display: block'
-        document.getElementById('blog-post').style = 'display: none'
-        document.getElementById('footer-to-blog-index').style = 'display: none'
-    }
+// ...other code in script.js
 
-}
+function renderMarkdownWithMermaid(markdown, targetElementId) {
+    const container = document.getElementById(targetElementId);
+    container.innerHTML = marked.parse(markdown);
+
+    const mermaidElements = container.querySelectorAll('.language-mermaid');
+    mermaidElements.forEach((element) => {
+      const diagramContainer = document.createElement('div');
+      diagramContainer.className = 'mermaid';
+      diagramContainer.innerHTML = element.textContent;
+      element.parentElement.replaceChild(diagramContainer, element);
+    });
+
+    mermaid.init(undefined, 'div.mermaid');
+  }
+
+  function loadFile() {
+    if (md || html) {
+      document.getElementById('blog-title').style = 'display: block'
+      document.getElementById('blog-title').innerHTML = `<h1>${md}</h1>`
+      document.getElementById('blog-index').style = 'display: none'
+      document.getElementById('blog-post').style = 'display: block'
+      document.getElementById('footer-to-blog-index').style = 'display: block'
+
+      const filePath = html ? `${html}.html` : `${md}.md`;
+      const isMarkdown = !html;
+
+      fetch(filePath)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Error loading file');
+          }
+          return response.text();
+        })
+        .then(content => {
+          if (isMarkdown) {
+            renderMarkdownWithMermaid(content, 'blog-post');
+          } else {
+            document.getElementById('blog-post').innerHTML = content;
+          }
+        })
+        .catch(error => {
+          console.error(error);
+        });
+
+    } else {
+      document.getElementById('blog-title').style = 'display: none'
+      document.getElementById('blog-title').innerHTML = ''
+      document.getElementById('blog-index').style = 'display: block'
+      document.getElementById('blog-post').style = 'display: none'
+      document.getElementById('footer-to-blog-index').style = 'display: none'
+    }
+  }
+
+
 async function fetchComments(post_id) {
     // Make a GET request to the comments REST API
     const response = await fetch(`https://tng.coop/p2.php?post_id=${post_id}`);
