@@ -130,92 +130,76 @@ Since α_B ∘ F(f)(x) = G(f) ∘ α_A(x) for all x in F(A), the naturality cond
 is satisfied. Therefore, α_A and α_B form a natural transformation between
 functors F and G.
 
-# Yoneda Lemma
-The Yoneda Lemma is a foundational result in category theory that provides a
-deep insight into the structure of categories and their relationship with
-functors. It connects a functor with a representable functor and natural
-transformations, and shows that every natural transformation can be uniquely
-determined by its action on a single object.
+# Hom-Functors
 
-## Representable Functors
-Representable functors are a special class of functors that can be associated
-with an object in a category. In this discussion, we will explore the concept of
-representable functors and their properties.
+## Rough Idea
 
-To illustrate representable functors, let's consider a category C and its
-opposite category, C^op. The objects of C^op are the same as those in C, but the
-arrows (morphisms) have their directions reversed.
-## Hom-Functors
-In the context of representable functors, we often deal with Hom-functors. A
-Hom-functor is a functor that maps objects and morphisms of a category to the
-set of morphisms (arrows) between those objects.
+Hom-Functors map a category, say C, to a Hom-Set category, say D.
 
-| Property             | Regular Functor                | Hom-Functor                                               |
-|----------------------|---------------------------------|-----------------------------------------------------------|
-| Domain               | Category C                      | Category C                                                |
-| Codomain             | Category D                      | Category of Sets                                          |
-| Objects in Target    | Objects in D                    | Sets of morphisms in C                                    |
-| Maps objects         | Maps objects in C to objects in D  | Maps objects in C to sets of morphisms                   |
-| Maps morphisms       | Maps morphisms in C to morphisms in D | Maps morphisms in C to functions between sets of morphisms |
-| Composition law      | Preserves composition in C      | Preserves composition in C                                |
-| Identity morphisms   | Preserves identity morphisms in C | Preserves identity morphisms in C                         |
+Although D may have all sorts of objects that are each Hom-Set (say, HomC(A,B)),
+and morphisms between them, HomC(A,B)->HomC(C,D), then kind of morphisms created
+by our functor our very specific.
 
-If source had 3 objects, Hom-Functors will create 9 objects in the target
-category as below
+> The reason HomC(A,B), instead of Hom(A,B), is for clarity.  Although Hom(A,B)
+> is defined as an object in D, the A,B part comes from C!  We make it clear by
+> calling our Homset, HomC
 
-```mermaid
-graph LR
-  A-->HA("Hom(A, A)")
-  A-->HB("Hom(A, B)")
-  A-->HC("Hom(A, C)")
-  B-->HBA("Hom(B, A)")
-  B-->HBB("Hom(B, B)")
-  B-->HBC("Hom(B, C)")
-  C-->HCA("Hom(C, A)")
-  C-->HCB("Hom(C, B)")
-  C-->HCC("Hom(C, C)")
+> Let me also mention that our morphism Hom(A,B)->Hom(C,D) is just like Int ->
+> String in Haskell. It is a function that takes a morphism from A to B and
+> returns a new morphism from C to D.
 
-```
+First, pick an object we will use as an anchor in C, say X. Then for every
+map f:A->B in C, we map it to what we call HomC(X, f) in D.
 
-```mermaid
-graph TD
-    A[X] -->|f| B[Y]
+HomC(X,f) is a shorthand for HomC(X,A) -> HomC(X,B), a morphism in D, defined as a function
+taking morphism X->A of C and producing morphism X->B of C.
 
-    subgraph Category C
-    A -->|g| C[Z]
-    B -->|h| C
-    end
+## Definition of our Hom-Functor
 
-    subgraph Hom-Functor H
-    HA[HomX, -] -->|Hf| HB[HomY, -]
-    HA -->|HomX, g| HC[HomX, Z]
-    HB -->|HomY, h| HC
-    end
+Our Functor maps:
 
-```
+Using X as a chosen anchor object in C,
 
-Contravariant Hom-Functor
+    Any Object A in C to HomC(X, A) in D.
+    Any morphism f:A->B in C to HomC(X, f), or HomC(X,A)->HomC(X,B) in D.
+        h : X -> A
+        F(f):=lambda h, f . h
 
-The contravariant Hom-functor is denoted as Hom(A, -) and maps objects and morphisms in category C^op to the set of morphisms starting from object A in C. The Mermaid code for the diagram representing the contravariant Hom-functor is:
+## Definitions of D
 
-mermaid
+In D, the identity morphism for HomC(X,A) is defined as:
 
-graph LR
-X((X)) <--|f| Y((Y))
-Y <--|g| Z((Z))
-subgraph Contravariant Hom-Functor Hom(A, -)
-  HomX[Hom(A, X)]
-  HomY[Hom(A, Y)]
-  HomZ[Hom(A, Z)]
-  Y -->|Hom(A, f)| HomX
-  Z -->|Hom(A, g)| HomY
-end
+id_HomC(X,A) : HomC(X,A)->HomC(X,A)
+id_HomC(X,A) := lambda h: h
 
-Representable Functor Definition
+Composition of morphisms in D is defined as:
 
-A functor F: C → Set (or C^op → Set) is called representable if it is isomorphic to a Hom-functor for some object A in C. In other words, there exists an object A in C such that F is naturally isomorphic to Hom(A, -) or Hom(-, A).
-Example of a Representable Functor
+f:A->B
+g:B->C
+h:X->A
+HomC(X,g) . HomC(X,f) : X -> C
+HomC(X,g) . HomC(X,f) := lambda h, g . f . h
 
-Consider the category of finite sets, FinSet. Let's define a functor F: FinSet^op → Set that takes a finite set X and maps it to the set of all possible orderings (i.e., permutations) of X.
+## Preservation of Identity
+Let f:B->A.
+We need to show that F(id_A . f) = id_HomC(X,A) . HomC(X,f)
 
-Now, let's consider the contravariant Hom-functor Hom(A, -), where A is a finite set with n elements. For any finite set X, Hom(A, X) represents the set of all functions from A to X. When X has n elements, there are n^n possible functions from A to X. Since
+Recall that F(f) = HomC(X,f) = lambda h, f . h.
+
+    LHS = F(id_A . f) = F(f) = lambda h, f . h
+    RHS = id_HomC(X,A) . HomC(X,f) = (lambda h: h) . (lambda h, f . h)
+
+To prove that the LHS and RHS are equal, we need to show that their action on an arbitrary morphism h:X->A is the same:
+
+    LHS(h) = (lambda h, f . h)(h) = f . h
+    RHS(h) = (lambda h: h)(f . h) = f . h
+
+Since LHS(h) = RHS(h) for any morphism h:X->A, the preservation of identity is proven.
+
+## Preservation of Composition
+We need to prove that F(gf) = F(g) . F(f)
+LHS = lambda h. gf . h =  lambda .h, g . f . h
+RHS = lambda h. g . f. h by definition
+
+
+

@@ -1,0 +1,31 @@
+// Yoneda Lemma Diagram
+digraph {
+	graph [splines=ortho]
+	A [label=A]
+	B [label=B]
+	C [label=C]
+	subgraph cluster_A_alpha {
+		style=invis
+		alpha [label=alpha shape=diamond]
+	}
+	subgraph cluster_A_beta {
+		style=invis
+		beta [label=beta shape=diamond]
+	}
+	subgraph cluster_B_alpha {
+		style=invis
+		alpha [label=alpha shape=diamond]
+	}
+	subgraph cluster_B_beta {
+		style=invis
+		beta [label=beta shape=diamond]
+	}
+	subgraph cluster_C_alpha {
+		style=invis
+		alpha [label=alpha shape=diamond]
+	}
+	subgraph cluster_C_beta {
+		style=invis
+		beta [label=beta shape=diamond]
+	}
+}
