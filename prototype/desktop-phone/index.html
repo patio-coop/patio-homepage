@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Desktop!</title>
+  <style>
+    body {
+      display: none;
+    }
+  </style>
+  <script>
+    function handleDevice() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      if (/android|iphone|ipad|ipod|blackberry|iemobile|windows phone|opera mini|opera mobi/i.test(userAgent)) {
+        window.location.href = "smart.html";
+      } else {
+        document.body.style.display = "block";
+      }
+    }
+  </script>
+</head>
+<body onload="handleDevice()">
+  <h1>Hello Desktop!</h1>
+</body>
+</html>
