@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello Smart Phone!</title>
+  <title>Patio Home</title>
+  <meta name="description"
+    content="Global community of worker owned cooperatives specializing in the development of software, communication and design.">
+
+  <!-- Start 3d globe dependencies -->
+  <script src="../3dglobe/libs/three.min.js"></script>
+  <script src="../3dglobe/libs/dat.gui.min.js"></script>
+  <script src="../3dglobe/libs/fabric.min.js"></script>
+  <script src="../3dglobe/libs/d3-geo.v1.min.js"></script>
+  <script src="../3dglobe/libs/THREE.MeshLine.js"></script>
+  <script src="../3dglobe/libs/orbit-controls.js"></script>
+  <script src="../3dglobe/libs/trackball-controls.js"></script>
+  <script src="../3dglobe/libs/perlin-noise.js"></script>
+  <!-- -- The customizable JS -->
+  <script src="../3dglobe/assets/data/processing.js"></script>
+  <script src="../3dglobe/scripts/config.js"></script>
+  <script src="../3dglobe/scripts/app.js"></script>
+  <script src="../3dglobe/scripts/shaders.js"></script>
+  <script src="../3dglobe/scripts/index.js"></script>
+  <script src="../3dglobe/scripts/globe.js"></script>
+  <script src="../3dglobe/scripts/points.js"></script>
+  <script src="../3dglobe/scripts/marker.js"></script>
+  <script src="../3dglobe/scripts/markers.js"></script>
+  <script src="../3dglobe/scripts/lines.js"></script>
+  <script src="../3dglobe/scripts/dots.js"></script>
+  <script src="../3dglobe/scripts/utils.js"></script>
+  <!-- -- The Country and Connection data -->
+  <script src="../assets/countries.js"></script>
+  <script src="../assets/languages.js"></script>
+  <script src="../assets/connections.js"></script>
+  <script src="../3dglobe/assets/data/grid.js"></script>
+  <script>
+    HEIGHT = window.innerHeight
+  </script>
+  <link rel="stylesheet" href="smart.css">
+  <!-- End 3d globe dependencies -->
 </head>
-<body>
-  <h1>Hello Smart Phone!</h1>
+
+<body style="margin:0">
+  <div class="container">
+    <div class="content" id="3dglobe-target"></div>
+    <div class="overlay" id="patio-on-globe">
+      <div style="font-size: 10vw; text-align:center">
+        PATIO
+      </div>
+      <div style="font-size: 7vw; text-align:center">
+        World IT worker coop federation
+      </div>
+    </div>
+  </div>
+  <form id="contact-form" name="contact-form" action="/success-form-page.html" class="main__section8__form__content"
+    method="POST" data-netlify="true" netlify>
+    <label class="form_label_1" for="form-why-input">
+      <script>t("section8-why")</script>
+    </label>
+    <select class="form_input_1" id="form-why-input" name="Select an option" required>
+      <option selected value>
+        <script>t("section8-select-option")</script>
+      </option>
+      <option value="work-with-us">
+        <script>t("section8-work")</script>
+      </option>
+      <option value="join-patio-community">
+        <script>t("section8-join")</script>
+      </option>
+    </select>
+
+    <label class="form_label_2" for="form-name-input">
+      <script>t("section8-name")</script>
+    </label>
+    <input class="form_input_2" type="text" id="form-name-input" name="name" required>
+
+    <label class="form_label_3" for="form-surname-input">
+      <script>t("section8-surname")</script>
+    </label>
+    <input class="form_input_3" type="text" id="form-surname-input" name="surname" required>
+
+    <label class="form_label_4" for="form-email-input">
+      <script>t("section8-email")</script>
+    </label>
+    <input class="form_input_4" type="email" id="form-email-input" name="email" required>
+
+    <label class="form_label_6" for="form-subject-input">
+      <script>t("section8-subject")</script>
+    </label>
+    <input class="form_input_6" type="text" id="form-subject-input" name="subject" required>
+
+    <label class="form_label_7" for="form-message-input">
+      <script>t("section8-message")</script>
+    </label>
+    <textarea class="form_input_7" name="message" id="form-message-input" cols="30" rows="10" required></textarea>
+    <button class="btn btn1">
+      <script>t("section8-btn-send")</script>
+    </button>
+  </form>
+
 </body>
+
 </html>
