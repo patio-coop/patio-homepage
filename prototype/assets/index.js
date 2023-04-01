@@ -69,29 +69,6 @@ window.onclick = function(event) {
 }
 
 
-// MANAGE COOPS BY COUNTRY LIST
-countries_list = document.getElementById("coops_by_country_list");
-for (let country of data.countries) {
-  for (let c of country.coops) {
-    // CREATE ITEM LINK
-    let link = document.createElement("a");
-    link.innerHTML = c.name;
-    link.setAttribute('class', 'main__section4__list__items__link');
-    link.onclick = function() {
-      openModal(country.name, c);
-    }
-
-    // CREATE LIST ITEM
-    let item = document.createElement("li");
-    item.setAttribute('class', "main__section4__list__items__item");
-    item.appendChild(link);
-    countries_list.appendChild(item);
-  }
-}
-// APPEND LIST TO CONTAINER
-document.getElementById("coops_by_country_list_container").appendChild(countries_list);
-
-
 // STICKY NAVBAR
 const navbar = document.querySelector('.navbar-fixed')
 window.addEventListener('scroll', function (e) {
