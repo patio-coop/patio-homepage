@@ -1,4 +1,4 @@
-const HEIGHT = 600;
+let HEIGHT = 600;
 
 class App {
   constructor({animate, setup}) {

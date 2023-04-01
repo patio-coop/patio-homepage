@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+  }
+
+  .content {
+    position: absolute;
+  }
+
+  .overlay {
+    position: relative;
+    z-index: 9;
+    color: turquoise;
+  }
+
+  input, textarea{
+    font-size: 5vw;
+    color: black;
+  }
+  form{
+    font-size: 5vw;
+    color: white;
+  }
+  button{
+    font-size: 5vw;
+    padding: 5vw 5vw;
+    color: red;
+  }
+  select{
+    font-size: 5vw;
+    padding: 5vw 5vw;
+    color: red;
+
+  }
+
+body {
+background-color: navy;
+  overflow-y: scroll; /* make the body scrollable */
+  touch-action: pan-y; /* allow vertical scrolling only */
+  -webkit-overflow-scrolling: touch; /* enable smooth scrolling on iOS */
+}
