@@ -504,7 +504,7 @@ hr{
 }
 
 .item {
-  padding: 0rem;
+  padding: 2rem;
   background-color:white;
   height: 90px;
   display: flex;
@@ -657,7 +657,7 @@ hr{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   /* INSETAR MARGEN */
   gap: 1%; 
   max-width: 100%;
@@ -672,7 +672,7 @@ hr{
   justify-content: center;
   align-items: center;
   color: white;
-  margin: 24px 33px;
+  margin: 24px 18px;
   width: 100%;
 }
 
@@ -784,7 +784,7 @@ hr{
 }
 
 .main__section5__services div {
-  padding: 38px;
+  padding: 16px;
 }
 
 .main__section5__services div img {
@@ -839,9 +839,11 @@ hr{
 }
 .main__section5__services__content{
   display: flex;
-  flex-direction: row;
-  padding: 10rem;
-  width: 100%;
+    flex-direction: row;
+    padding: 10rem;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
 }
 .main__section5__services__full-stack img {
   width: 90% !important;
@@ -1335,6 +1337,15 @@ Infinite > Larger screen > 1350px
 
 @media screen and (min-width: 1024px){
 
+  .container { 
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto auto;
+  }
+  
+
 header {
   display: flex;
   justify-content: center;
@@ -1463,6 +1474,7 @@ nav ul li a:hover {
 .main__section1 .container{
   display: flex;
   flex-direction: row;
+  width: 1200px;
   }
 .main__section1__title {
   display: flex;
@@ -1551,6 +1563,7 @@ nav ul li a:hover {
 .main__section2 .container{
   display: flex;
   flex-direction: row;
+  width: 1200px;
 }
 
 .main__section2__patio {
@@ -1595,10 +1608,11 @@ nav ul li a:hover {
   min-height: 588px;
 }
 
-.main__section3__container {
+.main__section3 .container {
   display: flex;
   flex-direction: row;
   margin: 100px;
+  width: 1200px;
 }
 
 .main__section3__text {
@@ -1647,7 +1661,16 @@ nav ul li a:hover {
   display: flex;
   flex-direction: row;
   background: var(--background-section3);
+  width: 1200px;
+  height: auto;
 
+}
+
+.main__section4 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: var(--background-section3);
 }
 
 .main__section4__stats {
@@ -1670,7 +1693,8 @@ nav ul li a:hover {
   align-items: flex-start;
   justify-content: center;
   max-width: 100%;
-  margin-top: -33rem;
+  margin-top: -46rem;
+  margin-left: -15rem;
   /* flex-wrap: wrap; */
 }
 
@@ -1848,6 +1872,7 @@ nav ul li a:hover {
   display: flex;
   padding: 0rem;
   background: var(--background-section3);
+  margin-top: -35rem;
 }
 .modal{
   display: flex;
@@ -1961,22 +1986,26 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   background: linear-gradient(359deg,var(--dark-violet) 50.06%,rgba(154, 73, 236, 0) 90.19%),var(--deep-purple-dark);
+  width: 100%;
 }
 .main__section5__container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: -30rem; 
+  width: 1200px;
 }
 .main__section5__wrapper {
   display: flex;
   margin-top: 90px;
   font-family: var(--font-family);
   color: rgba(255, 255, 255, 1);
+  
 }
 
 .main__section5_text {
   width: 30%;
+  margin-left: 3rem;
 }
 
 .main__section5__img {
@@ -2070,7 +2099,7 @@ nav ul li a:hover {
 .main__section5__services__content{
   display: flex;
   flex-direction: column;
-  margin-left: -5rem;
+  margin-left: -27rem;
 }
 
 .main__section5__services__column1{
@@ -2127,6 +2156,7 @@ nav ul li a:hover {
 .main__section6__container {
   justify-content: space-between;
   flex-wrap: wrap;
+  
 }
 
 .main__section6__container div {
