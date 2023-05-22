@@ -225,14 +225,14 @@ body::-webkit-scrollbar-thumb {
 .container { 
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  margin: auto auto;
+  margin: auto -1rem;
 }
 /******************************** HEADER *************************************/
 
 
-header {
+header  {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -240,7 +240,7 @@ header {
   position: sticky; /* Set the navbar to fixed position */
   top: 0;
   z-index: 33;
-
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 
@@ -249,7 +249,7 @@ header {
   object-fit: cover;
 }
 
-.header__navbar{
+.header__navbar__socialmedia{
   
   display: none;
 }
@@ -261,17 +261,65 @@ header {
   cursor: pointer;
   background: var(--turquoise-blue); 
   padding: 1.5rem;
+  margin-right: -8rem;
     
  }
  .menu-btn img{
   width: 20px;
   height: 20px;
  }
+ .menu {
+  display: flex;
+  position: fixed;
+  top: var(--header-height);
+  bottom: var(--header-height);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--turquoise-blue);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  text-decoration: none;
+  
+}
+ 
+.menu.is-active {
+  display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    bottom: -5rem;
+    width: 102%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -24rem;
+    place-content: stretch space-evenly;
+    text-decoration: none;
+  
+  
+}
+
+
+ .menu a {
+  font-family: "Ubuntu", sans-serif;
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--dark-midnight-blue);
+}
 
 .none{
   display: none;
 }
 
+.header__navbar__socialmedia {
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+}
 .navigation .header__navbar__sections{
   display: flex;
   position: fixed;
@@ -285,6 +333,8 @@ header {
   pointer-events: none;
   transition: opacity 0.5s ease;
 }
+
+
 
 /*************************** SECTION 1 Mb *******************************/
 
@@ -460,7 +510,7 @@ hr{
   line-height: 26px;
 }
 
-.main__section3__globe {
+.main__section3__globe-mb {
  
   display: flex;
   flex-direction: column;
@@ -489,7 +539,7 @@ hr{
   margin-top: 11rem;
   text-align: center;
   height: auto;
-  padding: 1rem;
+  padding: 0rem;
   
 }
 
@@ -520,10 +570,10 @@ hr{
 .grid-responsive {
   background: white;
   display: grid;
-  padding: 3rem;
-  margin: 0rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
+  padding: 1rem;
+  margin: 0.rem;
+  grid-template-columns: repeat(auto-fit, minmax(171px, 1fr));
+  gap: 0.5rem;
   
 }
 
@@ -721,18 +771,20 @@ hr{
   padding: 1rem;
   background: linear-gradient(359deg,var(--dark-violet) 50.06%, rgba(154, 73, 236, 0) 90.19%),var(--deep-purple-dark);
   width: 100%;
+  margin-left: 0rem;
 }
 .main__section5 .container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
+  margin-left: .1rem;
 }
 .main__section5__wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 90px;
+  margin-top: 14px;
   font-family: var(--font-family);
   color: rgba(255, 255, 255, 1);
 }
@@ -740,7 +792,7 @@ hr{
 .main__section5_text {
 
   margin-top: 35rem;
-  width: 90%;
+  width: 100%;
 }
 
 .main__section5__img {
@@ -784,7 +836,7 @@ hr{
 }
 
 .main__section5__services div {
-  padding: 16px;
+  padding: 10px;
 }
 
 .main__section5__services div img {
@@ -843,7 +895,9 @@ hr{
     padding: 10rem;
     width: 100%;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1rem;
 }
 .main__section5__services__full-stack img {
   width: 90% !important;
@@ -854,7 +908,7 @@ hr{
 }
 
 .main__section5__services__branding img {
-  width: 145% !important;
+  width: 100% !important;
 }
 
 .main__section5__services__mobile img {
@@ -889,16 +943,18 @@ hr{
   flex-direction: column;
   justify-content: space-evenly;
   background: var(--dark-midnight-blue); /*var(--background-section6)*/
-  padding: 128px 0;
+  padding: 128px 0; 
   width: 100%;
+  
 }
 
 
 .main__section6 .container {
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 1rem;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 1rem;
+  
 }
 
 /* .main__section6__island__content{
@@ -1005,7 +1061,7 @@ hr{
 .main__section7 .container{
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 2rem;
   width: 100%;
 }
 
@@ -1263,6 +1319,26 @@ textarea {
 
 /****************************  Footer Grid *****************************/
 
+.footer__intercoop {
+  background-color: var(--dark-midnight-blue);
+  height: 1rem;
+  padding: 4px;
+}
+
+.footer__intercoop__text {
+  background-color: white; 
+  color: var(--dark-midnight-blue);
+  font-size: 11px;
+  text-align: center;
+  line-height: 13px;
+  width: 100%;
+  height: 5rem;
+  margin-left: 0rem;
+  margin-right: auto;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
 .footer__content__coops-modal {
   display: flex;
   background: #070c3875;
@@ -1313,13 +1389,7 @@ textarea {
 
 /************************ CONTAINER SETTINGS **************************/
 
-.container { 
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: auto auto;
-}
+
 
 /*
 Media query x<1350 { .container{width: 1000px} }
@@ -1428,6 +1498,49 @@ header {
 
   border: none;
 }
+
+.menu {
+  display: flex;
+  position: fixed;
+  top: var(--header-height);
+  bottom: var(--header-height);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--turquoise-blue);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  text-decoration: none;
+  
+}
+ 
+.menu.is-active {
+  display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    bottom: -5rem;
+    width: 102%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -24rem;
+    place-content: stretch space-evenly;
+    text-decoration: none;
+  
+  
+}
+
+
+ .menu a {
+  font-family: "Ubuntu", sans-serif;
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--dark-midnight-blue);
+}
+
 
 nav ul {
   display: flex;
@@ -1648,12 +1761,16 @@ nav ul li a:hover {
   width: 30rem;
 }
 
-.main__section3__globe {
+.main__section3__globe-mb {
  
-  display: flex;
+  display: none;
   width: 100%;
   height: auto;
 }
+ 
+
+
+
 
 /************************************ SECTION 4 Ds ***********************************/
 
@@ -1661,12 +1778,11 @@ nav ul li a:hover {
   display: flex;
   flex-direction: row;
   background: var(--background-section3);
-  width: 1200px;
   height: auto;
 
 }
 
-.main__section4 {
+.main__section4 .container{
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -1866,6 +1982,17 @@ nav ul li a:hover {
 .members__credits a {
   margin-top: 15px;
 }
+
+.grid-responsive {
+  background: white;
+  display: grid;
+  padding: 1rem;
+  margin: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(171px, 1fr));
+  gap: 1.5rem;
+  
+}
+
 /********************************* Modal Ds *************************************/
 
 .section4__content__coops-modal {
@@ -1988,12 +2115,12 @@ nav ul li a:hover {
   background: linear-gradient(359deg,var(--dark-violet) 50.06%,rgba(154, 73, 236, 0) 90.19%),var(--deep-purple-dark);
   width: 100%;
 }
-.main__section5__container {
+.main__section5 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: -30rem; 
-  width: 1200px;
+  
 }
 .main__section5__wrapper {
   display: flex;
@@ -2150,12 +2277,15 @@ nav ul li a:hover {
   flex-direction: row;
   justify-content: space-evenly;
   background: var(--dark-midnight-blue); /*var(--background-section6)*/
-  padding: 128px 0;
+  padding: 128px 0; 
 }
 
-.main__section6__container {
+.main__section6 .container {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 1200px;
   
 }
 
@@ -2264,6 +2394,7 @@ nav ul li a:hover {
 .main__section7 .container{
   display: flex;
   flex-direction: row;
+  width: 1200px;
  
 }
 
@@ -2359,8 +2490,8 @@ nav ul li a:hover {
 .main__section8 .container{
   display: flex;
   flex-direction: row;
+  width: 1200px;
  
-
 }
 
 
