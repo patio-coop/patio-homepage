@@ -250,7 +250,6 @@ header  {
 }
 
 .header__navbar__socialmedia{
-  
   display: none;
 }
 
@@ -281,7 +280,6 @@ header  {
   pointer-events: none;
   transition: opacity 0.5s ease;
   text-decoration: none;
-  
 }
  
 .menu.is-active {
@@ -296,12 +294,10 @@ header  {
     margin-left: -24rem;
     place-content: stretch space-evenly;
     text-decoration: none;
-  
-  
 }
 
 
- .menu a {
+.menu a {
   font-family: "Ubuntu", sans-serif;
   padding: 2rem;
   font-size: 1.5rem;
@@ -802,7 +798,6 @@ hr{
 }
 
 .main__section5__img img {
-  margin-top: -58rem; 
   width: 100%;
   height: auto;
 }
@@ -2142,7 +2137,7 @@ nav ul li a:hover {
 }
 
 .main__section5__img img {
-  margin-top: -28rem;
+  margin-top: -32rem;
 }
 
 .main__section5__title {
@@ -2750,6 +2745,9 @@ textarea {
 
 } 
 
+.social-media-icon {
+  color:rgba(12, 19, 84, 0.7);
+}
 
 }  
  
