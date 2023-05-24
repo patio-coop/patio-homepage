@@ -248,6 +248,7 @@ Infinite > Larger screen > 1350px
   margin:0 0;
 }
 
+
 /******************************** HEADER *************************************/
 
 
@@ -268,6 +269,11 @@ header  {
   justify-content: center;
   object-fit: cover;
 }
+
+.header__navbar__socialmedia{
+  display: none;
+}
+
 
 .menu-btn{
   padding: auto;
@@ -295,7 +301,6 @@ header  {
   pointer-events: none;
   transition: opacity 0.5s ease;
   text-decoration: none;
-  
 }
  
 .menu.is-active {
@@ -318,7 +323,8 @@ header  {
 
 
 
- .menu a{
+
+.menu a {
   font-family: "Ubuntu", sans-serif;
   padding: 2rem;
   font-size: 1.5rem;
@@ -361,7 +367,10 @@ header  {
   transition: opacity 0.5s ease;
 }*/
 
+
+
 @media screen and (min-width: 768px){
+
 
 }
 @media screen and (min-width: 1024px){
@@ -386,28 +395,6 @@ header  {
   position: sticky; /* Set the navbar to fixed position */
   top: 0;
   z-index: 33;
- }
-
- .navbar-fixed.scrolled {
-  background-color: #08f5d9f3;
-  box-shadow: var(--translucent-blue-gray) 0px 13px 27px -5px,rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  transition: 50ms ease-in-out;
-  z-index: 33;
- }
-
- .header__logo {
-  color: var(--dark-midnight-blue);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: -1rem;
- }
-
- .header__navbar {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: column;
  }
 
  .menu {
@@ -885,6 +872,7 @@ hr{
   }
 
 .main__section3 {
+  position: relative;
   background: var(--background-section3);
   display: flex;
   flex-direction: row;
@@ -892,6 +880,7 @@ hr{
   width: 100%;
   margin: 0px;
   min-height: 588px;
+  overflow: hidden;
   align-items: stretch;
  }
  .main__section3 .container {
@@ -905,7 +894,6 @@ hr{
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  margin-left: 4rem;
   margin-top: -25rem;
   max-width: 50%;
   min-width: 30%;
@@ -941,12 +929,14 @@ hr{
 }
  
 .main__section3__globe {
+  position: absolute;
+  right: -400px;
   pointer-events: none;
     user-select: none;
     display: flex;
     margin: 0 auto 0 -30%;
     background-color: transparent;
-    overflow: hidden;
+    
     /* min-width: 73vw; */
 }
 
@@ -957,6 +947,7 @@ hr{
 
 .main__section4 { 
   display: flex;
+  flex-direction: column;
   background: var(--background-section3);
   width: 100%;
   
@@ -1065,7 +1056,7 @@ hr{
     background: var(--background-section3);
     display: flex;
     flex-direction:row ;
-  
+    margin-top: 0px;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: start;
@@ -1081,7 +1072,7 @@ hr{
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    margin-top: -67rem;
+    margin-top: 0px;
     width: 100%;
   }
   
@@ -1327,7 +1318,7 @@ hr{
     object-fit: cover;
     display: grid;
     width: 100%;
-    margin-top: -39rem;
+    margin-top: 10rem;
     text-align: center;
     height: auto;
     padding: 0rem;
@@ -1491,7 +1482,6 @@ hr{
 }
 
 .main__section5__img img {
-  margin-top: -58rem; 
   width: 100%;
   height: auto;
 }
