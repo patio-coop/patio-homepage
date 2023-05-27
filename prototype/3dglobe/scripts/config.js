@@ -5,7 +5,7 @@ const config = {
   },
   sizes: {
     globe: 200,
-    globeDotSize: 5
+    globeDotSize: 4
   },
   scale: {
     points: 0.025,

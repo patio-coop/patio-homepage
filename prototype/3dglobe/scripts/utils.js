@@ -90,5 +90,3 @@ function getSplineFromCoords(latitudeA, longitudeA, latitudeB, longitudeB, size)
 
   return {start, end, mid1, mid2};
 }
-
-
