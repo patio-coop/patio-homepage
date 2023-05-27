@@ -118,7 +118,8 @@ class Line {
     return new MeshLineMaterial({
       color: config.colors.globeLines,
       transparent: true,
-      opacity: 0.45
+      opacity: 0.45,
+      lineWidth: 0.0025
     });
   }
 }

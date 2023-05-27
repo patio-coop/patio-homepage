@@ -93,7 +93,7 @@ class Marker {
 
     const text = new fabric.Text(this.labelText, {
       left: 0, top: 0, fill: this.textColor, 
-      fontFamily: 'Open Sans',
+      fontFamily: 'Ubuntu',
     });
 
     canvas.add(text);

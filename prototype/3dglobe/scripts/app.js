@@ -1,4 +1,4 @@
-let HEIGHT = 600;
+let HEIGHT = 750;
 
 class App {
   constructor({animate, setup}) {
@@ -30,10 +30,21 @@ class App {
   }
 
   initCamera = () => {
-    this.ratio = window.innerWidth / HEIGHT;
-    this.camera = new THREE.PerspectiveCamera(60, this.ratio, 10, 5000);
-    this.camera.lookAt(this.scene.position);
-    this.camera.position.set(0, 20, 30);
+    let aspectRatio = window.innerWidth / HEIGHT;
+    let viewSize = 250; // You may want to adjust this depending on your scene
+
+    // OrthographicCamera parameters are left, right, top, bottom, near, far
+    // Adjust these values to crop the frustum
+    let left = -aspectRatio * viewSize / 2.3;
+    let right = aspectRatio * viewSize / 2; // Set this to 0 to only show the left half of the scene
+    let top = viewSize / 2;
+    let bottom = -viewSize / 2; // Set this to 0 to only show the top half of the scene
+
+    // OrthographicCamera parameters are left, right, top, bottom, near, far
+    this.camera = new THREE.OrthographicCamera(left, right, top, bottom, 1, 500);
+
+    this.camera.position.set(10, 20, 1000); // Adjust position as needed
+    // this.camera.lookAt(this.scene.position);
   }
 
   render = () => {
