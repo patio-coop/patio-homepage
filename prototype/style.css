@@ -1262,7 +1262,7 @@ hr{
   }
   
   .members__cooplogo__large {
-    transform: scale(0.65);
+    transform: scale(1.65);
   }
   
   .members__credits a {
@@ -1300,7 +1300,6 @@ hr{
   margin: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
   gap: 0.5rem;
-  
 }
 
 .img {
@@ -1316,7 +1315,7 @@ hr{
 .item {
   padding: 2rem;
   background-color:white;
-  height: 90px;
+  /* height: 90px; */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1326,7 +1325,10 @@ hr{
   }
 
   
-
+.logo-image {
+  max-height: 80px;
+  max-width: 96px;
+}
 
 
 @media screen and (min-width: 768px){
@@ -1387,9 +1389,7 @@ hr{
 }
 
 .modal-content{
-  
   position: relative;
-
 }
 
 .modal-close{
@@ -1411,27 +1411,26 @@ hr{
 }
 
 .coops-modal{
-  
   background-color: white;
   padding: 2rem;
   max-width: 400px;
 }
+
 .coops-modal img{
  width: 100%;
  height: fit-content;
  text-align: center;
- justify-content: cover;
-
- 
+ justify-content: cover; 
 }
+
 .coops-info{
   margin: 0;
   padding-bottom: 2rem;
   color: #0c1354;
   font-family: 'Ubuntu';
   font-style: normal;
-
 }
+
 .coops-info p{
   display: inline-block;
   background: #0C1354;
@@ -1499,12 +1498,6 @@ hr{
   margin-top: 14px;
   font-family: var(--font-family);
   color: rgba(255, 255, 255, 1);
-}
-
-.main__section5_text {
-
-  margin-top: 35rem;
-  width: 100%;
 }
 
 .main__section5__img {

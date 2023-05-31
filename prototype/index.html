@@ -47,14 +47,12 @@
   <script src="assets/languages.js"></script>
   <script src="assets/connections.js"></script>
   <script src="3dglobe/assets/data/grid.js"></script>
-
   <!-- End 3d globe dependencies -->
 </head>
 
 <body>
 
   <!--------============ HEADER =============---------->
-
   <header class="navbar-fixed" disabled>
     <div class="container">
       <div class="header__logo">
@@ -135,8 +133,6 @@
           </select>
           <script>initLanguageSelector()</script>
         </div>
-
-
         <!-- <nav class="navigation header__navbar__sections">
           <ul class="menu">
             <li><a href="#who-we-are">
@@ -156,21 +152,15 @@
               </a></li>
           </ul>
         </nav>   -->
-
-
       </div>
     </div>
   </header>
-
   <!--------============== MAIN ===============--------->
-
   <main>
     <!--------============ SECTION 1 ============--------->
-
     <section class="main__section1">
       <div class="container">
         <div class="main__section1__title">
-
           <p class="main__section1__title__top">
             <script>t("section1-title-top1")</script>
           </p>
@@ -178,13 +168,10 @@
             <script>t("section1-title-top2")</script>
           </p>
           <p class="main__section1__title__middle">
-
             <script>t("section1-title-middle")</script>
-
           <div class="main__section1__title__middle_triangle">
           </div>
           </p>
-
           <h1 class="main__section1__title__title">
             <script>t("section1-title-title")</script>
           </h1>
@@ -197,7 +184,6 @@
             </a>
           </div>
         </div>
-
         <div class="main__section1__img">
           <img class="main__section1__img__front" src="./media/LandingPage_People_Solar_jumping_1.png" alt="">
         </div>
@@ -232,10 +218,8 @@
         <div id="3dglobe-target-mb" class="main__section3__globe-mb">
           <img src="media/globe-mb.PNG" alt="">
         </div>
-
-      
-      <div id="3dglobe-target" class="main__section3__globe">
-      </div>
+        <div id="3dglobe-target" class="main__section3__globe">
+        </div>
       </div>
     </section>
     <!--------============ SECTION 4 ============--------->
@@ -243,7 +227,6 @@
       <div class="container">
         <div class="main__section4__stats">
           <div class="main__section4__statsWrapper">
-
             <div class="main__section4__stats__coops">
               <img class="main__section4__stats__img" src="./media/Coop1.png" alt="">
               <div class="main__section4__stats__content">
@@ -253,7 +236,6 @@
                 </p>
               </div>
             </div>
-
             <div class="main__section4__stats__cooperators">
               <img class="main__section4__stats__img" src="./media/Coop2.png" alt="">
               <div class="main__section4__stats__content">
@@ -263,9 +245,6 @@
                 </p>
               </div>
             </div>
-
-
-
             <div class="main__section4__stats__countries">
               <img class="main__section4__stats__img" src="./media/Coop3.png" alt="">
               <div class="main__section4__stats__content">
@@ -275,7 +254,6 @@
                 </p>
               </div>
             </div>
-
             <div class="main__section4__stats__digital">
               <img class="main__section4__stats__img" src="./media/Coop4.png" alt="">
               <div class="main__section4__stats__content">
@@ -288,66 +266,44 @@
           </div>
         </div>
       </div>
-
-
-      </div>
     </section>
-
 
     <section class="section4__content__coops-modal">
       <div class="container">
 
+        <div id="coops-grid-container" class="container-coops">
+          <div id="coops-grid" class="containergrid grid-responsive">
+            <!-- <div class="item">
+              <a href="#cooperativa-1">
+                <img class="img" src="media/logos/cooperativa 1.png" alt="">
+              </a>
+            </div> -->
+          </div>
+        </div>
+        
+        <!-- Coop Card Modal -->
+        <div id="cooperative-card-modal" class="coop-card-modal">
+          <div class="coop-card-modal-content">
+            <div class="modal-logo"><img id="modal-coop-logo" src="./media/logos/no-logo.jpg" alt="logo" class="modal-logoimg"></div>
+            <div class="modal-info">
+              <p id="modal-coop-country" class="modal-place"></p>
+              <h1 id="modal-coop-name" class="modal-h1"></h1>
+              <hr class="modal-hr">
+              <p id="modal-coop-tagline" class="modal-slug"></p>
+              <p id="modal-coop-description" class="modal-description"></p>
+              <ul id="modal-coop-services" class="modal-services"></ul>
+              <a id="modal-coop-url" href="#" target="_blank" class="btn1"><script>t("modal-visit-website-btn")</script></a>
+            </div>
+            <a id="modal-close" href="#" class="modal-btn-close">X</a>
+          </div>
+        </div>
 
-        <article class="container-coops">
-          <aside class="containergrid grid-responsive">
-            <article class="item"><a href="#cooperativa-1"><img class="img" src="media/logos/cooperativa 1.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-2"><img class="img" src="media/logos/cooperativa 2.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-3"><img class="img" src="media/logos/cooperativa 3.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-4"><img class="img" src="media/logos/cooperativa 4.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-5"><img class="img" src="media/logos/cooperativa 5.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-6"><img class="img" src="media/logos/cooperativa 6.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-7"><img class="img" src="media/logos/cooperativa 7.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-8"><img class="img" src="media/logos/cooperativa 8.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-9"><img class="img" src="media/logos/cooperativa 9-fiqus.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-10"><img class="img" src="media/logos/cooperativa 10.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-11"><img class="img" src="media/logos/cooperativa 11.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-12"><img class="img" src="media/logos/cooperativa 12.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-13"><img class="img" src="media/logos/cooperativa 13.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-14"><img class="img" src="media/logos/cooperativa 14.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-15"><img class="img" src="media/logos/cooperativa 15.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-16"><img class="img" src="media/logos/cooperativa 16.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-17"><img class="img" src="media/logos/cooperativa 17.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-18"><img class="img" src="media/logos/cooperativa 18.png"
-                  alt=""></a></article>
-            <article class="item"><a href="#cooperativa-19"><img class="img" src="media/logos/cooperativa 19.png"
-                  alt=""></a></article>
-          </aside>
-        </article>
-
-
-        <article class="modal" id="cooperativa-1">
+        <!-- <div class="modal" id="cooperative-card-modal">
           <div class="modal-content">
             <a href="#close" class="modal-close">
               <img src="media/close.png" alt="">
             </a>
-            <article class="coops-modal">
+            <div class="coops-modal">
               <img src="media/logos/cooperativa 1.png" alt="agaric">
               <div class="coops-info">
                 <small>
@@ -362,578 +318,16 @@
                   <small><b>Databases</b></small>
                   <small><b>Desarrollo Web</b></small>
                   <br>
-
                   </b></small>
-
                 </aside>
               </div>
               <div class="btn-modal">
                 <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
               </div>
-            </article>
+            </div>
           </div>
+        </div> -->
 
-        </article>
-        <article class="modal" id="cooperativa-2">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 2.png" alt="albastro">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Albastro</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-3">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 3.png" alt="animus">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Animus</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-4">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 4.png" alt="cambá">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Cambá</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-5">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 5.png" alt="camplight">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Camplight</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-6">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 6.png" alt="chi">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Chi Commons </h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-7">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 7.png" alt="colab">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Colab</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-8">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 8.png" alt="cooperos">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Cooperos</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-9">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 9.png" alt="ficus">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Ficus</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-10">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 10.png" alt="gcoop">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Gcoop</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-11">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 11.png" alt="libre-code">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Libre Code</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-12">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 12.png" alt="optimi">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Optimi</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-13">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 13.png" alt="redjar">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Redjar</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-14">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 14.png" alt="slobodna">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Slobodna</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-15">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 15.png" alt="sociality">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>sociality</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-16">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 16.png" alt="sofi">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Sofi</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-17">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 17.png" alt="tecso">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Tecso</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-18">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 18.png" alt="Tierra-comun">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>Tierra Comun</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-        <article class="modal" id="cooperativa-19">
-          <div class="modal-content">
-            <a href="#close" class="modal-close">
-              <img src="media/close.png" alt="">
-            </a>
-            <article class="coops-modal">
-              <img src="media/logos/cooperativa 19.png" alt="tng">
-              <div class="coops-info">
-                <small>
-                  <p>Estados Unidos</p>
-                </small>
-                <br>
-                <h3>TNG</h3>
-                <h4>Software development professionals</h4>
-                <aside class="coops-details">
-                  <small><b>Content Management Systems</b></small>
-                  <small><b>Software Development</b></small>
-                  <small><b>Databases</b></small>
-                  <small><b>Desarrollo Web</b></small>
-                  <br>
-
-                  </b></small>
-
-                </aside>
-              </div>
-              <div class="btn-modal">
-                <a href="https://agaric.coop/" class="btn1" target="_blank">Visit Website</a>
-              </div>
-            </article>
-          </div>
-        </article>
-      </div>
-      </div>
       </div>
     </section>
 
