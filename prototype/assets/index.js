@@ -136,8 +136,10 @@ document.getElementById("coops-grid-container").appendChild(countries_grid);
   });
 
   d.addEventListener("click", (e) => {
-    if (!e.target.matches(".manu a")) return false;
-
+    if (!e.target.matches(".menu a")) {
+      return false;
+    }
+    
     $btnMenu.firstElementChild.classList.remove("none");
     $btnMenu.lastElementChild.classList.add("none");
     $menu.classList.remove("is-active");
