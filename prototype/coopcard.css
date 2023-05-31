@@ -1,3 +1,124 @@
+/********************************** modal Mb *************************************/
+
+.coop-card-modal {
+  display: none;
+  position: fixed;
+  z-index: 10000000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.coop-card-modal-content {
+  background-color: #fefefe;
+  color: #0c1354;
+  border: 1px solid #888;
+  border-radius: 0.75rem;
+
+  position: relative;
+  margin: 0.4% auto;
+
+  max-width: 95%;
+
+  /* min-height: 85%; */
+
+  padding: 2.5rem 0rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 4rem;
+}
+
+.modal-btn-close {
+  color: #aaa;
+  font-family: monospace;
+  font-size: xx-large;
+  text-decoration: none;
+  font-weight: bold;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer !important;
+}
+
+.modal-logo {
+  align-self: center;
+}
+
+.modal-logoimg {
+  max-height: 160px;
+  max-width: 350px;
+}
+
+.modal-info {
+  width: 85%;
+}
+
+.modal-place {
+  background-color: #0c1354;
+  color: white;
+  display: inline;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.modal-h1 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-hr {
+  background-color: #0c1354;
+  width: 100px;
+  height: 6px;
+  margin: 1.5rem 0;
+}
+
+.modal-slug {
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.modal-description {
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+
+.modal-services li {
+  font-size: small;
+  font-family: sans-serif;
+  list-style: none;
+  background-color: white;
+  border: solid 1px #0c1354;
+  border-radius: 0.4rem;
+  padding: 0.3rem;
+}
+
+/********************************** modal Ds *************************************/
+
+@media screen and (min-width: 1024px){
 .coop-card-modal {
     display: none;
     position: fixed;
@@ -113,3 +234,4 @@
     border-radius: 0.4rem;
     padding: 0.3rem;
   }
+}
