@@ -87,6 +87,19 @@ data.countries = [
             "Machine Learning",
           ],
         },
+        {
+          name: "Nayra",
+          url: "https://nayra.coop/",
+          logo: "nayra.png",
+          tagline: "nayra-tagline",
+          description: "nayra-description",
+          services: [
+            "Software Development",
+            "Functional Programming",
+            "Data Analytics",
+            "Machine Learning",
+          ],
+        },
       ],
     },
     {

@@ -138,10 +138,12 @@ document.getElementById("coops-grid-container").appendChild(countries_grid);
   let a = d.querySelectorAll(".menu a span");
   
   a.forEach((element,i) => {
-    a[i].addEventListener("click", (e) => { 
-        $btnMenu.firstElementChild.classList.toggle("none");
-        $btnMenu.lastElementChild.classList.toggle("none");
-        $menu.classList.toggle("is-active");
+    a[i].addEventListener("click", (e) => {
+        if ($menu.classList.contains('is-active')) {
+          $btnMenu.firstElementChild.classList.toggle("none");
+          $btnMenu.lastElementChild.classList.toggle("none");
+          $menu.classList.toggle("is-active");
+        }  
     })
   });
 })(document);

@@ -1132,7 +1132,6 @@ hr{
     font-family: var(--font-family);
     font-size: var(--font-size-stats-descrip);
     font-weight: 900;
-    color: var(--dark-midnight-blue);
     width: 200px;
   }
   
@@ -1327,7 +1326,7 @@ hr{
   
 .logo-image {
   max-height: 80px;
-  max-width: 96px;
+  max-width: 130px;
 }
 
 
@@ -1733,10 +1732,11 @@ hr{
     flex-direction: row;
     margin-bottom: 30px;
     align-items: center;
+    padding-left: 20px;
   }
   
   .main__section5__services div {
-    padding: 38px;
+    padding: 45px;
   }
   
   .main__section5__services div img {
@@ -1818,6 +1818,10 @@ hr{
   .main__section5__services__branding img {
     width: 145% !important;
   }
+
+  .main__section5__services__mobile {
+    margin-left: 9px;
+  }
   
   .main__section5__services__mobile img {
     width: 100% !important;
@@ -1844,6 +1848,10 @@ hr{
     width: 99% !important;
   }
 
+  .main__section5__services__blockchain {
+    margin-left: 10px;
+  }
+
   .main__section5__services__blockchain img {
     width: 100% !important;
   }
@@ -1852,8 +1860,13 @@ hr{
     min-width: 154px;
   }
 
+  .main__section5__services__devops p {
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+
   .main__section5__services__devops img {
-    width: 120%;
+    width: 130% !important;
   }
 }
 
@@ -2090,14 +2103,10 @@ background: white;
     background-color: var(--dark-purple-red);
     background-image: url(./media/Coop5.png);
     height: 100%;
-    width: 150%;
+    width: 155%;
     border-top-left-radius: 0.75rem;
     border-bottom-left-radius: 0.75rem;
-    --webkit-mask-image: -webkit-linear-gradient(
-      left,
-      rgba(0, 0, 0, 1) 85%,
-      rgba(0, 0, 0, 0) 100%
-    );
+    --webkit-mask-image: -webkit-linear-gradient( left, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100% );
   }
   
   #specialCheck {
