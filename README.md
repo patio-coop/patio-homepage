@@ -7,11 +7,13 @@ Patio Interational Worker Co-operative Association Homepage
 page. The static site generation system (to be added later) should produce
 essentially the same output under the `output/` directory.
 
-At <https://patio-coop.github.io/patio-homepage/prototype/> (on GitHub
+At <https://patio-coop.github.io/patio-homepage/> (on GitHub
 Pages) we publish one branch of the repo. This is whatever branch a
 developer happened to need to show to others at the time; feel free to
 change it when you need it. (It's set by clicking on the _Settings_ tab and
 then in _Pages_ in left sidebar.)
+
+Alao, the homepage is copied to https://patio.coop by Netlify.  Netlify is used for enabling the forms.   The login/password information for netlify is kept by some people.  Ask around!   (But we need a proper sharing mechanism)
 
 # Developers
 
