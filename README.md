@@ -115,6 +115,7 @@ To deploy, you must have the latest version of the site. The steps to follow are
  `git checkout main`
  
  **Note: Currently it deploys to Netlify.**
+ 
 
 
 <!-------------------------------------------------------------------->
