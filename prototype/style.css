@@ -1784,6 +1784,7 @@ hr{
   
     transform: rotate(90deg);
   } */
+
   .main__section5__services__content{
     display: flex;
     flex-direction: column;
@@ -1825,11 +1826,35 @@ hr{
   .main__section5__services__IOT img {
     width: 107% !important;
   }
+
+  .main__section5__services__IOT {
+    min-width: 166px;
+    margin-left: -5px;
+  }
+
+  .main__section5__services__consultancy {
+    margin-left: 24px;
+  }
+
+  .main__section5__services__consultancy img {
+    width: 100% !important;
+  }
   
   .main__section5__services__PM img {
     width: 99% !important;
   }
-  
+
+  .main__section5__services__blockchain img {
+    width: 100% !important;
+  }
+
+  .main__section5__services__devops {
+    min-width: 154px;
+  }
+
+  .main__section5__services__devops img {
+    width: 120%;
+  }
 }
 
 
