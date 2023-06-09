@@ -1085,20 +1085,21 @@ hr{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 26rem;
+    margin-top: 27rem;
     min-width: 20%;
     padding: 3rem 0 6rem 3rem;
   }
   
   .main__section4__statsWrapper {
     display: flex;
-  flex-direction: row;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
   
     /* INSETAR MARGEN */
     gap: 1%;
-    max-width: 13%;
+    max-width: 15%;
+    margin-left: -45px;
   }
   
   .main__section4__stats__coops,
@@ -1133,6 +1134,10 @@ hr{
     font-size: var(--font-size-stats-descrip);
     font-weight: 900;
     width: 200px;
+  }
+
+  .main__section4__stats__content {
+    margin-left: -35px;
   }
   
   .main__section4__list {

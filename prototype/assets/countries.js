@@ -103,6 +103,27 @@ data.countries = [
       ],
     },
     {
+      name: "Chile",
+      longitude: "32",
+      latitude: "34",
+      coops: [
+        {
+          name: "NewDev",
+          url: "https://www.newdev.cl/",
+          logo: "newdev.png",
+          tagline: "newdev-tagline",
+          description: "newdev-description",
+          services: [
+            "Software Development",
+            "Mobile Development",
+            "Websites",
+            "Databases",
+            "ERPs",
+          ],
+        },
+      ],
+    },
+    {
       name: "Turkey",
       longitude: "35",
       latitude: "39",
@@ -144,27 +165,6 @@ data.countries = [
       ],
     },
     {
-      name: "Japan",
-      latitude: "36",
-      longitude: "138",
-      coops: [
-        {
-          name: "TNG",
-          url: "https://tng.coop/",
-          logo: "tng.png",
-          tagline: "tng-tagline",
-          description: "tng-description",
-          services: [
-            "Software Development",
-            "Data Analytics",
-            "Databases",
-            "Websites",
-            "Learning Management Systems (LMS)",
-          ],
-        },
-      ],
-    },
-    {
       name: "Brazil",
       latitude: "-10",
       longitude: "-52",
@@ -186,6 +186,24 @@ data.countries = [
       ],
     },
     {
+      name: "France",
+      latitude: "48",
+      longitude: "2",
+      coops: [
+        {
+          name: "StartinBlox",
+          url: "https://startinblox.com/",
+          logo: "startinblox.png",
+          tagline: "startinblox-tagline",
+          description: "startinblox-description",
+          services: [
+            "App builder for data spaces.",
+            "Software Development",
+          ],
+        },
+      ],
+    },
+    {
       name: "Israel",
       latitude: "31",
       longitude: "35",
@@ -202,6 +220,27 @@ data.countries = [
             "Websites",
             "UX / UI",
             " Branding & Identity",
+          ],
+        },
+      ],
+    },
+    {
+      name: "Japan",
+      latitude: "36",
+      longitude: "138",
+      coops: [
+        {
+          name: "TNG",
+          url: "https://tng.coop/",
+          logo: "tng.png",
+          tagline: "tng-tagline",
+          description: "tng-description",
+          services: [
+            "Software Development",
+            "Data Analytics",
+            "Databases",
+            "Websites",
+            "Learning Management Systems (LMS)",
           ],
         },
       ],
@@ -361,6 +400,27 @@ data.countries = [
     //   "longitude": "10.7387"
     // },
     {
+      "name": "Germany",
+      "latitude": "52.5235",
+      "longitude": "13.4115",
+      coops: [
+        {
+          name: "Fnordkollektiv",
+          url: "https://fnordkollektiv.de/",
+          logo: "fnordkollektiv.png",
+          tagline: "fnordkollektiv-tagline",
+          description: "fnordkollektiv-description",
+          services: [
+            "Software Development",
+            "Devops",
+            "Hosting",
+            "Websites",
+            "Sound Production",
+          ],
+        },
+      ],
+    },
+    {
       name: "Greece",
       latitude: "37.9792",
       longitude: "23.7166",
@@ -478,6 +538,25 @@ data.countries = [
       ],
     },
     {
+      name: "Russia",
+      latitude: "155",
+      longitude: "37",
+      coops: [
+        {
+          name: "Rad Cop",
+          url: "https://radcop.online/",
+          logo: "radcop.png",
+          tagline: "radcop-tagline",
+          description: "radcop-description",
+          services: [
+            "IT security services",
+            "ICT Project Management",
+            "ICT Consulting"
+          ],
+        },
+      ],
+    },
+    {
       name: "United States",
       latitude: "38.8895",
       longitude: "-77.032",
@@ -520,6 +599,19 @@ data.countries = [
             "User Research",
             "UX / UI",
             "ICT Consulting",
+          ],
+        },
+        {
+          name: "Position development",
+          url: "https://positiondev.com/",
+          logo: "positiondev.png",
+          tagline: "positiondev-tagline",
+          description: "positiondev-description",
+          services: [
+            "Software Development",
+            "Websites",
+            "Apps",
+            "Devops",
           ],
         },
       ],
