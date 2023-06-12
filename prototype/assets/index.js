@@ -109,7 +109,8 @@ for (let country of data.countries) {
     let link = document.createElement("a");
     link.innerHTML = img.outerHTML;
     link.href = '#'
-    link.onclick = function() {
+    link.onclick = function(e) {
+      e.preventDefault();
       openModal(country.name, c);
     }
 
