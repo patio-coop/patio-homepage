@@ -318,6 +318,7 @@ header  {
   text-decoration: none;
   align-content: center;
   flex-wrap: wrap;
+  padding-bottom: 5rem;
 }
 
 .menu a {
