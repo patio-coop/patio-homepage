@@ -136,7 +136,7 @@ const languages = {
       tr: "Biz kimiz",
     },
     "section3-pmain": {
-      en: "We are a global community of worker cooperatives, specialized in the development of digital technology, communication and design, located in 17 different countries (and growing), working on projects with an international scope.",
+      en: "We are a global community of worker cooperatives, specialized in the development of digital technology, communication and design, located in 19 different countries (and growing), working on projects with an international scope.",
       es: "Somos una comunidad de cooperativas de trabajadoras y trabajadores de todo el mundo, especializadas en el desarrollo de tecnología, comunicación y diseño.",
       el: "Είμαστε μια παγκόσμια κοινότητα εργατικών συνεταιρισμών από όλο τον κόσμο, που ειδικεύονται στην ανάπτυξη της ψηφιακής τεχνολογίας, της επικοινωνίας και του σχεδιασμού.",
       hr: "Mi smo globalna zajednica radničkih zadruga specijaliziranih za rad s digitalnim tehnologijama, dizajn i komunikacije.",
@@ -672,10 +672,10 @@ const languages = {
       en: "We are a global community of worker cooperatives, specialized in the development of digital technology, communication and design, localted in different countries and working on projects with an international scope.",
       es: "Somos una comunidad global de cooperativas de trabajadoras y trabajadores, especializada en el desarrollo de tecnología digital, comunicación y diseño, ubicadas en países diferentes, y trabajando en proyectos con alcance internacional.",
       el: "Είμαστε μια παγκόσμια κοινότητα εργατικών συνεταιρισμών, που ειδικεύεται στην ανάπτυξη της ψηφιακής τεχνολογίας, της επικοινωνίας και του σχεδιασμού, με έδρα σε διάφορες χώρες και εργάζεται σε έργα διεθνούς εμβέλειας.",
-      hr: "Mi smo globalna zajednica radničkih zadruga specijaliziranih za rad s digitalnim tehnologijama,dizajn i komunikacije. Imamo članove iz 20 zemalja (taj broj raste) te radimo na projektima koji su internacionalnog karaktera.",
-      pt: "Somos uma comunidade global de cooperativas de trabalhadores especializados em desenvolvimento de tecnologias digitais, comunicação e design, de 20 países diferentes (e em crescimento), e trabalhando em projetos de âmbito global.",
-      jp: "私どもは、世界中のITの労働者協同組合の集まりで、デジタル技術、コミュニケーション、デザインなどに専門性を持ち、１７カ国（増加中）に存在、国際的なスコープをもつプロジェクトで仕事をしています。",
-      tr: "Bizler, dijital teknoloji geliştirme, iletişim ve tasarım konusunda uzmanlaşmış çalışan ortaklı kooperatiflerden oluşan küresel bir topluluğuz. 17 farklı ülkeden (ve artmakta) uluslararası bir yelpazede projeler üzerinde çalışmaktayız.",
+      hr: "Mi smo globalna zajednica radničkih zadruga specijaliziranih za rad s digitalnim tehnologijama,dizajn i komunikacije. Imamo članove iz 19 zemalja (taj broj raste) te radimo na projektima koji su internacionalnog karaktera.",
+      pt: "Somos uma comunidade global de cooperativas de trabalhadores especializados em desenvolvimento de tecnologias digitais, comunicação e design, de 19 países diferentes (e em crescimento), e trabalhando em projetos de âmbito global.",
+      jp: "私どもは、世界中のITの労働者協同組合の集まりで、デジタル技術、コミュニケーション、デザインなどに専門性を持ち、１9カ国（増加中）に存在、国際的なスコープをもつプロジェクトで仕事をしています。",
+      tr: "Bizler, dijital teknoloji geliştirme, iletişim ve tasarım konusunda uzmanlaşmış çalışan ortaklı kooperatiflerden oluşan küresel bir topluluğuz. 19 farklı ülkeden (ve artmakta) uluslararası bir yelpazede projeler üzerinde çalışmaktayız.",
     },
     "footer-intercoop": {
       en: "Website made inter-cooperatively with",
