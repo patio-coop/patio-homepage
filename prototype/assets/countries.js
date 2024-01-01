@@ -467,11 +467,27 @@ data.countries = [
         },
       ],
     },
-    // {
-    //   "name": "Spain",
-    //   "latitude": "40.4167",
-    //   "longitude": "-3.70327"
-    // },
+    {
+    "name": "Spain",
+    "latitude": "40.4167",
+    "longitude": "-3.70327",
+    coops: [
+      {
+        name: "CoopDevs",
+        url: "https://coopdevs.org",
+        logo: "coopdevs.png",
+        tagline: "coopdevs-tagline",
+        description: "coopdevs-description",
+        services: [
+          "Business Intelligence",
+          "Enterprise Resource Planning (ERP)",
+          "Digitalization",
+          "ICT Consulting",
+          "System Administration",
+        ],
+      },
+    ],
+    },
     // {
     //   "name": "Portugal",
     //   "latitude": "38.7072",
