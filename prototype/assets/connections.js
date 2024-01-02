@@ -2,12 +2,9 @@ data.connections = {
     Argentina: [
       "Argentina",
       "Brazil",
-      "Bulgaria",
-      "Croatia",
-      "France",
+      "Chile",
       "Germany",
       "Greece",
-      "Israel",
       "Japan",
       "Mexico",
       "New Zealand",
@@ -15,6 +12,8 @@ data.connections = {
       "Spain",
       "Turkey",
       "United States",
+      "United Kingdom",
+      "Uruguay",
     ],
   };
   

@@ -89,6 +89,19 @@ data.countries = [
         ],
       },
       {
+        name: "Sutty",
+        url: "https://sutty.coop.ar",
+        logo: "sutty.png",
+        tagline: "sutty-tagline",
+        description: "sutty-description",
+        services: [
+          "Web Portals, Apps and Services",
+          "UX / UI",
+          "Content Management System (CMSs)",
+          "System Administration",
+        ],
+      },
+      {
         name: "Tecso",
         url: "https://tecso.coop/",
         logo: "tecso.png",
@@ -180,8 +193,8 @@ data.countries = [
   },
   {
     name: "Brazil",
-    latitude: "-10",
-    longitude: "-52",
+    latitude: "-15.2865",
+    longitude: "-47.776",
     coops: [
       {
         name: "Libre Code",
