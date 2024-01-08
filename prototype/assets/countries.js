@@ -507,7 +507,7 @@ data.countries = [
   "longitude": "-3.70327",
   coops: [
     {
-      name: "CoopDevs",
+      name: "Coopdevs",
       url: "https://coopdevs.org",
       logo: "coopdevs.png",
       tagline: "coopdevs-tagline",
