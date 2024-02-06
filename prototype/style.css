@@ -1025,6 +1025,11 @@ hr{
   padding: 8px;
 }
 
+main__section4__stats__img__cooperators {
+  max-height: 100px !important;
+  padding-right: 26px !important;
+}
+
  .main__section4__stats__number { 
   font-family: var(--font-stats); 
   font-size: var(--font-size-stats);
