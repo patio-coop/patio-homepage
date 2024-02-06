@@ -1025,7 +1025,7 @@ hr{
   padding: 8px;
 }
 
-main__section4__stats__img__cooperators {
+.main__section4__stats__img__cooperators {
   max-height: 100px !important;
   padding-right: 26px !important;
 }
