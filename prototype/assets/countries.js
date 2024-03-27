@@ -5,6 +5,20 @@ data.countries = [
     latitude: "-34.603722",
     coops: [
       {
+        name: "Alt",
+        url: "https://altcooperativa.com/",
+        logo: "alt.png",
+        tagline: "alt-tagline",
+        description: "alt-description",
+        services: [
+          "Websites",
+          "Data Analytics",
+          "UX / UI",
+          "Advertising and Marketing",
+          "Content Management Systems",
+        ],
+      },
+      {
         name: "Animus",
         url: "https://animus.coop/",
         logo: "animus.png",
@@ -16,6 +30,20 @@ data.countries = [
           "UX / UI",
           "Web Portals, Apps and Services",
           "Accessibility Consulting ",
+        ],
+      },
+      {
+        name: "Boot Coop",
+        url: "https://bootcoop.io/",
+        logo: "boot.png",
+        tagline: "boot-tagline",
+        description: "boot-description",
+        services: [
+          "Software Development",
+          "UX / UI",
+          "Quality Assurance & Testing",
+          "Devops",
+          "Data Science",
         ],
       },
       {
@@ -42,6 +70,8 @@ data.countries = [
           "Software Development",
           "Staff Augmentation",
           "Social Impact Projects",
+          "Platform Cooperatives",
+          "Gender Equality Projects",
         ],
       },
       {
@@ -56,6 +86,20 @@ data.countries = [
           "UX / UI",
           "Animation, VFX and CGI",
           "Copywriting",
+        ],
+      },
+      {
+        name: "Eryx",
+        url: "https://eryx.co/",
+        logo: "eryx.png",
+        tagline: "eryx-tagline",
+        description: "eryx-description",
+        services: [
+          "Software Development",
+          "Data Science",
+          "Artificial Intelligence",
+          "Crypto and Blockchain",
+          "IT Security",
         ],
       },
       {
@@ -84,6 +128,20 @@ data.countries = [
           "Cloud Computing",
           "Web Portals, Apps and Services",
           "Customer Relationship Management (CRM)",
+        ],
+      },
+      {
+        name: "Indepi",
+        url: "http://www.indepi.coop.ar/",
+        logo: "indepi.png",
+        tagline: "indepi-tagline",
+        description: "indepi-description",
+        services: [
+          "Software Development",
+          "Mobile Development",
+          "Enterprise Applications",
+          "ICT Consulting",
+          "Mapping",
         ],
       },
       {
