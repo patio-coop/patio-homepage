@@ -1229,6 +1229,24 @@ const languages = {
     jp: "We develop custom-tailored software, such as web and mobile applications, following the latest standards in agile methodologies. We also build teams for staff augmentation, to make your project more productive and innovative. We are a tech-coop with a wide experience in the industry.",
     tr: "We develop custom-tailored software, such as web and mobile applications, following the latest standards in agile methodologies. We also build teams for staff augmentation, to make your project more productive and innovative. We are a tech-coop with a wide experience in the industry.",
   },
+  "codigolibre-tagline": {
+    en: "Collective solutions to your technological challenges",
+    es: "Collective solutions to your technological challenges",
+    el: "Collective solutions to your technological challenges",
+    hr: "Collective solutions to your technological challenges",
+    pt: "Collective solutions to your technological challenges",
+    jp: "Collective solutions to your technological challenges",
+    tr: "Collective solutions to your technological challenges",
+  },
+  "codigolibre-description": {
+    en: "We are cooperative because we believe that equitable, supportive and diverse participation promotes innovation and enhances both individual and collective capabilities. We are passionate about technology as a way to drive the growth of our customers and business partners, achieving the highest levels of efficiency and commitment. As part of the cooperative technology sector, we work as a network to empower free culture and technological sovereignty in our region.",
+    es: "We are cooperative because we believe that equitable, supportive and diverse participation promotes innovation and enhances both individual and collective capabilities. We are passionate about technology as a way to drive the growth of our customers and business partners, achieving the highest levels of efficiency and commitment. As part of the cooperative technology sector, we work as a network to empower free culture and technological sovereignty in our region.",
+    el: "We are cooperative because we believe that equitable, supportive and diverse participation promotes innovation and enhances both individual and collective capabilities. We are passionate about technology as a way to drive the growth of our customers and business partners, achieving the highest levels of efficiency and commitment. As part of the cooperative technology sector, we work as a network to empower free culture and technological sovereignty in our region.",
+    hr: "We are cooperative because we believe that equitable, supportive and diverse participation promotes innovation and enhances both individual and collective capabilities. We are passionate about technology as a way to drive the growth of our customers and business partners, achieving the highest levels of efficiency and commitment. As part of the cooperative technology sector, we work as a network to empower free culture and technological sovereignty in our region.",
+    pt: "We are cooperative because we believe that equitable, supportive and diverse participation promotes innovation and enhances both individual and collective capabilities. We are passionate about technology as a way to drive the growth of our customers and business partners, achieving the highest levels of efficiency and commitment. As part of the cooperative technology sector, we work as a network to empower free culture and technological sovereignty in our region.",
+    jp: "We are cooperative because we believe that equitable, supportive and diverse participation promotes innovation and enhances both individual and collective capabilities. We are passionate about technology as a way to drive the growth of our customers and business partners, achieving the highest levels of efficiency and commitment. As part of the cooperative technology sector, we work as a network to empower free culture and technological sovereignty in our region.",
+    tr: "We are cooperative because we believe that equitable, supportive and diverse participation promotes innovation and enhances both individual and collective capabilities. We are passionate about technology as a way to drive the growth of our customers and business partners, achieving the highest levels of efficiency and commitment. As part of the cooperative technology sector, we work as a network to empower free culture and technological sovereignty in our region.",
+  },
 
   // Success Form Page Translations
   "success-thankyou": {

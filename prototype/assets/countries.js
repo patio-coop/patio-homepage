@@ -33,6 +33,18 @@ data.countries = [
         ],
       },
       {
+        name: "Código Libre",
+        url: "https://codigolibre.coop.ar/",
+        logo: "codigolibre.png",
+        tagline: "codigolibre-tagline",
+        description: "codigolibre-description",
+        services: [
+          "Software Development",
+          "Staff Augmentation",
+          "Social Impact Projects",
+        ],
+      },
+      {
         name: "El Maizal",
         url: "https://elmaizal.coop.ar/",
         logo: "elmaizal.jpg",
