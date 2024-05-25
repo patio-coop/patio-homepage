@@ -1370,8 +1370,8 @@ hr{
     width: 1200px;
     text-align: center;
     margin: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(201px, 2fr));
-    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
+    gap: 1rem;
     align-items: center;
     justify-content: center;
     align-content: space-between;

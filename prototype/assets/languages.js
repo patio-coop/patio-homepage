@@ -1319,6 +1319,24 @@ const languages = {
     jp: "Since 2005 we have provided customized solutions for companies, institutions and utility cooperatives. As technological partners of our clients, we promote their growthand efficiency.",
     tr: "Since 2005 we have provided customized solutions for companies, institutions and utility cooperatives. As technological partners of our clients, we promote their growthand efficiency.",
   },
+  "limeleaf-tagline": {
+    en: "We provide software engineering and product development services for businesses, brands, and startups.",
+    es: "We provide software engineering and product development services for businesses, brands, and startups.",
+    el: "We provide software engineering and product development services for businesses, brands, and startups.",
+    hr: "We provide software engineering and product development services for businesses, brands, and startups.",
+    pt: "We provide software engineering and product development services for businesses, brands, and startups.",
+    jp: "We provide software engineering and product development services for businesses, brands, and startups.",
+    tr: "We provide software engineering and product development services for businesses, brands, and startups.",
+  },
+  "limeleaf-description": {
+    en: "Whether you want to develop a new application or service, optimize your infrastructure, or simply need technical guidance, Limeleaf has the expertise, experience, and innovative spirit to help you succeed.",
+    es: "Whether you want to develop a new application or service, optimize your infrastructure, or simply need technical guidance, Limeleaf has the expertise, experience, and innovative spirit to help you succeed.",
+    el: "Whether you want to develop a new application or service, optimize your infrastructure, or simply need technical guidance, Limeleaf has the expertise, experience, and innovative spirit to help you succeed.",
+    hr: "Whether you want to develop a new application or service, optimize your infrastructure, or simply need technical guidance, Limeleaf has the expertise, experience, and innovative spirit to help you succeed.",
+    pt: "Whether you want to develop a new application or service, optimize your infrastructure, or simply need technical guidance, Limeleaf has the expertise, experience, and innovative spirit to help you succeed.",
+    jp: "Whether you want to develop a new application or service, optimize your infrastructure, or simply need technical guidance, Limeleaf has the expertise, experience, and innovative spirit to help you succeed.",
+    tr: "Whether you want to develop a new application or service, optimize your infrastructure, or simply need technical guidance, Limeleaf has the expertise, experience, and innovative spirit to help you succeed.",
+  },
 
   // Success Form Page Translations
   "success-thankyou": {

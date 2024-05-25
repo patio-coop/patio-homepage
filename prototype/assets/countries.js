@@ -316,7 +316,7 @@ data.countries = [
           "Mobile Development",
           "Websites",
           "UX / UI",
-          " Branding & Identity",
+          "Branding & Identity",
         ],
       },
     ],
@@ -719,6 +719,19 @@ data.countries = [
           "User Research",
           "UX / UI",
           "ICT Consulting",
+        ],
+      },
+      {
+        name: "Limeleaf",
+        url: "https://limeleaf.io/",
+        logo: "limeleaf.png",
+        tagline: "limeleaf-tagline",
+        description: "limeleaf-description",
+        services: [
+          "Web Portals, Apps and Services",
+          "Software Development",
+          "Go and Rust Programming",
+          "Broadcast and Streaming",
         ],
       },
       {
