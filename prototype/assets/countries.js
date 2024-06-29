@@ -185,6 +185,20 @@ data.countries = [
         ],
       },
       {
+        name: "Tinta Sur",
+        url: "https://www.tintasur.com/",
+        logo: "tinta_sur.png",
+        tagline: "tintasur-tagline",
+        description: "tintasur-description",
+        services: [
+          "Video Production",
+          "Communication",
+          "Graphic Design",
+          "Social Media",
+          "Motion Graphics",
+        ],
+      },
+      {
         name: "Nayra",
         url: "https://nayra.coop/",
         logo: "nayra.png",

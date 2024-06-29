@@ -1338,6 +1338,25 @@ const languages = {
     tr: "Whether you want to develop a new application or service, optimize your infrastructure, or simply need technical guidance, Limeleaf has the expertise, experience, and innovative spirit to help you succeed.",
   },
 
+  "tintasur-tagline": {
+    es: "We are a production and communication cooperative that generates creative solutions.",
+    en: "We are a production and communication cooperative that generates creative solutions.",
+    el: "We are a production and communication cooperative that generates creative solutions.",
+    hr: "We are a production and communication cooperative that generates creative solutions.",
+    pt: "We are a production and communication cooperative that generates creative solutions.",
+    jp: "We are a production and communication cooperative that generates creative solutions.",
+    tr: "We are a production and communication cooperative that generates creative solutions.",
+  },
+  "tintasur-description": {
+    en: "We are a multidisciplinary team of experts in communication, digital strategies, graphic design, video and journalistic production that believe that communication is a fundamental tool to generate social transformations. Tinta Sur translates theory into experience.",
+    es: "We are a multidisciplinary team of experts in communication, digital strategies, graphic design, video and journalistic production that believe that communication is a fundamental tool to generate social transformations. Tinta Sur translates theory into experience.",
+    el: "We are a multidisciplinary team of experts in communication, digital strategies, graphic design, video and journalistic production that believe that communication is a fundamental tool to generate social transformations. Tinta Sur translates theory into experience.",
+    hr: "We are a multidisciplinary team of experts in communication, digital strategies, graphic design, video and journalistic production that believe that communication is a fundamental tool to generate social transformations. Tinta Sur translates theory into experience.",
+    pt: "We are a multidisciplinary team of experts in communication, digital strategies, graphic design, video and journalistic production that believe that communication is a fundamental tool to generate social transformations. Tinta Sur translates theory into experience.",
+    jp: "We are a multidisciplinary team of experts in communication, digital strategies, graphic design, video and journalistic production that believe that communication is a fundamental tool to generate social transformations. Tinta Sur translates theory into experience.",
+    tr: "We are a multidisciplinary team of experts in communication, digital strategies, graphic design, video and journalistic production that believe that communication is a fundamental tool to generate social transformations. Tinta Sur translates theory into experience.",
+  },
+
   // Success Form Page Translations
   "success-thankyou": {
     en: "Thank you!",
