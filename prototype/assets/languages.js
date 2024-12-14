@@ -1356,6 +1356,42 @@ const languages = {
     jp: "We are a multidisciplinary team of experts in communication, digital strategies, graphic design, video and journalistic production that believe that communication is a fundamental tool to generate social transformations. Tinta Sur translates theory into experience.",
     tr: "We are a multidisciplinary team of experts in communication, digital strategies, graphic design, video and journalistic production that believe that communication is a fundamental tool to generate social transformations. Tinta Sur translates theory into experience.",
   },
+  "polycot-tagline": {
+    es: "Custom Technology Solutions for Mission-Driven Businesses and Nonprofits.",
+    en: "Custom Technology Solutions for Mission-Driven Businesses and Nonprofits.",
+    el: "Custom Technology Solutions for Mission-Driven Businesses and Nonprofits.",
+    hr: "Custom Technology Solutions for Mission-Driven Businesses and Nonprofits.",
+    pt: "Custom Technology Solutions for Mission-Driven Businesses and Nonprofits.",
+    jp: "Custom Technology Solutions for Mission-Driven Businesses and Nonprofits.",
+    tr: "Custom Technology Solutions for Mission-Driven Businesses and Nonprofits.",
+  },
+  "polycot-description": {
+    en: "We specialize in custom technology solutions for mission-driven businesses and nonprofits, from small-scale projects to enterprise-level solutions. Our team is deeply invested in your success, bringing wisdom and experience to every collaboration. We believe in building strong, relational partnerships and empowering your organization with the tools and technology needed to thrive.",
+    es: "We specialize in custom technology solutions for mission-driven businesses and nonprofits, from small-scale projects to enterprise-level solutions. Our team is deeply invested in your success, bringing wisdom and experience to every collaboration. We believe in building strong, relational partnerships and empowering your organization with the tools and technology needed to thrive.",
+    el: "We specialize in custom technology solutions for mission-driven businesses and nonprofits, from small-scale projects to enterprise-level solutions. Our team is deeply invested in your success, bringing wisdom and experience to every collaboration. We believe in building strong, relational partnerships and empowering your organization with the tools and technology needed to thrive.",
+    hr: "We specialize in custom technology solutions for mission-driven businesses and nonprofits, from small-scale projects to enterprise-level solutions. Our team is deeply invested in your success, bringing wisdom and experience to every collaboration. We believe in building strong, relational partnerships and empowering your organization with the tools and technology needed to thrive.",
+    pt: "We specialize in custom technology solutions for mission-driven businesses and nonprofits, from small-scale projects to enterprise-level solutions. Our team is deeply invested in your success, bringing wisdom and experience to every collaboration. We believe in building strong, relational partnerships and empowering your organization with the tools and technology needed to thrive.",
+    jp: "We specialize in custom technology solutions for mission-driven businesses and nonprofits, from small-scale projects to enterprise-level solutions. Our team is deeply invested in your success, bringing wisdom and experience to every collaboration. We believe in building strong, relational partnerships and empowering your organization with the tools and technology needed to thrive.",
+    tr: "We specialize in custom technology solutions for mission-driven businesses and nonprofits, from small-scale projects to enterprise-level solutions. Our team is deeply invested in your success, bringing wisdom and experience to every collaboration. We believe in building strong, relational partnerships and empowering your organization with the tools and technology needed to thrive.",
+  },
+  "pollux-tagline": {
+    es: "We provide custom software solutions, working collaboratively within our team to deliver the best results for our clients.",
+    en: "We provide custom software solutions, working collaboratively within our team to deliver the best results for our clients.",
+    el: "We provide custom software solutions, working collaboratively within our team to deliver the best results for our clients.",
+    hr: "We provide custom software solutions, working collaboratively within our team to deliver the best results for our clients.",
+    pt: "We provide custom software solutions, working collaboratively within our team to deliver the best results for our clients.",
+    jp: "We provide custom software solutions, working collaboratively within our team to deliver the best results for our clients.",
+    tr: "We provide custom software solutions, working collaboratively within our team to deliver the best results for our clients.",
+  },
+  "pollux-description": {
+    en: "Pollux is more than just a workplace; it’s a collaborative project where we’ve built a strong team of professionals committed to continuous growth and learning. We provide high-quality IT services and custom software solutions, always adapting to the unique needs of our clients with flexibility and innovation.",
+    es: "Pollux is more than just a workplace; it’s a collaborative project where we’ve built a strong team of professionals committed to continuous growth and learning. We provide high-quality IT services and custom software solutions, always adapting to the unique needs of our clients with flexibility and innovation.",
+    el: "Pollux is more than just a workplace; it’s a collaborative project where we’ve built a strong team of professionals committed to continuous growth and learning. We provide high-quality IT services and custom software solutions, always adapting to the unique needs of our clients with flexibility and innovation.",
+    hr: "Pollux is more than just a workplace; it’s a collaborative project where we’ve built a strong team of professionals committed to continuous growth and learning. We provide high-quality IT services and custom software solutions, always adapting to the unique needs of our clients with flexibility and innovation.",
+    pt: "Pollux is more than just a workplace; it’s a collaborative project where we’ve built a strong team of professionals committed to continuous growth and learning. We provide high-quality IT services and custom software solutions, always adapting to the unique needs of our clients with flexibility and innovation.",
+    jp: "Pollux is more than just a workplace; it’s a collaborative project where we’ve built a strong team of professionals committed to continuous growth and learning. We provide high-quality IT services and custom software solutions, always adapting to the unique needs of our clients with flexibility and innovation.",
+    tr: "Pollux is more than just a workplace; it’s a collaborative project where we’ve built a strong team of professionals committed to continuous growth and learning. We provide high-quality IT services and custom software solutions, always adapting to the unique needs of our clients with flexibility and innovation.",
+  },
 
   // Success Form Page Translations
   "success-thankyou": {

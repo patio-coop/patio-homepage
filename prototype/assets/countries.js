@@ -145,6 +145,20 @@ data.countries = [
         ],
       },
       {
+        name: "Pollux",
+        url: "https://polluxcoop.com/",
+        logo: "pollux.png",
+        tagline: "pollux-tagline",
+        description: "pollux-description",
+        services: [
+          "Web Portals, Apps and Services",
+          "Mobile Development",
+          "Cloud-based Infrastructure",
+          "E-commerce Development",
+          "UX / UI",
+        ],
+      },
+      {
         name: "Redjar",
         url: "https://redjar.com.ar/",
         logo: "redjar.png",
@@ -746,6 +760,19 @@ data.countries = [
           "Software Development",
           "Go and Rust Programming",
           "Broadcast and Streaming",
+        ],
+      },
+      {
+        name: "Polycot Associates",
+        url: "https://polycotassociates.com/",
+        logo: "polycot.png",
+        tagline: "polycot-tagline",
+        description: "polycot-description",
+        services: [
+          "Web Portals, Apps and Services",
+          "ICT Consulting",
+          "Solution Architecture",
+          "Strategic Planning",
         ],
       },
       {
