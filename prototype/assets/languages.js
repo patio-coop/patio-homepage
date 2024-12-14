@@ -118,7 +118,7 @@ const languages = {
     tr: "Bilgiyi, iş fırsatlarını ve insan kaynaklarını paylaşarak işbirliği yapıyoruz.Patio, hem kooperatif üyeleri, hem de partnerlerimiz için en iyi deneyimi sağlar.",
   },
   "section2-coops": {
-    en: "Patio is a network comprised of tech cooperatives, from all corners of the globe, working together in solidarity to democratize the tech sector.",
+    en: "Patio is a network comprising tech cooperatives, from all corners of the globe, working together in solidarity to democratize the tech sector.",
     es: "Patio es una red de cooperativas de tecnología de todos los rincones del mundo, trabajando juntas en solidaridad para democratizar al sector tecnológico.",
     el: "Το Patio είναι ένα δίκτυο που αποτελείται από συνεταιρισμούς τεχνολογίας, από όλες τις γωνιές του πλανήτη, που συνεργάζονται αλληλέγγυα για τον εκδημοκρατισμό του τεχνολογικού τομέα.",
     hr: "Patio je mreža tehnološki orjentiranih zadruga iz cijelog svijeta koje solidarno surađuju u smjeru demokratizacije tehnološkog sektora.",
