@@ -923,22 +923,22 @@ const languages = {
     tr: "",
   },
   "autonomic-tagline": {
-    es: "Websites, apps, design and infrastructure powered by free and open software",
-    el: "Websites, apps, design and infrastructure powered by free and open software",
-    hr: "Websites, apps, design and infrastructure powered by free and open software",
-    pt: "Websites, apps, design and infrastructure powered by free and open software",
-    jp: "Websites, apps, design and infrastructure powered by free and open software",
-    tr: "Websites, apps, design and infrastructure powered by free and open software",
-    en: "Websites, apps, design and infrastructure powered by free and open software",
-  },
-  "autonomic-description": {
-    el: "A global collective of developers, designers and multi-disciplinary professionals with a broad range of skills and backgrounds. We build technologies, apps and websites that help you make a positive impact on the world.",
-    en: "A global collective of developers, designers and multi-disciplinary professionals with a broad range of skills and backgrounds. We build technologies, apps and websites that help you make a positive impact on the world.",
-    es: "A global collective of developers, designers and multi-disciplinary professionals with a broad range of skills and backgrounds. We build technologies, apps and websites that help you make a positive impact on the world.",
-    hr: "A global collective of developers, designers and multi-disciplinary professionals with a broad range of skills and backgrounds. We build technologies, apps and websites that help you make a positive impact on the world.",
-    pt: "A global collective of developers, designers and multi-disciplinary professionals with a broad range of skills and backgrounds. We build technologies, apps and websites that help you make a positive impact on the world.",
-    jp: "A global collective of developers, designers and multi-disciplinary professionals with a broad range of skills and backgrounds. We build technologies, apps and websites that help you make a positive impact on the world.",
-    tr: "A global collective of developers, designers and multi-disciplinary professionals with a broad range of skills and backgrounds. We build technologies, apps and websites that help you make a positive impact on the world.",
+    "es": "Sitios web, aplicaciones, diseño e infraestructura impulsados por software libre y abierto",
+    "el": "Ιστότοποι, εφαρμογές, σχεδιασμός και υποδομή με τη δύναμη του ελεύθερου και ανοιχτού λογισμικού",
+    "hr": "Web stranice, aplikacije, dizajn i infrastruktura pokretani slobodnim i otvorenim softverom",
+    "pt": "Websites, aplicativos, design e infraestrutura impulsados por software livre e aberto",
+    "jp": "自由でオープンなソフトウェアによって支えられるウェブサイト、アプリ、デザイン、インフラ",
+    "tr": "Web siteleri, uygulamalar, tasarım ve altyapı özgür ve açık kaynaklı yazılım ile desteklenmektedir",
+    "en": "Websites, apps, design and infrastructure powered by free and open software"
+},
+"autonomic-description": {
+    "es": "Un colectivo global de desarrolladores, diseñadores y profesionales multidisciplinarios con una amplia gama de habilidades y antecedentes. Construimos tecnologías, aplicaciones y sitios web que te ayudan a tener un impacto positivo en el mundo.",
+    "el": "Μια παγκόσμια συλλογικότητα προγραμματιστών, σχεδιαστών και πολυεπιστημονικών επαγγελματιών με ένα ευρύ φάσμα δεξιοτήτων και υπόβαθρων. Δημιουργούμε τεχνολογίες, εφαρμογές και ιστότοπους που σας βοηθούν να έχετε θετικό αντίκτυπο στον κόσμο.",
+    "hr": "Globalni kolektiv programera, dizajnera i multidisciplinarnih profesionalaca sa širokim spektrom vještina i iskustava. Gradimo tehnologije, aplikacije i web stranice koje vam pomažu da ostvarite pozitivan utjecaj na svijet.",
+    "pt": "Um coletivo global de desenvolvedores, designers e profissionais multidisciplinares com uma ampla gama de habilidades e experiências. Construímos tecnologias, aplicativos e sites que ajudam você a causar um impacto positivo no mundo.",
+    "jp": "開発者、デザイナー、多分野の専門家からなるグローバルなコレクティブであり、幅広いスキルとバックグラウンドを持っています。私たちは、世界に良い影響を与える技術、アプリ、ウェブサイトを構築します。",
+    "tr": "Geniş bir yetenek ve geçmiş çeşitliliğine sahip geliştiriciler, tasarımcılar ve çok disiplinli profesyonellerden oluşan küresel bir kolektifiz. Dünyada olumlu bir etki yaratmanıza yardımcı olacak teknolojiler, uygulamalar ve web siteleri geliştiriyoruz.",
+    "en": "A global collective of developers, designers and multi-disciplinary professionals with a broad range of skills and backgrounds. We build technologies, apps and websites that help you make a positive impact on the world."
   },
   "webarchitects-tagline": {
     es: "We provide ethical, open source, hosting and system administration services.",
