@@ -376,6 +376,20 @@ data.countries = [
     longitude: "-3",
     coops: [
       {
+        name: "Autonomic",
+        url: "https://autonomic.zone",
+        logo: "autonomic.png",
+        tagline: "autonomic-tagline",
+        description: "autonomic-description",
+        services: [
+          "Applications",
+          "Websites",
+          "Web design",
+          "Open Source infrastructure",
+          "Hosting & Support",
+        ],
+      },
+      {
         name: "Web Architects",
         url: "https://www.webarchitects.coop",
         logo: "webarchitects.png",
